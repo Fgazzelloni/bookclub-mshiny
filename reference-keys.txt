@@ -26,6 +26,7 @@ other-resources
 meeting-videos
 cohort-1
 cohort-2
+cohort-3
 shiny---basic-user-interface
 learning-objectives
 fyi
@@ -43,6 +44,7 @@ summary
 meeting-videos-1
 cohort-1-1
 cohort-2-1
+cohort-3-1
 basic-reactivity
 recap
 important-learnings-so-far-main-app-components
@@ -64,6 +66,7 @@ acknowledgements
 meeting-videos-2
 cohort-1-2
 cohort-2-2
+cohort-3-2
 case-study-er-injuries
 introduction-1
 the-data
@@ -75,6 +78,7 @@ narrative
 meeting-videos-3
 cohort-1-3
 cohort-2-3
+cohort-3-3
 workflow
 why-workflow
 learning-objectives-1
@@ -102,6 +106,7 @@ making-the-bad-reprex-betterminimal
 meeting-videos-4
 cohort-1-4
 cohort-2-4
+cohort-3-4
 layout-themes-html
 disclaimer
 learning-objectives-2
@@ -124,10 +129,12 @@ the-final-app-app.r
 meeting-videos-5
 cohort-1-5
 cohort-2-5
+cohort-3-5
 graphics-and-shiny
 meeting-videos-6
 cohort-1-6
 cohort-2-6
+cohort-3-6
 user-feedback
 validation
 validating-input
@@ -148,6 +155,7 @@ undoing-an-action
 meeting-videos-7
 cohort-1-7
 cohort-2-7
+cohort-3-7
 uploads-and-downloads
 file-uploads
 ui
@@ -166,6 +174,7 @@ some-tips-tricks-when-including-report-download-functionality
 meeting-videos-8
 cohort-1-8
 cohort-2-8
+cohort-3-8
 dynamic-ui
 introduction-2
 updating-inputs
@@ -176,6 +185,7 @@ conclusions
 meeting-videos-9
 cohort-1-9
 cohort-2-9
+cohort-3-9
 bookmarking
 introduction-3
 modifying-app-to-be-bookmarkable
@@ -186,11 +196,13 @@ bookmarking-challenges
 meeting-videos-10
 cohort-1-10
 cohort-2-10
+cohort-3-10
 tidy-evaluation
 slide-title
 meeting-videos-11
 cohort-1-11
 cohort-2-11
+cohort-3-11
 why-reactivity
 introduction-4
 why-do-we-need-reactive-programming
@@ -202,6 +214,7 @@ a-brief-history-of-reactive-programming
 meeting-videos-12
 cohort-1-12
 cohort-2-12
+cohort-3-12
 the-reactive-graph-1
 quick-review-of-chapter-3-basic-reactivity
 introduction-5
@@ -213,6 +226,7 @@ summary-1
 meeting-videos-13
 cohort-1-13
 cohort-2-13
+cohort-3-13
 reactive-building-blocks
 learning-objectives-3
 tools
@@ -227,6 +241,7 @@ timed-invalidation-1
 meeting-videos-14
 cohort-1-14
 cohort-2-14
+cohort-3-14
 escaping-the-graph
 introduction-6
 combine-reactive-values
@@ -238,6 +253,7 @@ resources-1
 meeting-videos-15
 cohort-1-15
 cohort-2-15
+cohort-3-15
 general-guidelines
 best-practices-section-of-the-book
 software-engineering
@@ -250,6 +266,7 @@ code-reviews
 meeting-videos-16
 cohort-1-16
 cohort-2-16
+cohort-3-16
 functions
 file-organization
 ui-functions
@@ -260,6 +277,7 @@ internal-functions
 meeting-videos-17
 cohort-1-17
 cohort-2-17
+cohort-3-17
 modules
 note-about-golem
 case-study-modules-to-make-a-histogram
@@ -268,6 +286,7 @@ links-to-examples
 meeting-videos-18
 cohort-1-18
 cohort-2-18
+cohort-3-18
 packages
 package-structure
 benefits
@@ -278,6 +297,7 @@ demo
 lets-take-a-look
 meeting-videos-19
 cohort-1-19
+cohort-3-19
 testing-1
 learning-outcomes
 purpose-of-testing
@@ -305,6 +325,7 @@ other-interesting-things
 meeting-videos-20
 cohort-1-20
 cohort-2-19
+cohort-3-20
 security
 introduction-7
 the-security-within-your-app
@@ -315,6 +336,7 @@ resources-2
 meeting-videos-21
 cohort-1-21
 cohort-2-20
+cohort-3-21
 performance
 restaurant-shiny
 benchmarking
@@ -328,9 +350,11 @@ resources-3
 meeting-videos-22
 cohort-1-22
 cohort-2-21
+cohort-3-22
 wrap-up-session
 meeting-videos-23
 cohort-1-23
+cohort-3-23
 up-and-running-with-git
 what-is-git
 accessing-and-using-git

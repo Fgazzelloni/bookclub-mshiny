@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>19.2 Case study: histogram with two modules | Mastering Shiny Book Club</title>
   <meta name="description" content="This is the product of the R4DS Online Learning Community’s Book Club." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="19.2 Case study: histogram with two modules | Mastering Shiny Book Club" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is the product of the R4DS Online Learning Community’s Book Club." />
   <meta name="github-repo" content="r4ds/bookclub-mshiny" />
@@ -24,7 +23,7 @@
 <meta name="author" content="The R4DS Online Learning Community" />
 
 
-<meta name="date" content="2022-01-23" />
+<meta name="date" content="2022-05-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -51,8 +50,9 @@
 
 
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
 <script src="libs/d3-3.3.8/d3.min.js"></script>
 <script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
@@ -60,7 +60,7 @@
 <script src="libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
 <link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
 <script src="libs/chromatography-0.1/chromatography.js"></script>
-<script src="libs/DiagrammeR-binding-1.0.7/DiagrammeR.js"></script>
+<script src="libs/DiagrammeR-binding-1.0.9/DiagrammeR.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
@@ -171,6 +171,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.9" data-path="meeting-videos.html"><a href="meeting-videos.html"><i class="fa fa-check"></i><b>1.9</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="1.9.1" data-path="meeting-videos.html"><a href="meeting-videos.html#cohort-1"><i class="fa fa-check"></i><b>1.9.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="1.9.2" data-path="meeting-videos.html"><a href="meeting-videos.html#cohort-2"><i class="fa fa-check"></i><b>1.9.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="1.9.3" data-path="meeting-videos.html"><a href="meeting-videos.html#cohort-3"><i class="fa fa-check"></i><b>1.9.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="shiny---basic-user-interface.html"><a href="shiny---basic-user-interface.html"><i class="fa fa-check"></i><b>2</b> Shiny - Basic User Interface</a><ul>
@@ -192,6 +193,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.14" data-path="meeting-videos-1.html"><a href="meeting-videos-1.html"><i class="fa fa-check"></i><b>2.14</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="2.14.1" data-path="meeting-videos-1.html"><a href="meeting-videos-1.html#cohort-1-1"><i class="fa fa-check"></i><b>2.14.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="2.14.2" data-path="meeting-videos-1.html"><a href="meeting-videos-1.html#cohort-2-1"><i class="fa fa-check"></i><b>2.14.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="2.14.3" data-path="meeting-videos-1.html"><a href="meeting-videos-1.html#cohort-3-1"><i class="fa fa-check"></i><b>2.14.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="basic-reactivity.html"><a href="basic-reactivity.html"><i class="fa fa-check"></i><b>3</b> Basic Reactivity</a><ul>
@@ -220,6 +222,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.12" data-path="meeting-videos-2.html"><a href="meeting-videos-2.html"><i class="fa fa-check"></i><b>3.12</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="3.12.1" data-path="meeting-videos-2.html"><a href="meeting-videos-2.html#cohort-1-2"><i class="fa fa-check"></i><b>3.12.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="3.12.2" data-path="meeting-videos-2.html"><a href="meeting-videos-2.html#cohort-2-2"><i class="fa fa-check"></i><b>3.12.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="3.12.3" data-path="meeting-videos-2.html"><a href="meeting-videos-2.html#cohort-3-2"><i class="fa fa-check"></i><b>3.12.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="case-study-er-injuries.html"><a href="case-study-er-injuries.html"><i class="fa fa-check"></i><b>4</b> Case study: ER injuries</a><ul>
@@ -233,6 +236,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.8" data-path="meeting-videos-3.html"><a href="meeting-videos-3.html"><i class="fa fa-check"></i><b>4.8</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="4.8.1" data-path="meeting-videos-3.html"><a href="meeting-videos-3.html#cohort-1-3"><i class="fa fa-check"></i><b>4.8.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="4.8.2" data-path="meeting-videos-3.html"><a href="meeting-videos-3.html#cohort-2-3"><i class="fa fa-check"></i><b>4.8.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="4.8.3" data-path="meeting-videos-3.html"><a href="meeting-videos-3.html#cohort-3-3"><i class="fa fa-check"></i><b>4.8.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Shiny in action</b></span></li>
@@ -265,6 +269,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.15" data-path="meeting-videos-4.html"><a href="meeting-videos-4.html"><i class="fa fa-check"></i><b>5.15</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="5.15.1" data-path="meeting-videos-4.html"><a href="meeting-videos-4.html#cohort-1-4"><i class="fa fa-check"></i><b>5.15.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="5.15.2" data-path="meeting-videos-4.html"><a href="meeting-videos-4.html#cohort-2-4"><i class="fa fa-check"></i><b>5.15.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="5.15.3" data-path="meeting-videos-4.html"><a href="meeting-videos-4.html#cohort-3-4"><i class="fa fa-check"></i><b>5.15.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="layout-themes-html.html"><a href="layout-themes-html.html"><i class="fa fa-check"></i><b>6</b> Layout, themes, HTML</a><ul>
@@ -293,12 +298,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.8" data-path="meeting-videos-5.html"><a href="meeting-videos-5.html"><i class="fa fa-check"></i><b>6.8</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="6.8.1" data-path="meeting-videos-5.html"><a href="meeting-videos-5.html#cohort-1-5"><i class="fa fa-check"></i><b>6.8.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="6.8.2" data-path="meeting-videos-5.html"><a href="meeting-videos-5.html#cohort-2-5"><i class="fa fa-check"></i><b>6.8.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="6.8.3" data-path="meeting-videos-5.html"><a href="meeting-videos-5.html#cohort-3-5"><i class="fa fa-check"></i><b>6.8.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="graphics-and-shiny.html"><a href="graphics-and-shiny.html"><i class="fa fa-check"></i><b>7</b> Graphics and Shiny</a><ul>
 <li class="chapter" data-level="7.1" data-path="meeting-videos-6.html"><a href="meeting-videos-6.html"><i class="fa fa-check"></i><b>7.1</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="7.1.1" data-path="meeting-videos-6.html"><a href="meeting-videos-6.html#cohort-1-6"><i class="fa fa-check"></i><b>7.1.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="7.1.2" data-path="meeting-videos-6.html"><a href="meeting-videos-6.html#cohort-2-6"><i class="fa fa-check"></i><b>7.1.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="7.1.3" data-path="meeting-videos-6.html"><a href="meeting-videos-6.html#cohort-3-6"><i class="fa fa-check"></i><b>7.1.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="user-feedback.html"><a href="user-feedback.html"><i class="fa fa-check"></i><b>8</b> User Feedback</a><ul>
@@ -325,6 +332,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.5" data-path="meeting-videos-7.html"><a href="meeting-videos-7.html"><i class="fa fa-check"></i><b>8.5</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="8.5.1" data-path="meeting-videos-7.html"><a href="meeting-videos-7.html#cohort-1-7"><i class="fa fa-check"></i><b>8.5.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="8.5.2" data-path="meeting-videos-7.html"><a href="meeting-videos-7.html#cohort-2-7"><i class="fa fa-check"></i><b>8.5.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="8.5.3" data-path="meeting-videos-7.html"><a href="meeting-videos-7.html#cohort-3-7"><i class="fa fa-check"></i><b>8.5.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="uploads-and-downloads.html"><a href="uploads-and-downloads.html"><i class="fa fa-check"></i><b>9</b> Uploads and Downloads</a><ul>
@@ -350,6 +358,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.6" data-path="meeting-videos-8.html"><a href="meeting-videos-8.html"><i class="fa fa-check"></i><b>9.6</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="9.6.1" data-path="meeting-videos-8.html"><a href="meeting-videos-8.html#cohort-1-8"><i class="fa fa-check"></i><b>9.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="9.6.2" data-path="meeting-videos-8.html"><a href="meeting-videos-8.html#cohort-2-8"><i class="fa fa-check"></i><b>9.6.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="9.6.3" data-path="meeting-videos-8.html"><a href="meeting-videos-8.html#cohort-3-8"><i class="fa fa-check"></i><b>9.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="dynamic-ui.html"><a href="dynamic-ui.html"><i class="fa fa-check"></i><b>10</b> Dynamic UI</a><ul>
@@ -363,6 +372,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="10.6" data-path="meeting-videos-9.html"><a href="meeting-videos-9.html"><i class="fa fa-check"></i><b>10.6</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="10.6.1" data-path="meeting-videos-9.html"><a href="meeting-videos-9.html#cohort-1-9"><i class="fa fa-check"></i><b>10.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="10.6.2" data-path="meeting-videos-9.html"><a href="meeting-videos-9.html#cohort-2-9"><i class="fa fa-check"></i><b>10.6.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="10.6.3" data-path="meeting-videos-9.html"><a href="meeting-videos-9.html#cohort-3-9"><i class="fa fa-check"></i><b>10.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="bookmarking.html"><a href="bookmarking.html"><i class="fa fa-check"></i><b>11</b> Bookmarking</a><ul>
@@ -376,6 +386,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11.6" data-path="meeting-videos-10.html"><a href="meeting-videos-10.html"><i class="fa fa-check"></i><b>11.6</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="11.6.1" data-path="meeting-videos-10.html"><a href="meeting-videos-10.html#cohort-1-10"><i class="fa fa-check"></i><b>11.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="11.6.2" data-path="meeting-videos-10.html"><a href="meeting-videos-10.html#cohort-2-10"><i class="fa fa-check"></i><b>11.6.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="11.6.3" data-path="meeting-videos-10.html"><a href="meeting-videos-10.html#cohort-3-10"><i class="fa fa-check"></i><b>11.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="tidy-evaluation.html"><a href="tidy-evaluation.html"><i class="fa fa-check"></i><b>12</b> Tidy evaluation</a><ul>
@@ -383,6 +394,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="12.2" data-path="meeting-videos-11.html"><a href="meeting-videos-11.html"><i class="fa fa-check"></i><b>12.2</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="12.2.1" data-path="meeting-videos-11.html"><a href="meeting-videos-11.html#cohort-1-11"><i class="fa fa-check"></i><b>12.2.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="12.2.2" data-path="meeting-videos-11.html"><a href="meeting-videos-11.html#cohort-2-11"><i class="fa fa-check"></i><b>12.2.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="12.2.3" data-path="meeting-videos-11.html"><a href="meeting-videos-11.html#cohort-3-11"><i class="fa fa-check"></i><b>12.2.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Mastering reactivity</b></span></li>
@@ -398,6 +410,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13.5" data-path="meeting-videos-12.html"><a href="meeting-videos-12.html"><i class="fa fa-check"></i><b>13.5</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="13.5.1" data-path="meeting-videos-12.html"><a href="meeting-videos-12.html#cohort-1-12"><i class="fa fa-check"></i><b>13.5.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="13.5.2" data-path="meeting-videos-12.html"><a href="meeting-videos-12.html#cohort-2-12"><i class="fa fa-check"></i><b>13.5.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="13.5.3" data-path="meeting-videos-12.html"><a href="meeting-videos-12.html#cohort-3-12"><i class="fa fa-check"></i><b>13.5.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="the-reactive-graph-1.html"><a href="the-reactive-graph-1.html"><i class="fa fa-check"></i><b>14</b> The reactive graph</a><ul>
@@ -411,6 +424,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="14.8" data-path="meeting-videos-13.html"><a href="meeting-videos-13.html"><i class="fa fa-check"></i><b>14.8</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="14.8.1" data-path="meeting-videos-13.html"><a href="meeting-videos-13.html#cohort-1-13"><i class="fa fa-check"></i><b>14.8.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="14.8.2" data-path="meeting-videos-13.html"><a href="meeting-videos-13.html#cohort-2-13"><i class="fa fa-check"></i><b>14.8.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="14.8.3" data-path="meeting-videos-13.html"><a href="meeting-videos-13.html#cohort-3-13"><i class="fa fa-check"></i><b>14.8.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="15" data-path="reactive-building-blocks.html"><a href="reactive-building-blocks.html"><i class="fa fa-check"></i><b>15</b> Reactive Building Blocks</a><ul>
@@ -428,6 +442,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="15.9" data-path="meeting-videos-14.html"><a href="meeting-videos-14.html"><i class="fa fa-check"></i><b>15.9</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="15.9.1" data-path="meeting-videos-14.html"><a href="meeting-videos-14.html#cohort-1-14"><i class="fa fa-check"></i><b>15.9.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="15.9.2" data-path="meeting-videos-14.html"><a href="meeting-videos-14.html#cohort-2-14"><i class="fa fa-check"></i><b>15.9.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="15.9.3" data-path="meeting-videos-14.html"><a href="meeting-videos-14.html#cohort-3-14"><i class="fa fa-check"></i><b>15.9.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="16" data-path="escaping-the-graph.html"><a href="escaping-the-graph.html"><i class="fa fa-check"></i><b>16</b> Escaping the graph</a><ul>
@@ -443,6 +458,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="16.6" data-path="meeting-videos-15.html"><a href="meeting-videos-15.html"><i class="fa fa-check"></i><b>16.6</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="16.6.1" data-path="meeting-videos-15.html"><a href="meeting-videos-15.html#cohort-1-15"><i class="fa fa-check"></i><b>16.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="16.6.2" data-path="meeting-videos-15.html"><a href="meeting-videos-15.html#cohort-2-15"><i class="fa fa-check"></i><b>16.6.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="16.6.3" data-path="meeting-videos-15.html"><a href="meeting-videos-15.html#cohort-3-15"><i class="fa fa-check"></i><b>16.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Best practices</b></span></li>
@@ -458,6 +474,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="17.9" data-path="meeting-videos-16.html"><a href="meeting-videos-16.html"><i class="fa fa-check"></i><b>17.9</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="17.9.1" data-path="meeting-videos-16.html"><a href="meeting-videos-16.html#cohort-1-16"><i class="fa fa-check"></i><b>17.9.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="17.9.2" data-path="meeting-videos-16.html"><a href="meeting-videos-16.html#cohort-2-16"><i class="fa fa-check"></i><b>17.9.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="17.9.3" data-path="meeting-videos-16.html"><a href="meeting-videos-16.html#cohort-3-16"><i class="fa fa-check"></i><b>17.9.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="18" data-path="functions.html"><a href="functions.html"><i class="fa fa-check"></i><b>18</b> Functions</a><ul>
@@ -472,6 +489,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="18.4" data-path="meeting-videos-17.html"><a href="meeting-videos-17.html"><i class="fa fa-check"></i><b>18.4</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="18.4.1" data-path="meeting-videos-17.html"><a href="meeting-videos-17.html#cohort-1-17"><i class="fa fa-check"></i><b>18.4.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="18.4.2" data-path="meeting-videos-17.html"><a href="meeting-videos-17.html#cohort-2-17"><i class="fa fa-check"></i><b>18.4.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="18.4.3" data-path="meeting-videos-17.html"><a href="meeting-videos-17.html#cohort-3-17"><i class="fa fa-check"></i><b>18.4.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="19" data-path="modules.html"><a href="modules.html"><i class="fa fa-check"></i><b>19</b> Modules</a><ul>
@@ -482,6 +500,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="19.4" data-path="meeting-videos-18.html"><a href="meeting-videos-18.html"><i class="fa fa-check"></i><b>19.4</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="19.4.1" data-path="meeting-videos-18.html"><a href="meeting-videos-18.html#cohort-1-18"><i class="fa fa-check"></i><b>19.4.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="19.4.2" data-path="meeting-videos-18.html"><a href="meeting-videos-18.html#cohort-2-18"><i class="fa fa-check"></i><b>19.4.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="19.4.3" data-path="meeting-videos-18.html"><a href="meeting-videos-18.html#cohort-3-18"><i class="fa fa-check"></i><b>19.4.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="20" data-path="packages.html"><a href="packages.html"><i class="fa fa-check"></i><b>20</b> Packages</a><ul>
@@ -495,6 +514,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="20.5" data-path="meeting-videos-19.html"><a href="meeting-videos-19.html"><i class="fa fa-check"></i><b>20.5</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="20.5.1" data-path="meeting-videos-19.html"><a href="meeting-videos-19.html#cohort-1-19"><i class="fa fa-check"></i><b>20.5.1</b> Cohort 1</a></li>
+<li class="chapter" data-level="20.5.2" data-path="meeting-videos-19.html"><a href="meeting-videos-19.html#cohort-3-19"><i class="fa fa-check"></i><b>20.5.2</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="21" data-path="testing-1.html"><a href="testing-1.html"><i class="fa fa-check"></i><b>21</b> Testing</a><ul>
@@ -528,6 +548,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="21.15" data-path="meeting-videos-20.html"><a href="meeting-videos-20.html"><i class="fa fa-check"></i><b>21.15</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="21.15.1" data-path="meeting-videos-20.html"><a href="meeting-videos-20.html#cohort-1-20"><i class="fa fa-check"></i><b>21.15.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="21.15.2" data-path="meeting-videos-20.html"><a href="meeting-videos-20.html#cohort-2-19"><i class="fa fa-check"></i><b>21.15.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="21.15.3" data-path="meeting-videos-20.html"><a href="meeting-videos-20.html#cohort-3-20"><i class="fa fa-check"></i><b>21.15.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="22" data-path="security.html"><a href="security.html"><i class="fa fa-check"></i><b>22</b> Security</a><ul>
@@ -541,6 +562,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="22.6" data-path="meeting-videos-21.html"><a href="meeting-videos-21.html"><i class="fa fa-check"></i><b>22.6</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="22.6.1" data-path="meeting-videos-21.html"><a href="meeting-videos-21.html#cohort-1-21"><i class="fa fa-check"></i><b>22.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="22.6.2" data-path="meeting-videos-21.html"><a href="meeting-videos-21.html#cohort-2-20"><i class="fa fa-check"></i><b>22.6.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="22.6.3" data-path="meeting-videos-21.html"><a href="meeting-videos-21.html#cohort-3-21"><i class="fa fa-check"></i><b>22.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="23" data-path="performance.html"><a href="performance.html"><i class="fa fa-check"></i><b>23</b> Performance</a><ul>
@@ -559,11 +581,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="23.6" data-path="meeting-videos-22.html"><a href="meeting-videos-22.html"><i class="fa fa-check"></i><b>23.6</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="23.6.1" data-path="meeting-videos-22.html"><a href="meeting-videos-22.html#cohort-1-22"><i class="fa fa-check"></i><b>23.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="23.6.2" data-path="meeting-videos-22.html"><a href="meeting-videos-22.html#cohort-2-21"><i class="fa fa-check"></i><b>23.6.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="23.6.3" data-path="meeting-videos-22.html"><a href="meeting-videos-22.html#cohort-3-22"><i class="fa fa-check"></i><b>23.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="24" data-path="wrap-up-session.html"><a href="wrap-up-session.html"><i class="fa fa-check"></i><b>24</b> Wrap up session</a><ul>
 <li class="chapter" data-level="24.1" data-path="meeting-videos-23.html"><a href="meeting-videos-23.html"><i class="fa fa-check"></i><b>24.1</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="24.1.1" data-path="meeting-videos-23.html"><a href="meeting-videos-23.html#cohort-1-23"><i class="fa fa-check"></i><b>24.1.1</b> Cohort 1</a></li>
+<li class="chapter" data-level="24.1.2" data-path="meeting-videos-23.html"><a href="meeting-videos-23.html#cohort-3-23"><i class="fa fa-check"></i><b>24.1.2</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Other topics</b></span></li>
@@ -615,125 +639,125 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="case-study-histogram-with-two-modules" class="section level2">
-<h2><span class="header-section-number">19.2</span> Case study: histogram with two modules</h2>
-<div class="sourceCode" id="cb226"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb226-1"><a href="case-study-histogram-with-two-modules.html#cb226-1"></a><span class="kw">library</span>(shiny)</span>
-<span id="cb226-2"><a href="case-study-histogram-with-two-modules.html#cb226-2"></a></span>
-<span id="cb226-3"><a href="case-study-histogram-with-two-modules.html#cb226-3"></a><span class="co"># define the dataset input ----------------</span></span>
-<span id="cb226-4"><a href="case-study-histogram-with-two-modules.html#cb226-4"></a><span class="co"># This is interesting, the function takes one id variable and works with that at the end</span></span>
-<span id="cb226-5"><a href="case-study-histogram-with-two-modules.html#cb226-5"></a>datasetInput &lt;-<span class="st"> </span><span class="cf">function</span>(id, <span class="dt">filter =</span> <span class="ot">NULL</span>) {</span>
-<span id="cb226-6"><a href="case-study-histogram-with-two-modules.html#cb226-6"></a>  names &lt;-<span class="st"> </span><span class="kw">ls</span>(<span class="st">&quot;package:datasets&quot;</span>)</span>
-<span id="cb226-7"><a href="case-study-histogram-with-two-modules.html#cb226-7"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">is.null</span>(filter)) {</span>
-<span id="cb226-8"><a href="case-study-histogram-with-two-modules.html#cb226-8"></a>    data &lt;-<span class="st"> </span><span class="kw">lapply</span>(names, get, <span class="st">&quot;package:datasets&quot;</span>)</span>
-<span id="cb226-9"><a href="case-study-histogram-with-two-modules.html#cb226-9"></a>    names &lt;-<span class="st"> </span>names[<span class="kw">vapply</span>(data, filter, <span class="kw">logical</span>(<span class="dv">1</span>))]</span>
-<span id="cb226-10"><a href="case-study-histogram-with-two-modules.html#cb226-10"></a>  }</span>
-<span id="cb226-11"><a href="case-study-histogram-with-two-modules.html#cb226-11"></a>  </span>
-<span id="cb226-12"><a href="case-study-histogram-with-two-modules.html#cb226-12"></a>  <span class="kw">selectInput</span>(<span class="kw">NS</span>(id, <span class="st">&quot;dataset&quot;</span>), <span class="st">&quot;Pick a dataset&quot;</span>, <span class="dt">choices =</span> names)</span>
-<span id="cb226-13"><a href="case-study-histogram-with-two-modules.html#cb226-13"></a>}</span>
-<span id="cb226-14"><a href="case-study-histogram-with-two-modules.html#cb226-14"></a></span>
-<span id="cb226-15"><a href="case-study-histogram-with-two-modules.html#cb226-15"></a><span class="co"># server function returns a reactive</span></span>
-<span id="cb226-16"><a href="case-study-histogram-with-two-modules.html#cb226-16"></a>datasetServer &lt;-<span class="st"> </span><span class="cf">function</span>(id) {</span>
-<span id="cb226-17"><a href="case-study-histogram-with-two-modules.html#cb226-17"></a>  <span class="kw">moduleServer</span>(id, <span class="cf">function</span>(input, output, session) {</span>
-<span id="cb226-18"><a href="case-study-histogram-with-two-modules.html#cb226-18"></a>    <span class="co"># last thing returned</span></span>
-<span id="cb226-19"><a href="case-study-histogram-with-two-modules.html#cb226-19"></a>    <span class="kw">reactive</span>(<span class="kw">get</span>(input<span class="op">$</span>dataset, <span class="st">&quot;package:datasets&quot;</span>)) <span class="co"># gotta be a reactive</span></span>
-<span id="cb226-20"><a href="case-study-histogram-with-two-modules.html#cb226-20"></a>  })</span>
-<span id="cb226-21"><a href="case-study-histogram-with-two-modules.html#cb226-21"></a>}</span>
-<span id="cb226-22"><a href="case-study-histogram-with-two-modules.html#cb226-22"></a></span>
-<span id="cb226-23"><a href="case-study-histogram-with-two-modules.html#cb226-23"></a><span class="co"># selectVar module --------------------</span></span>
-<span id="cb226-24"><a href="case-study-histogram-with-two-modules.html#cb226-24"></a></span>
-<span id="cb226-25"><a href="case-study-histogram-with-two-modules.html#cb226-25"></a>find_vars &lt;-<span class="st"> </span><span class="cf">function</span>(data, filter) {</span>
-<span id="cb226-26"><a href="case-study-histogram-with-two-modules.html#cb226-26"></a>  <span class="kw">names</span>(data)[<span class="kw">vapply</span>(data, filter, <span class="kw">logical</span>(<span class="dv">1</span>))]</span>
-<span id="cb226-27"><a href="case-study-histogram-with-two-modules.html#cb226-27"></a>}</span>
-<span id="cb226-28"><a href="case-study-histogram-with-two-modules.html#cb226-28"></a></span>
-<span id="cb226-29"><a href="case-study-histogram-with-two-modules.html#cb226-29"></a></span>
-<span id="cb226-30"><a href="case-study-histogram-with-two-modules.html#cb226-30"></a><span class="co"># id is the only thing linking the two parts, Input and Server</span></span>
-<span id="cb226-31"><a href="case-study-histogram-with-two-modules.html#cb226-31"></a><span class="co"># This module creates, within namespace `id`, the reactive input var_they_wants</span></span>
-<span id="cb226-32"><a href="case-study-histogram-with-two-modules.html#cb226-32"></a>selectVarInput &lt;-<span class="st"> </span><span class="cf">function</span>(id) {</span>
-<span id="cb226-33"><a href="case-study-histogram-with-two-modules.html#cb226-33"></a>  <span class="kw">selectInput</span>(<span class="kw">NS</span>(id, <span class="st">&quot;var_they_wants&quot;</span>), <span class="st">&quot;Variable&quot;</span>, <span class="dt">choices =</span> <span class="ot">NULL</span>) </span>
-<span id="cb226-34"><a href="case-study-histogram-with-two-modules.html#cb226-34"></a>}</span>
-<span id="cb226-35"><a href="case-study-histogram-with-two-modules.html#cb226-35"></a></span>
-<span id="cb226-36"><a href="case-study-histogram-with-two-modules.html#cb226-36"></a></span>
-<span id="cb226-37"><a href="case-study-histogram-with-two-modules.html#cb226-37"></a>selectVarServer &lt;-<span class="st"> </span><span class="cf">function</span>(id, data_chosen, <span class="dt">filter =</span> is.numeric) {</span>
-<span id="cb226-38"><a href="case-study-histogram-with-two-modules.html#cb226-38"></a>  <span class="kw">moduleServer</span>(id, <span class="cf">function</span>(input, output, session) {</span>
-<span id="cb226-39"><a href="case-study-histogram-with-two-modules.html#cb226-39"></a>    <span class="co"># WHEN the data changes -- that is, when the reactive value data() changes here...</span></span>
-<span id="cb226-40"><a href="case-study-histogram-with-two-modules.html#cb226-40"></a>    <span class="kw">observeEvent</span>(<span class="kw">data_chosen</span>(), {</span>
-<span id="cb226-41"><a href="case-study-histogram-with-two-modules.html#cb226-41"></a>      <span class="co"># ... THEN you should update Select Input with the numeric columns of the new dataframe</span></span>
-<span id="cb226-42"><a href="case-study-histogram-with-two-modules.html#cb226-42"></a>      <span class="kw">updateSelectInput</span>(session, <span class="st">&quot;var_they_wants&quot;</span>, <span class="dt">choices =</span> <span class="kw">find_vars</span>(<span class="kw">data_chosen</span>(), filter))</span>
-<span id="cb226-43"><a href="case-study-histogram-with-two-modules.html#cb226-43"></a>      <span class="co">## </span><span class="al">NOTE</span><span class="co"> this updating happens WIHTIN the namespace `id`.</span></span>
-<span id="cb226-44"><a href="case-study-histogram-with-two-modules.html#cb226-44"></a>      <span class="co">#### var_they_wants is updated with the LIST OF VARS THEY MIGHT WANT</span></span>
-<span id="cb226-45"><a href="case-study-histogram-with-two-modules.html#cb226-45"></a>    })</span>
-<span id="cb226-46"><a href="case-study-histogram-with-two-modules.html#cb226-46"></a>    <span class="co"># input$var_they_wants -- </span></span>
-<span id="cb226-47"><a href="case-study-histogram-with-two-modules.html#cb226-47"></a>    <span class="co"># note that in the server function selectVarServer is called with the namespace id</span></span>
-<span id="cb226-48"><a href="case-study-histogram-with-two-modules.html#cb226-48"></a>    <span class="co"># once again returning the last thing and its reactive</span></span>
-<span id="cb226-49"><a href="case-study-histogram-with-two-modules.html#cb226-49"></a>    </span>
-<span id="cb226-50"><a href="case-study-histogram-with-two-modules.html#cb226-50"></a>    <span class="kw">list</span>(</span>
-<span id="cb226-51"><a href="case-study-histogram-with-two-modules.html#cb226-51"></a>      <span class="dt">name =</span> <span class="kw">reactive</span>(input<span class="op">$</span>var_they_wants),</span>
-<span id="cb226-52"><a href="case-study-histogram-with-two-modules.html#cb226-52"></a>      <span class="dt">value =</span> <span class="kw">reactive</span>(<span class="kw">data_chosen</span>()[[input<span class="op">$</span>var_they_wants]])</span>
-<span id="cb226-53"><a href="case-study-histogram-with-two-modules.html#cb226-53"></a>    )</span>
-<span id="cb226-54"><a href="case-study-histogram-with-two-modules.html#cb226-54"></a>  })</span>
-<span id="cb226-55"><a href="case-study-histogram-with-two-modules.html#cb226-55"></a>}</span></code></pre></div>
+<div id="case-study-histogram-with-two-modules" class="section level2 hasAnchor">
+<h2><span class="header-section-number">19.2</span> Case study: histogram with two modules<a href="case-study-histogram-with-two-modules.html#case-study-histogram-with-two-modules" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb244"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb244-1"><a href="case-study-histogram-with-two-modules.html#cb244-1"></a><span class="kw">library</span>(shiny)</span>
+<span id="cb244-2"><a href="case-study-histogram-with-two-modules.html#cb244-2"></a></span>
+<span id="cb244-3"><a href="case-study-histogram-with-two-modules.html#cb244-3"></a><span class="co"># define the dataset input ----------------</span></span>
+<span id="cb244-4"><a href="case-study-histogram-with-two-modules.html#cb244-4"></a><span class="co"># This is interesting, the function takes one id variable and works with that at the end</span></span>
+<span id="cb244-5"><a href="case-study-histogram-with-two-modules.html#cb244-5"></a>datasetInput &lt;-<span class="st"> </span><span class="cf">function</span>(id, <span class="dt">filter =</span> <span class="ot">NULL</span>) {</span>
+<span id="cb244-6"><a href="case-study-histogram-with-two-modules.html#cb244-6"></a>  names &lt;-<span class="st"> </span><span class="kw">ls</span>(<span class="st">&quot;package:datasets&quot;</span>)</span>
+<span id="cb244-7"><a href="case-study-histogram-with-two-modules.html#cb244-7"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">is.null</span>(filter)) {</span>
+<span id="cb244-8"><a href="case-study-histogram-with-two-modules.html#cb244-8"></a>    data &lt;-<span class="st"> </span><span class="kw">lapply</span>(names, get, <span class="st">&quot;package:datasets&quot;</span>)</span>
+<span id="cb244-9"><a href="case-study-histogram-with-two-modules.html#cb244-9"></a>    names &lt;-<span class="st"> </span>names[<span class="kw">vapply</span>(data, filter, <span class="kw">logical</span>(<span class="dv">1</span>))]</span>
+<span id="cb244-10"><a href="case-study-histogram-with-two-modules.html#cb244-10"></a>  }</span>
+<span id="cb244-11"><a href="case-study-histogram-with-two-modules.html#cb244-11"></a>  </span>
+<span id="cb244-12"><a href="case-study-histogram-with-two-modules.html#cb244-12"></a>  <span class="kw">selectInput</span>(<span class="kw">NS</span>(id, <span class="st">&quot;dataset&quot;</span>), <span class="st">&quot;Pick a dataset&quot;</span>, <span class="dt">choices =</span> names)</span>
+<span id="cb244-13"><a href="case-study-histogram-with-two-modules.html#cb244-13"></a>}</span>
+<span id="cb244-14"><a href="case-study-histogram-with-two-modules.html#cb244-14"></a></span>
+<span id="cb244-15"><a href="case-study-histogram-with-two-modules.html#cb244-15"></a><span class="co"># server function returns a reactive</span></span>
+<span id="cb244-16"><a href="case-study-histogram-with-two-modules.html#cb244-16"></a>datasetServer &lt;-<span class="st"> </span><span class="cf">function</span>(id) {</span>
+<span id="cb244-17"><a href="case-study-histogram-with-two-modules.html#cb244-17"></a>  <span class="kw">moduleServer</span>(id, <span class="cf">function</span>(input, output, session) {</span>
+<span id="cb244-18"><a href="case-study-histogram-with-two-modules.html#cb244-18"></a>    <span class="co"># last thing returned</span></span>
+<span id="cb244-19"><a href="case-study-histogram-with-two-modules.html#cb244-19"></a>    <span class="kw">reactive</span>(<span class="kw">get</span>(input<span class="op">$</span>dataset, <span class="st">&quot;package:datasets&quot;</span>)) <span class="co"># gotta be a reactive</span></span>
+<span id="cb244-20"><a href="case-study-histogram-with-two-modules.html#cb244-20"></a>  })</span>
+<span id="cb244-21"><a href="case-study-histogram-with-two-modules.html#cb244-21"></a>}</span>
+<span id="cb244-22"><a href="case-study-histogram-with-two-modules.html#cb244-22"></a></span>
+<span id="cb244-23"><a href="case-study-histogram-with-two-modules.html#cb244-23"></a><span class="co"># selectVar module --------------------</span></span>
+<span id="cb244-24"><a href="case-study-histogram-with-two-modules.html#cb244-24"></a></span>
+<span id="cb244-25"><a href="case-study-histogram-with-two-modules.html#cb244-25"></a>find_vars &lt;-<span class="st"> </span><span class="cf">function</span>(data, filter) {</span>
+<span id="cb244-26"><a href="case-study-histogram-with-two-modules.html#cb244-26"></a>  <span class="kw">names</span>(data)[<span class="kw">vapply</span>(data, filter, <span class="kw">logical</span>(<span class="dv">1</span>))]</span>
+<span id="cb244-27"><a href="case-study-histogram-with-two-modules.html#cb244-27"></a>}</span>
+<span id="cb244-28"><a href="case-study-histogram-with-two-modules.html#cb244-28"></a></span>
+<span id="cb244-29"><a href="case-study-histogram-with-two-modules.html#cb244-29"></a></span>
+<span id="cb244-30"><a href="case-study-histogram-with-two-modules.html#cb244-30"></a><span class="co"># id is the only thing linking the two parts, Input and Server</span></span>
+<span id="cb244-31"><a href="case-study-histogram-with-two-modules.html#cb244-31"></a><span class="co"># This module creates, within namespace `id`, the reactive input var_they_wants</span></span>
+<span id="cb244-32"><a href="case-study-histogram-with-two-modules.html#cb244-32"></a>selectVarInput &lt;-<span class="st"> </span><span class="cf">function</span>(id) {</span>
+<span id="cb244-33"><a href="case-study-histogram-with-two-modules.html#cb244-33"></a>  <span class="kw">selectInput</span>(<span class="kw">NS</span>(id, <span class="st">&quot;var_they_wants&quot;</span>), <span class="st">&quot;Variable&quot;</span>, <span class="dt">choices =</span> <span class="ot">NULL</span>) </span>
+<span id="cb244-34"><a href="case-study-histogram-with-two-modules.html#cb244-34"></a>}</span>
+<span id="cb244-35"><a href="case-study-histogram-with-two-modules.html#cb244-35"></a></span>
+<span id="cb244-36"><a href="case-study-histogram-with-two-modules.html#cb244-36"></a></span>
+<span id="cb244-37"><a href="case-study-histogram-with-two-modules.html#cb244-37"></a>selectVarServer &lt;-<span class="st"> </span><span class="cf">function</span>(id, data_chosen, <span class="dt">filter =</span> is.numeric) {</span>
+<span id="cb244-38"><a href="case-study-histogram-with-two-modules.html#cb244-38"></a>  <span class="kw">moduleServer</span>(id, <span class="cf">function</span>(input, output, session) {</span>
+<span id="cb244-39"><a href="case-study-histogram-with-two-modules.html#cb244-39"></a>    <span class="co"># WHEN the data changes -- that is, when the reactive value data() changes here...</span></span>
+<span id="cb244-40"><a href="case-study-histogram-with-two-modules.html#cb244-40"></a>    <span class="kw">observeEvent</span>(<span class="kw">data_chosen</span>(), {</span>
+<span id="cb244-41"><a href="case-study-histogram-with-two-modules.html#cb244-41"></a>      <span class="co"># ... THEN you should update Select Input with the numeric columns of the new dataframe</span></span>
+<span id="cb244-42"><a href="case-study-histogram-with-two-modules.html#cb244-42"></a>      <span class="kw">updateSelectInput</span>(session, <span class="st">&quot;var_they_wants&quot;</span>, <span class="dt">choices =</span> <span class="kw">find_vars</span>(<span class="kw">data_chosen</span>(), filter))</span>
+<span id="cb244-43"><a href="case-study-histogram-with-two-modules.html#cb244-43"></a>      <span class="co">## </span><span class="al">NOTE</span><span class="co"> this updating happens WIHTIN the namespace `id`.</span></span>
+<span id="cb244-44"><a href="case-study-histogram-with-two-modules.html#cb244-44"></a>      <span class="co">#### var_they_wants is updated with the LIST OF VARS THEY MIGHT WANT</span></span>
+<span id="cb244-45"><a href="case-study-histogram-with-two-modules.html#cb244-45"></a>    })</span>
+<span id="cb244-46"><a href="case-study-histogram-with-two-modules.html#cb244-46"></a>    <span class="co"># input$var_they_wants -- </span></span>
+<span id="cb244-47"><a href="case-study-histogram-with-two-modules.html#cb244-47"></a>    <span class="co"># note that in the server function selectVarServer is called with the namespace id</span></span>
+<span id="cb244-48"><a href="case-study-histogram-with-two-modules.html#cb244-48"></a>    <span class="co"># once again returning the last thing and its reactive</span></span>
+<span id="cb244-49"><a href="case-study-histogram-with-two-modules.html#cb244-49"></a>    </span>
+<span id="cb244-50"><a href="case-study-histogram-with-two-modules.html#cb244-50"></a>    <span class="kw">list</span>(</span>
+<span id="cb244-51"><a href="case-study-histogram-with-two-modules.html#cb244-51"></a>      <span class="dt">name =</span> <span class="kw">reactive</span>(input<span class="op">$</span>var_they_wants),</span>
+<span id="cb244-52"><a href="case-study-histogram-with-two-modules.html#cb244-52"></a>      <span class="dt">value =</span> <span class="kw">reactive</span>(<span class="kw">data_chosen</span>()[[input<span class="op">$</span>var_they_wants]])</span>
+<span id="cb244-53"><a href="case-study-histogram-with-two-modules.html#cb244-53"></a>    )</span>
+<span id="cb244-54"><a href="case-study-histogram-with-two-modules.html#cb244-54"></a>  })</span>
+<span id="cb244-55"><a href="case-study-histogram-with-two-modules.html#cb244-55"></a>}</span></code></pre></div>
 <p>Finally a third module to generate the histogram:</p>
-<div class="sourceCode" id="cb227"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb227-1"><a href="case-study-histogram-with-two-modules.html#cb227-1"></a>histogramOutput &lt;-<span class="st"> </span><span class="cf">function</span>(id) {</span>
-<span id="cb227-2"><a href="case-study-histogram-with-two-modules.html#cb227-2"></a>  <span class="kw">tagList</span>(</span>
-<span id="cb227-3"><a href="case-study-histogram-with-two-modules.html#cb227-3"></a>    <span class="kw">numericInput</span>(<span class="kw">NS</span>(id, <span class="st">&quot;bins&quot;</span>), <span class="st">&quot;bins&quot;</span>, <span class="dv">10</span>, <span class="dt">min =</span> <span class="dv">1</span>, <span class="dt">step =</span> <span class="dv">1</span>),</span>
-<span id="cb227-4"><a href="case-study-histogram-with-two-modules.html#cb227-4"></a>    <span class="kw">plotOutput</span>(<span class="kw">NS</span>(id, <span class="st">&quot;hist&quot;</span>))</span>
-<span id="cb227-5"><a href="case-study-histogram-with-two-modules.html#cb227-5"></a>  )</span>
-<span id="cb227-6"><a href="case-study-histogram-with-two-modules.html#cb227-6"></a>}</span>
-<span id="cb227-7"><a href="case-study-histogram-with-two-modules.html#cb227-7"></a></span>
-<span id="cb227-8"><a href="case-study-histogram-with-two-modules.html#cb227-8"></a><span class="kw">histogramOutput</span>(<span class="st">&quot;foobar&quot;</span>)</span>
-<span id="cb227-9"><a href="case-study-histogram-with-two-modules.html#cb227-9"></a><span class="co"># you can see where the input id is definied! </span></span></code></pre></div>
+<div class="sourceCode" id="cb245"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb245-1"><a href="case-study-histogram-with-two-modules.html#cb245-1"></a>histogramOutput &lt;-<span class="st"> </span><span class="cf">function</span>(id) {</span>
+<span id="cb245-2"><a href="case-study-histogram-with-two-modules.html#cb245-2"></a>  <span class="kw">tagList</span>(</span>
+<span id="cb245-3"><a href="case-study-histogram-with-two-modules.html#cb245-3"></a>    <span class="kw">numericInput</span>(<span class="kw">NS</span>(id, <span class="st">&quot;bins&quot;</span>), <span class="st">&quot;bins&quot;</span>, <span class="dv">10</span>, <span class="dt">min =</span> <span class="dv">1</span>, <span class="dt">step =</span> <span class="dv">1</span>),</span>
+<span id="cb245-4"><a href="case-study-histogram-with-two-modules.html#cb245-4"></a>    <span class="kw">plotOutput</span>(<span class="kw">NS</span>(id, <span class="st">&quot;hist&quot;</span>))</span>
+<span id="cb245-5"><a href="case-study-histogram-with-two-modules.html#cb245-5"></a>  )</span>
+<span id="cb245-6"><a href="case-study-histogram-with-two-modules.html#cb245-6"></a>}</span>
+<span id="cb245-7"><a href="case-study-histogram-with-two-modules.html#cb245-7"></a></span>
+<span id="cb245-8"><a href="case-study-histogram-with-two-modules.html#cb245-8"></a><span class="kw">histogramOutput</span>(<span class="st">&quot;foobar&quot;</span>)</span>
+<span id="cb245-9"><a href="case-study-histogram-with-two-modules.html#cb245-9"></a><span class="co"># you can see where the input id is definied! </span></span></code></pre></div>
 <p>I find it interesting to see how the module id is added to each component id in the HTML:</p>
-<div class="sourceCode" id="cb228"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb228-1"><a href="case-study-histogram-with-two-modules.html#cb228-1"></a><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;form-group shiny-input-container&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb228-2"><a href="case-study-histogram-with-two-modules.html#cb228-2"></a>  <span class="kw">&lt;label</span><span class="ot"> class=</span><span class="st">&quot;control-label&quot;</span><span class="ot"> id=</span><span class="st">&quot;ff-bins-label&quot;</span><span class="ot"> for=</span><span class="st">&quot;ff-bins&quot;</span><span class="kw">&gt;</span>bins<span class="kw">&lt;/label&gt;</span></span>
-<span id="cb228-3"><a href="case-study-histogram-with-two-modules.html#cb228-3"></a>  <span class="kw">&lt;input</span><span class="ot"> id=</span><span class="st">&quot;ff-bins&quot;</span><span class="ot"> type=</span><span class="st">&quot;number&quot;</span><span class="ot"> class=</span><span class="st">&quot;form-control&quot;</span><span class="ot"> value=</span><span class="st">&quot;10&quot;</span><span class="ot"> min=</span><span class="st">&quot;1&quot;</span><span class="ot"> step=</span><span class="st">&quot;1&quot;</span><span class="kw">/&gt;</span></span>
-<span id="cb228-4"><a href="case-study-histogram-with-two-modules.html#cb228-4"></a><span class="kw">&lt;/div&gt;</span></span>
-<span id="cb228-5"><a href="case-study-histogram-with-two-modules.html#cb228-5"></a><span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;ff-hist&quot;</span><span class="ot"> class=</span><span class="st">&quot;shiny-plot-output&quot;</span><span class="ot"> style=</span><span class="st">&quot;width:100%;height:400px;&quot;</span><span class="kw">&gt;&lt;/div&gt;</span></span></code></pre></div>
-<div class="sourceCode" id="cb229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb229-1"><a href="case-study-histogram-with-two-modules.html#cb229-1"></a>histogramServer &lt;-<span class="st"> </span><span class="cf">function</span>(id, x, <span class="dt">title =</span> <span class="kw">reactive</span>(<span class="st">&quot;Histogram&quot;</span>)) {</span>
-<span id="cb229-2"><a href="case-study-histogram-with-two-modules.html#cb229-2"></a>  <span class="co"># we like these checks at the beginning because they make better error messages</span></span>
-<span id="cb229-3"><a href="case-study-histogram-with-two-modules.html#cb229-3"></a>  <span class="kw">stopifnot</span>(<span class="kw">is.reactive</span>(x))</span>
-<span id="cb229-4"><a href="case-study-histogram-with-two-modules.html#cb229-4"></a>  <span class="kw">stopifnot</span>(<span class="kw">is.reactive</span>(title))</span>
-<span id="cb229-5"><a href="case-study-histogram-with-two-modules.html#cb229-5"></a>  </span>
-<span id="cb229-6"><a href="case-study-histogram-with-two-modules.html#cb229-6"></a>  <span class="kw">moduleServer</span>(id, <span class="cf">function</span>(input, output, session) {   </span>
-<span id="cb229-7"><a href="case-study-histogram-with-two-modules.html#cb229-7"></a>    <span class="co"># browser()</span></span>
-<span id="cb229-8"><a href="case-study-histogram-with-two-modules.html#cb229-8"></a>    output<span class="op">$</span>hist &lt;-<span class="st"> </span><span class="kw">renderPlot</span>({</span>
-<span id="cb229-9"><a href="case-study-histogram-with-two-modules.html#cb229-9"></a>      <span class="co"># whoa req is interesting.. checks for &quot;truthiness&quot;. but why the is.numeric first???</span></span>
-<span id="cb229-10"><a href="case-study-histogram-with-two-modules.html#cb229-10"></a>      <span class="kw">req</span>(<span class="kw">is.numeric</span>(<span class="kw">x</span>()))</span>
-<span id="cb229-11"><a href="case-study-histogram-with-two-modules.html#cb229-11"></a>      <span class="co"># generate a req error just to see</span></span>
-<span id="cb229-12"><a href="case-study-histogram-with-two-modules.html#cb229-12"></a>      <span class="co"># req(is.character(x()))</span></span>
-<span id="cb229-13"><a href="case-study-histogram-with-two-modules.html#cb229-13"></a>      <span class="co"># input bins is assumed to be in the same namespace???</span></span>
-<span id="cb229-14"><a href="case-study-histogram-with-two-modules.html#cb229-14"></a>      main &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="kw">title</span>(), <span class="st">&quot; [&quot;</span>, input<span class="op">$</span>bins, <span class="st">&quot;]&quot;</span>)</span>
-<span id="cb229-15"><a href="case-study-histogram-with-two-modules.html#cb229-15"></a>      </span>
-<span id="cb229-16"><a href="case-study-histogram-with-two-modules.html#cb229-16"></a>      <span class="kw">hist</span>(<span class="kw">x</span>(), <span class="dt">breaks =</span> input<span class="op">$</span>bins, <span class="dt">main =</span> main)</span>
-<span id="cb229-17"><a href="case-study-histogram-with-two-modules.html#cb229-17"></a>    },</span>
-<span id="cb229-18"><a href="case-study-histogram-with-two-modules.html#cb229-18"></a>    <span class="co"># neat little point to control res of plot!</span></span>
-<span id="cb229-19"><a href="case-study-histogram-with-two-modules.html#cb229-19"></a>    <span class="dt">res =</span> <span class="dv">96</span>)</span>
-<span id="cb229-20"><a href="case-study-histogram-with-two-modules.html#cb229-20"></a>  })</span>
-<span id="cb229-21"><a href="case-study-histogram-with-two-modules.html#cb229-21"></a>}</span></code></pre></div>
-<div class="sourceCode" id="cb230"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb230-1"><a href="case-study-histogram-with-two-modules.html#cb230-1"></a><span class="co"># note that there is nothing in the code YET that makes these two things go together! except the name!</span></span>
-<span id="cb230-2"><a href="case-study-histogram-with-two-modules.html#cb230-2"></a></span>
-<span id="cb230-3"><a href="case-study-histogram-with-two-modules.html#cb230-3"></a>histogramApp &lt;-<span class="st"> </span><span class="cf">function</span>() {</span>
-<span id="cb230-4"><a href="case-study-histogram-with-two-modules.html#cb230-4"></a>  ui &lt;-<span class="st"> </span><span class="kw">fluidPage</span>(</span>
-<span id="cb230-5"><a href="case-study-histogram-with-two-modules.html#cb230-5"></a>    <span class="kw">sidebarLayout</span>(</span>
-<span id="cb230-6"><a href="case-study-histogram-with-two-modules.html#cb230-6"></a>      <span class="kw">sidebarPanel</span>(</span>
-<span id="cb230-7"><a href="case-study-histogram-with-two-modules.html#cb230-7"></a>        <span class="kw">datasetInput</span>(<span class="st">&quot;data&quot;</span>, is.data.frame),</span>
-<span id="cb230-8"><a href="case-study-histogram-with-two-modules.html#cb230-8"></a>        <span class="kw">selectVarInput</span>(<span class="st">&quot;var&quot;</span>),</span>
-<span id="cb230-9"><a href="case-study-histogram-with-two-modules.html#cb230-9"></a>      ),</span>
-<span id="cb230-10"><a href="case-study-histogram-with-two-modules.html#cb230-10"></a>      <span class="kw">mainPanel</span>(</span>
-<span id="cb230-11"><a href="case-study-histogram-with-two-modules.html#cb230-11"></a>        <span class="kw">histogramOutput</span>(<span class="st">&quot;hist&quot;</span>)    </span>
-<span id="cb230-12"><a href="case-study-histogram-with-two-modules.html#cb230-12"></a>      )</span>
-<span id="cb230-13"><a href="case-study-histogram-with-two-modules.html#cb230-13"></a>    )</span>
-<span id="cb230-14"><a href="case-study-histogram-with-two-modules.html#cb230-14"></a>  )</span>
-<span id="cb230-15"><a href="case-study-histogram-with-two-modules.html#cb230-15"></a>  </span>
-<span id="cb230-16"><a href="case-study-histogram-with-two-modules.html#cb230-16"></a>  server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output, session) {</span>
-<span id="cb230-17"><a href="case-study-histogram-with-two-modules.html#cb230-17"></a>    data &lt;-<span class="st"> </span><span class="kw">datasetServer</span>(<span class="st">&quot;data&quot;</span>)</span>
-<span id="cb230-18"><a href="case-study-histogram-with-two-modules.html#cb230-18"></a>    <span class="co"># reactive output captured here!! </span></span>
-<span id="cb230-19"><a href="case-study-histogram-with-two-modules.html#cb230-19"></a>    x &lt;-<span class="st"> </span><span class="kw">selectVarServer</span>(<span class="st">&quot;var&quot;</span>, data)</span>
-<span id="cb230-20"><a href="case-study-histogram-with-two-modules.html#cb230-20"></a></span>
-<span id="cb230-21"><a href="case-study-histogram-with-two-modules.html#cb230-21"></a>    <span class="kw">histogramServer</span>(<span class="st">&quot;hist&quot;</span>, <span class="dt">x =</span> x<span class="op">$</span>value, <span class="dt">title =</span> x<span class="op">$</span>name)</span>
-<span id="cb230-22"><a href="case-study-histogram-with-two-modules.html#cb230-22"></a>  }</span>
-<span id="cb230-23"><a href="case-study-histogram-with-two-modules.html#cb230-23"></a>  <span class="kw">shinyApp</span>(ui, server)</span>
-<span id="cb230-24"><a href="case-study-histogram-with-two-modules.html#cb230-24"></a>} </span>
-<span id="cb230-25"><a href="case-study-histogram-with-two-modules.html#cb230-25"></a><span class="kw">histogramApp</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb246"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb246-1"><a href="case-study-histogram-with-two-modules.html#cb246-1"></a><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;form-group shiny-input-container&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb246-2"><a href="case-study-histogram-with-two-modules.html#cb246-2"></a>  <span class="kw">&lt;label</span><span class="ot"> class=</span><span class="st">&quot;control-label&quot;</span><span class="ot"> id=</span><span class="st">&quot;ff-bins-label&quot;</span><span class="ot"> for=</span><span class="st">&quot;ff-bins&quot;</span><span class="kw">&gt;</span>bins<span class="kw">&lt;/label&gt;</span></span>
+<span id="cb246-3"><a href="case-study-histogram-with-two-modules.html#cb246-3"></a>  <span class="kw">&lt;input</span><span class="ot"> id=</span><span class="st">&quot;ff-bins&quot;</span><span class="ot"> type=</span><span class="st">&quot;number&quot;</span><span class="ot"> class=</span><span class="st">&quot;form-control&quot;</span><span class="ot"> value=</span><span class="st">&quot;10&quot;</span><span class="ot"> min=</span><span class="st">&quot;1&quot;</span><span class="ot"> step=</span><span class="st">&quot;1&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb246-4"><a href="case-study-histogram-with-two-modules.html#cb246-4"></a><span class="kw">&lt;/div&gt;</span></span>
+<span id="cb246-5"><a href="case-study-histogram-with-two-modules.html#cb246-5"></a><span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;ff-hist&quot;</span><span class="ot"> class=</span><span class="st">&quot;shiny-plot-output&quot;</span><span class="ot"> style=</span><span class="st">&quot;width:100%;height:400px;&quot;</span><span class="kw">&gt;&lt;/div&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb247"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb247-1"><a href="case-study-histogram-with-two-modules.html#cb247-1"></a>histogramServer &lt;-<span class="st"> </span><span class="cf">function</span>(id, x, <span class="dt">title =</span> <span class="kw">reactive</span>(<span class="st">&quot;Histogram&quot;</span>)) {</span>
+<span id="cb247-2"><a href="case-study-histogram-with-two-modules.html#cb247-2"></a>  <span class="co"># we like these checks at the beginning because they make better error messages</span></span>
+<span id="cb247-3"><a href="case-study-histogram-with-two-modules.html#cb247-3"></a>  <span class="kw">stopifnot</span>(<span class="kw">is.reactive</span>(x))</span>
+<span id="cb247-4"><a href="case-study-histogram-with-two-modules.html#cb247-4"></a>  <span class="kw">stopifnot</span>(<span class="kw">is.reactive</span>(title))</span>
+<span id="cb247-5"><a href="case-study-histogram-with-two-modules.html#cb247-5"></a>  </span>
+<span id="cb247-6"><a href="case-study-histogram-with-two-modules.html#cb247-6"></a>  <span class="kw">moduleServer</span>(id, <span class="cf">function</span>(input, output, session) {   </span>
+<span id="cb247-7"><a href="case-study-histogram-with-two-modules.html#cb247-7"></a>    <span class="co"># browser()</span></span>
+<span id="cb247-8"><a href="case-study-histogram-with-two-modules.html#cb247-8"></a>    output<span class="op">$</span>hist &lt;-<span class="st"> </span><span class="kw">renderPlot</span>({</span>
+<span id="cb247-9"><a href="case-study-histogram-with-two-modules.html#cb247-9"></a>      <span class="co"># whoa req is interesting.. checks for &quot;truthiness&quot;. but why the is.numeric first???</span></span>
+<span id="cb247-10"><a href="case-study-histogram-with-two-modules.html#cb247-10"></a>      <span class="kw">req</span>(<span class="kw">is.numeric</span>(<span class="kw">x</span>()))</span>
+<span id="cb247-11"><a href="case-study-histogram-with-two-modules.html#cb247-11"></a>      <span class="co"># generate a req error just to see</span></span>
+<span id="cb247-12"><a href="case-study-histogram-with-two-modules.html#cb247-12"></a>      <span class="co"># req(is.character(x()))</span></span>
+<span id="cb247-13"><a href="case-study-histogram-with-two-modules.html#cb247-13"></a>      <span class="co"># input bins is assumed to be in the same namespace???</span></span>
+<span id="cb247-14"><a href="case-study-histogram-with-two-modules.html#cb247-14"></a>      main &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="kw">title</span>(), <span class="st">&quot; [&quot;</span>, input<span class="op">$</span>bins, <span class="st">&quot;]&quot;</span>)</span>
+<span id="cb247-15"><a href="case-study-histogram-with-two-modules.html#cb247-15"></a>      </span>
+<span id="cb247-16"><a href="case-study-histogram-with-two-modules.html#cb247-16"></a>      <span class="kw">hist</span>(<span class="kw">x</span>(), <span class="dt">breaks =</span> input<span class="op">$</span>bins, <span class="dt">main =</span> main)</span>
+<span id="cb247-17"><a href="case-study-histogram-with-two-modules.html#cb247-17"></a>    },</span>
+<span id="cb247-18"><a href="case-study-histogram-with-two-modules.html#cb247-18"></a>    <span class="co"># neat little point to control res of plot!</span></span>
+<span id="cb247-19"><a href="case-study-histogram-with-two-modules.html#cb247-19"></a>    <span class="dt">res =</span> <span class="dv">96</span>)</span>
+<span id="cb247-20"><a href="case-study-histogram-with-two-modules.html#cb247-20"></a>  })</span>
+<span id="cb247-21"><a href="case-study-histogram-with-two-modules.html#cb247-21"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb248"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb248-1"><a href="case-study-histogram-with-two-modules.html#cb248-1"></a><span class="co"># note that there is nothing in the code YET that makes these two things go together! except the name!</span></span>
+<span id="cb248-2"><a href="case-study-histogram-with-two-modules.html#cb248-2"></a></span>
+<span id="cb248-3"><a href="case-study-histogram-with-two-modules.html#cb248-3"></a>histogramApp &lt;-<span class="st"> </span><span class="cf">function</span>() {</span>
+<span id="cb248-4"><a href="case-study-histogram-with-two-modules.html#cb248-4"></a>  ui &lt;-<span class="st"> </span><span class="kw">fluidPage</span>(</span>
+<span id="cb248-5"><a href="case-study-histogram-with-two-modules.html#cb248-5"></a>    <span class="kw">sidebarLayout</span>(</span>
+<span id="cb248-6"><a href="case-study-histogram-with-two-modules.html#cb248-6"></a>      <span class="kw">sidebarPanel</span>(</span>
+<span id="cb248-7"><a href="case-study-histogram-with-two-modules.html#cb248-7"></a>        <span class="kw">datasetInput</span>(<span class="st">&quot;data&quot;</span>, is.data.frame),</span>
+<span id="cb248-8"><a href="case-study-histogram-with-two-modules.html#cb248-8"></a>        <span class="kw">selectVarInput</span>(<span class="st">&quot;var&quot;</span>),</span>
+<span id="cb248-9"><a href="case-study-histogram-with-two-modules.html#cb248-9"></a>      ),</span>
+<span id="cb248-10"><a href="case-study-histogram-with-two-modules.html#cb248-10"></a>      <span class="kw">mainPanel</span>(</span>
+<span id="cb248-11"><a href="case-study-histogram-with-two-modules.html#cb248-11"></a>        <span class="kw">histogramOutput</span>(<span class="st">&quot;hist&quot;</span>)    </span>
+<span id="cb248-12"><a href="case-study-histogram-with-two-modules.html#cb248-12"></a>      )</span>
+<span id="cb248-13"><a href="case-study-histogram-with-two-modules.html#cb248-13"></a>    )</span>
+<span id="cb248-14"><a href="case-study-histogram-with-two-modules.html#cb248-14"></a>  )</span>
+<span id="cb248-15"><a href="case-study-histogram-with-two-modules.html#cb248-15"></a>  </span>
+<span id="cb248-16"><a href="case-study-histogram-with-two-modules.html#cb248-16"></a>  server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output, session) {</span>
+<span id="cb248-17"><a href="case-study-histogram-with-two-modules.html#cb248-17"></a>    data &lt;-<span class="st"> </span><span class="kw">datasetServer</span>(<span class="st">&quot;data&quot;</span>)</span>
+<span id="cb248-18"><a href="case-study-histogram-with-two-modules.html#cb248-18"></a>    <span class="co"># reactive output captured here!! </span></span>
+<span id="cb248-19"><a href="case-study-histogram-with-two-modules.html#cb248-19"></a>    x &lt;-<span class="st"> </span><span class="kw">selectVarServer</span>(<span class="st">&quot;var&quot;</span>, data)</span>
+<span id="cb248-20"><a href="case-study-histogram-with-two-modules.html#cb248-20"></a></span>
+<span id="cb248-21"><a href="case-study-histogram-with-two-modules.html#cb248-21"></a>    <span class="kw">histogramServer</span>(<span class="st">&quot;hist&quot;</span>, <span class="dt">x =</span> x<span class="op">$</span>value, <span class="dt">title =</span> x<span class="op">$</span>name)</span>
+<span id="cb248-22"><a href="case-study-histogram-with-two-modules.html#cb248-22"></a>  }</span>
+<span id="cb248-23"><a href="case-study-histogram-with-two-modules.html#cb248-23"></a>  <span class="kw">shinyApp</span>(ui, server)</span>
+<span id="cb248-24"><a href="case-study-histogram-with-two-modules.html#cb248-24"></a>} </span>
+<span id="cb248-25"><a href="case-study-histogram-with-two-modules.html#cb248-25"></a><span class="kw">histogramApp</span>()</span></code></pre></div>
 </div>
             </section>
 

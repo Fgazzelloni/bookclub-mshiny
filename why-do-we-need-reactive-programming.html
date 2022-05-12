@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>13.2 Why do we need reactive programming? | Mastering Shiny Book Club</title>
   <meta name="description" content="This is the product of the R4DS Online Learning Community’s Book Club." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="13.2 Why do we need reactive programming? | Mastering Shiny Book Club" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is the product of the R4DS Online Learning Community’s Book Club." />
   <meta name="github-repo" content="r4ds/bookclub-mshiny" />
@@ -24,7 +23,7 @@
 <meta name="author" content="The R4DS Online Learning Community" />
 
 
-<meta name="date" content="2022-01-23" />
+<meta name="date" content="2022-05-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -51,8 +50,9 @@
 
 
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
 <script src="libs/d3-3.3.8/d3.min.js"></script>
 <script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
@@ -60,7 +60,7 @@
 <script src="libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
 <link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
 <script src="libs/chromatography-0.1/chromatography.js"></script>
-<script src="libs/DiagrammeR-binding-1.0.7/DiagrammeR.js"></script>
+<script src="libs/DiagrammeR-binding-1.0.9/DiagrammeR.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
@@ -171,6 +171,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.9" data-path="meeting-videos.html"><a href="meeting-videos.html"><i class="fa fa-check"></i><b>1.9</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="1.9.1" data-path="meeting-videos.html"><a href="meeting-videos.html#cohort-1"><i class="fa fa-check"></i><b>1.9.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="1.9.2" data-path="meeting-videos.html"><a href="meeting-videos.html#cohort-2"><i class="fa fa-check"></i><b>1.9.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="1.9.3" data-path="meeting-videos.html"><a href="meeting-videos.html#cohort-3"><i class="fa fa-check"></i><b>1.9.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="shiny---basic-user-interface.html"><a href="shiny---basic-user-interface.html"><i class="fa fa-check"></i><b>2</b> Shiny - Basic User Interface</a><ul>
@@ -192,6 +193,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.14" data-path="meeting-videos-1.html"><a href="meeting-videos-1.html"><i class="fa fa-check"></i><b>2.14</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="2.14.1" data-path="meeting-videos-1.html"><a href="meeting-videos-1.html#cohort-1-1"><i class="fa fa-check"></i><b>2.14.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="2.14.2" data-path="meeting-videos-1.html"><a href="meeting-videos-1.html#cohort-2-1"><i class="fa fa-check"></i><b>2.14.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="2.14.3" data-path="meeting-videos-1.html"><a href="meeting-videos-1.html#cohort-3-1"><i class="fa fa-check"></i><b>2.14.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="basic-reactivity.html"><a href="basic-reactivity.html"><i class="fa fa-check"></i><b>3</b> Basic Reactivity</a><ul>
@@ -220,6 +222,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.12" data-path="meeting-videos-2.html"><a href="meeting-videos-2.html"><i class="fa fa-check"></i><b>3.12</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="3.12.1" data-path="meeting-videos-2.html"><a href="meeting-videos-2.html#cohort-1-2"><i class="fa fa-check"></i><b>3.12.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="3.12.2" data-path="meeting-videos-2.html"><a href="meeting-videos-2.html#cohort-2-2"><i class="fa fa-check"></i><b>3.12.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="3.12.3" data-path="meeting-videos-2.html"><a href="meeting-videos-2.html#cohort-3-2"><i class="fa fa-check"></i><b>3.12.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="case-study-er-injuries.html"><a href="case-study-er-injuries.html"><i class="fa fa-check"></i><b>4</b> Case study: ER injuries</a><ul>
@@ -233,6 +236,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.8" data-path="meeting-videos-3.html"><a href="meeting-videos-3.html"><i class="fa fa-check"></i><b>4.8</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="4.8.1" data-path="meeting-videos-3.html"><a href="meeting-videos-3.html#cohort-1-3"><i class="fa fa-check"></i><b>4.8.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="4.8.2" data-path="meeting-videos-3.html"><a href="meeting-videos-3.html#cohort-2-3"><i class="fa fa-check"></i><b>4.8.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="4.8.3" data-path="meeting-videos-3.html"><a href="meeting-videos-3.html#cohort-3-3"><i class="fa fa-check"></i><b>4.8.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Shiny in action</b></span></li>
@@ -265,6 +269,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.15" data-path="meeting-videos-4.html"><a href="meeting-videos-4.html"><i class="fa fa-check"></i><b>5.15</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="5.15.1" data-path="meeting-videos-4.html"><a href="meeting-videos-4.html#cohort-1-4"><i class="fa fa-check"></i><b>5.15.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="5.15.2" data-path="meeting-videos-4.html"><a href="meeting-videos-4.html#cohort-2-4"><i class="fa fa-check"></i><b>5.15.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="5.15.3" data-path="meeting-videos-4.html"><a href="meeting-videos-4.html#cohort-3-4"><i class="fa fa-check"></i><b>5.15.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="layout-themes-html.html"><a href="layout-themes-html.html"><i class="fa fa-check"></i><b>6</b> Layout, themes, HTML</a><ul>
@@ -293,12 +298,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.8" data-path="meeting-videos-5.html"><a href="meeting-videos-5.html"><i class="fa fa-check"></i><b>6.8</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="6.8.1" data-path="meeting-videos-5.html"><a href="meeting-videos-5.html#cohort-1-5"><i class="fa fa-check"></i><b>6.8.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="6.8.2" data-path="meeting-videos-5.html"><a href="meeting-videos-5.html#cohort-2-5"><i class="fa fa-check"></i><b>6.8.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="6.8.3" data-path="meeting-videos-5.html"><a href="meeting-videos-5.html#cohort-3-5"><i class="fa fa-check"></i><b>6.8.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="graphics-and-shiny.html"><a href="graphics-and-shiny.html"><i class="fa fa-check"></i><b>7</b> Graphics and Shiny</a><ul>
 <li class="chapter" data-level="7.1" data-path="meeting-videos-6.html"><a href="meeting-videos-6.html"><i class="fa fa-check"></i><b>7.1</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="7.1.1" data-path="meeting-videos-6.html"><a href="meeting-videos-6.html#cohort-1-6"><i class="fa fa-check"></i><b>7.1.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="7.1.2" data-path="meeting-videos-6.html"><a href="meeting-videos-6.html#cohort-2-6"><i class="fa fa-check"></i><b>7.1.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="7.1.3" data-path="meeting-videos-6.html"><a href="meeting-videos-6.html#cohort-3-6"><i class="fa fa-check"></i><b>7.1.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="user-feedback.html"><a href="user-feedback.html"><i class="fa fa-check"></i><b>8</b> User Feedback</a><ul>
@@ -325,6 +332,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.5" data-path="meeting-videos-7.html"><a href="meeting-videos-7.html"><i class="fa fa-check"></i><b>8.5</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="8.5.1" data-path="meeting-videos-7.html"><a href="meeting-videos-7.html#cohort-1-7"><i class="fa fa-check"></i><b>8.5.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="8.5.2" data-path="meeting-videos-7.html"><a href="meeting-videos-7.html#cohort-2-7"><i class="fa fa-check"></i><b>8.5.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="8.5.3" data-path="meeting-videos-7.html"><a href="meeting-videos-7.html#cohort-3-7"><i class="fa fa-check"></i><b>8.5.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="uploads-and-downloads.html"><a href="uploads-and-downloads.html"><i class="fa fa-check"></i><b>9</b> Uploads and Downloads</a><ul>
@@ -350,6 +358,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.6" data-path="meeting-videos-8.html"><a href="meeting-videos-8.html"><i class="fa fa-check"></i><b>9.6</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="9.6.1" data-path="meeting-videos-8.html"><a href="meeting-videos-8.html#cohort-1-8"><i class="fa fa-check"></i><b>9.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="9.6.2" data-path="meeting-videos-8.html"><a href="meeting-videos-8.html#cohort-2-8"><i class="fa fa-check"></i><b>9.6.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="9.6.3" data-path="meeting-videos-8.html"><a href="meeting-videos-8.html#cohort-3-8"><i class="fa fa-check"></i><b>9.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="dynamic-ui.html"><a href="dynamic-ui.html"><i class="fa fa-check"></i><b>10</b> Dynamic UI</a><ul>
@@ -363,6 +372,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="10.6" data-path="meeting-videos-9.html"><a href="meeting-videos-9.html"><i class="fa fa-check"></i><b>10.6</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="10.6.1" data-path="meeting-videos-9.html"><a href="meeting-videos-9.html#cohort-1-9"><i class="fa fa-check"></i><b>10.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="10.6.2" data-path="meeting-videos-9.html"><a href="meeting-videos-9.html#cohort-2-9"><i class="fa fa-check"></i><b>10.6.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="10.6.3" data-path="meeting-videos-9.html"><a href="meeting-videos-9.html#cohort-3-9"><i class="fa fa-check"></i><b>10.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="bookmarking.html"><a href="bookmarking.html"><i class="fa fa-check"></i><b>11</b> Bookmarking</a><ul>
@@ -376,6 +386,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11.6" data-path="meeting-videos-10.html"><a href="meeting-videos-10.html"><i class="fa fa-check"></i><b>11.6</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="11.6.1" data-path="meeting-videos-10.html"><a href="meeting-videos-10.html#cohort-1-10"><i class="fa fa-check"></i><b>11.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="11.6.2" data-path="meeting-videos-10.html"><a href="meeting-videos-10.html#cohort-2-10"><i class="fa fa-check"></i><b>11.6.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="11.6.3" data-path="meeting-videos-10.html"><a href="meeting-videos-10.html#cohort-3-10"><i class="fa fa-check"></i><b>11.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="tidy-evaluation.html"><a href="tidy-evaluation.html"><i class="fa fa-check"></i><b>12</b> Tidy evaluation</a><ul>
@@ -383,6 +394,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="12.2" data-path="meeting-videos-11.html"><a href="meeting-videos-11.html"><i class="fa fa-check"></i><b>12.2</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="12.2.1" data-path="meeting-videos-11.html"><a href="meeting-videos-11.html#cohort-1-11"><i class="fa fa-check"></i><b>12.2.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="12.2.2" data-path="meeting-videos-11.html"><a href="meeting-videos-11.html#cohort-2-11"><i class="fa fa-check"></i><b>12.2.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="12.2.3" data-path="meeting-videos-11.html"><a href="meeting-videos-11.html#cohort-3-11"><i class="fa fa-check"></i><b>12.2.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Mastering reactivity</b></span></li>
@@ -398,6 +410,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13.5" data-path="meeting-videos-12.html"><a href="meeting-videos-12.html"><i class="fa fa-check"></i><b>13.5</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="13.5.1" data-path="meeting-videos-12.html"><a href="meeting-videos-12.html#cohort-1-12"><i class="fa fa-check"></i><b>13.5.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="13.5.2" data-path="meeting-videos-12.html"><a href="meeting-videos-12.html#cohort-2-12"><i class="fa fa-check"></i><b>13.5.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="13.5.3" data-path="meeting-videos-12.html"><a href="meeting-videos-12.html#cohort-3-12"><i class="fa fa-check"></i><b>13.5.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="the-reactive-graph-1.html"><a href="the-reactive-graph-1.html"><i class="fa fa-check"></i><b>14</b> The reactive graph</a><ul>
@@ -411,6 +424,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="14.8" data-path="meeting-videos-13.html"><a href="meeting-videos-13.html"><i class="fa fa-check"></i><b>14.8</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="14.8.1" data-path="meeting-videos-13.html"><a href="meeting-videos-13.html#cohort-1-13"><i class="fa fa-check"></i><b>14.8.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="14.8.2" data-path="meeting-videos-13.html"><a href="meeting-videos-13.html#cohort-2-13"><i class="fa fa-check"></i><b>14.8.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="14.8.3" data-path="meeting-videos-13.html"><a href="meeting-videos-13.html#cohort-3-13"><i class="fa fa-check"></i><b>14.8.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="15" data-path="reactive-building-blocks.html"><a href="reactive-building-blocks.html"><i class="fa fa-check"></i><b>15</b> Reactive Building Blocks</a><ul>
@@ -428,6 +442,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="15.9" data-path="meeting-videos-14.html"><a href="meeting-videos-14.html"><i class="fa fa-check"></i><b>15.9</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="15.9.1" data-path="meeting-videos-14.html"><a href="meeting-videos-14.html#cohort-1-14"><i class="fa fa-check"></i><b>15.9.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="15.9.2" data-path="meeting-videos-14.html"><a href="meeting-videos-14.html#cohort-2-14"><i class="fa fa-check"></i><b>15.9.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="15.9.3" data-path="meeting-videos-14.html"><a href="meeting-videos-14.html#cohort-3-14"><i class="fa fa-check"></i><b>15.9.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="16" data-path="escaping-the-graph.html"><a href="escaping-the-graph.html"><i class="fa fa-check"></i><b>16</b> Escaping the graph</a><ul>
@@ -443,6 +458,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="16.6" data-path="meeting-videos-15.html"><a href="meeting-videos-15.html"><i class="fa fa-check"></i><b>16.6</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="16.6.1" data-path="meeting-videos-15.html"><a href="meeting-videos-15.html#cohort-1-15"><i class="fa fa-check"></i><b>16.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="16.6.2" data-path="meeting-videos-15.html"><a href="meeting-videos-15.html#cohort-2-15"><i class="fa fa-check"></i><b>16.6.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="16.6.3" data-path="meeting-videos-15.html"><a href="meeting-videos-15.html#cohort-3-15"><i class="fa fa-check"></i><b>16.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Best practices</b></span></li>
@@ -458,6 +474,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="17.9" data-path="meeting-videos-16.html"><a href="meeting-videos-16.html"><i class="fa fa-check"></i><b>17.9</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="17.9.1" data-path="meeting-videos-16.html"><a href="meeting-videos-16.html#cohort-1-16"><i class="fa fa-check"></i><b>17.9.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="17.9.2" data-path="meeting-videos-16.html"><a href="meeting-videos-16.html#cohort-2-16"><i class="fa fa-check"></i><b>17.9.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="17.9.3" data-path="meeting-videos-16.html"><a href="meeting-videos-16.html#cohort-3-16"><i class="fa fa-check"></i><b>17.9.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="18" data-path="functions.html"><a href="functions.html"><i class="fa fa-check"></i><b>18</b> Functions</a><ul>
@@ -472,6 +489,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="18.4" data-path="meeting-videos-17.html"><a href="meeting-videos-17.html"><i class="fa fa-check"></i><b>18.4</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="18.4.1" data-path="meeting-videos-17.html"><a href="meeting-videos-17.html#cohort-1-17"><i class="fa fa-check"></i><b>18.4.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="18.4.2" data-path="meeting-videos-17.html"><a href="meeting-videos-17.html#cohort-2-17"><i class="fa fa-check"></i><b>18.4.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="18.4.3" data-path="meeting-videos-17.html"><a href="meeting-videos-17.html#cohort-3-17"><i class="fa fa-check"></i><b>18.4.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="19" data-path="modules.html"><a href="modules.html"><i class="fa fa-check"></i><b>19</b> Modules</a><ul>
@@ -482,6 +500,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="19.4" data-path="meeting-videos-18.html"><a href="meeting-videos-18.html"><i class="fa fa-check"></i><b>19.4</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="19.4.1" data-path="meeting-videos-18.html"><a href="meeting-videos-18.html#cohort-1-18"><i class="fa fa-check"></i><b>19.4.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="19.4.2" data-path="meeting-videos-18.html"><a href="meeting-videos-18.html#cohort-2-18"><i class="fa fa-check"></i><b>19.4.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="19.4.3" data-path="meeting-videos-18.html"><a href="meeting-videos-18.html#cohort-3-18"><i class="fa fa-check"></i><b>19.4.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="20" data-path="packages.html"><a href="packages.html"><i class="fa fa-check"></i><b>20</b> Packages</a><ul>
@@ -495,6 +514,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="20.5" data-path="meeting-videos-19.html"><a href="meeting-videos-19.html"><i class="fa fa-check"></i><b>20.5</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="20.5.1" data-path="meeting-videos-19.html"><a href="meeting-videos-19.html#cohort-1-19"><i class="fa fa-check"></i><b>20.5.1</b> Cohort 1</a></li>
+<li class="chapter" data-level="20.5.2" data-path="meeting-videos-19.html"><a href="meeting-videos-19.html#cohort-3-19"><i class="fa fa-check"></i><b>20.5.2</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="21" data-path="testing-1.html"><a href="testing-1.html"><i class="fa fa-check"></i><b>21</b> Testing</a><ul>
@@ -528,6 +548,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="21.15" data-path="meeting-videos-20.html"><a href="meeting-videos-20.html"><i class="fa fa-check"></i><b>21.15</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="21.15.1" data-path="meeting-videos-20.html"><a href="meeting-videos-20.html#cohort-1-20"><i class="fa fa-check"></i><b>21.15.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="21.15.2" data-path="meeting-videos-20.html"><a href="meeting-videos-20.html#cohort-2-19"><i class="fa fa-check"></i><b>21.15.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="21.15.3" data-path="meeting-videos-20.html"><a href="meeting-videos-20.html#cohort-3-20"><i class="fa fa-check"></i><b>21.15.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="22" data-path="security.html"><a href="security.html"><i class="fa fa-check"></i><b>22</b> Security</a><ul>
@@ -541,6 +562,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="22.6" data-path="meeting-videos-21.html"><a href="meeting-videos-21.html"><i class="fa fa-check"></i><b>22.6</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="22.6.1" data-path="meeting-videos-21.html"><a href="meeting-videos-21.html#cohort-1-21"><i class="fa fa-check"></i><b>22.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="22.6.2" data-path="meeting-videos-21.html"><a href="meeting-videos-21.html#cohort-2-20"><i class="fa fa-check"></i><b>22.6.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="22.6.3" data-path="meeting-videos-21.html"><a href="meeting-videos-21.html#cohort-3-21"><i class="fa fa-check"></i><b>22.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="23" data-path="performance.html"><a href="performance.html"><i class="fa fa-check"></i><b>23</b> Performance</a><ul>
@@ -559,11 +581,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="23.6" data-path="meeting-videos-22.html"><a href="meeting-videos-22.html"><i class="fa fa-check"></i><b>23.6</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="23.6.1" data-path="meeting-videos-22.html"><a href="meeting-videos-22.html#cohort-1-22"><i class="fa fa-check"></i><b>23.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="23.6.2" data-path="meeting-videos-22.html"><a href="meeting-videos-22.html#cohort-2-21"><i class="fa fa-check"></i><b>23.6.2</b> Cohort 2</a></li>
+<li class="chapter" data-level="23.6.3" data-path="meeting-videos-22.html"><a href="meeting-videos-22.html#cohort-3-22"><i class="fa fa-check"></i><b>23.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="24" data-path="wrap-up-session.html"><a href="wrap-up-session.html"><i class="fa fa-check"></i><b>24</b> Wrap up session</a><ul>
 <li class="chapter" data-level="24.1" data-path="meeting-videos-23.html"><a href="meeting-videos-23.html"><i class="fa fa-check"></i><b>24.1</b> Meeting Videos</a><ul>
 <li class="chapter" data-level="24.1.1" data-path="meeting-videos-23.html"><a href="meeting-videos-23.html#cohort-1-23"><i class="fa fa-check"></i><b>24.1.1</b> Cohort 1</a></li>
+<li class="chapter" data-level="24.1.2" data-path="meeting-videos-23.html"><a href="meeting-videos-23.html#cohort-3-23"><i class="fa fa-check"></i><b>24.1.2</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Other topics</b></span></li>
@@ -615,8 +639,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="why-do-we-need-reactive-programming" class="section level2">
-<h2><span class="header-section-number">13.2</span> Why do we need reactive programming?</h2>
+<div id="why-do-we-need-reactive-programming" class="section level2 hasAnchor">
+<h2><span class="header-section-number">13.2</span> Why do we need reactive programming?<a href="why-do-we-need-reactive-programming.html#why-do-we-need-reactive-programming" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>What is reactive programming?</p>
 <ul>
 <li>“focuses on values that change over time, and calculations and actions that
@@ -636,52 +660,52 @@ reactive programming is … concerned with data streams and the
 <li>reactive programming -&gt; <strong>automatic</strong> updating/propagation of <strong>necessary</strong>
 changes</li>
 </ul>
-<div id="why-cant-you-use-variables" class="section level3">
-<h3><span class="header-section-number">13.2.1</span> Why can’t you use variables?</h3>
+<div id="why-cant-you-use-variables" class="section level3 hasAnchor">
+<h3><span class="header-section-number">13.2.1</span> Why can’t you use variables?<a href="why-do-we-need-reactive-programming.html#why-cant-you-use-variables" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>reactive programming: values that change over time.</li>
 <li>don’t variables change over time?</li>
 <li>variables don’t update automatically -&gt; no good</li>
 </ul>
-<div class="sourceCode" id="cb155"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb155-1"><a href="why-do-we-need-reactive-programming.html#cb155-1"></a>temp_c &lt;-<span class="st"> </span><span class="dv">10</span></span>
-<span id="cb155-2"><a href="why-do-we-need-reactive-programming.html#cb155-2"></a>temp_f &lt;-<span class="st"> </span>(temp_c <span class="op">*</span><span class="st"> </span><span class="dv">9</span> <span class="op">/</span><span class="st"> </span><span class="dv">5</span>) <span class="op">+</span><span class="st"> </span><span class="dv">32</span></span>
-<span id="cb155-3"><a href="why-do-we-need-reactive-programming.html#cb155-3"></a>temp_f</span>
-<span id="cb155-4"><a href="why-do-we-need-reactive-programming.html#cb155-4"></a><span class="co">#&gt; [1] 50</span></span>
-<span id="cb155-5"><a href="why-do-we-need-reactive-programming.html#cb155-5"></a></span>
-<span id="cb155-6"><a href="why-do-we-need-reactive-programming.html#cb155-6"></a>temp_c &lt;-<span class="st"> </span><span class="dv">30</span></span>
-<span id="cb155-7"><a href="why-do-we-need-reactive-programming.html#cb155-7"></a></span>
-<span id="cb155-8"><a href="why-do-we-need-reactive-programming.html#cb155-8"></a><span class="co"># temp_f not automatically updated</span></span>
-<span id="cb155-9"><a href="why-do-we-need-reactive-programming.html#cb155-9"></a>temp_f</span>
-<span id="cb155-10"><a href="why-do-we-need-reactive-programming.html#cb155-10"></a><span class="co">#&gt; [1] 50</span></span></code></pre></div>
+<div class="sourceCode" id="cb167"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb167-1"><a href="why-do-we-need-reactive-programming.html#cb167-1"></a>temp_c &lt;-<span class="st"> </span><span class="dv">10</span></span>
+<span id="cb167-2"><a href="why-do-we-need-reactive-programming.html#cb167-2"></a>temp_f &lt;-<span class="st"> </span>(temp_c <span class="op">*</span><span class="st"> </span><span class="dv">9</span> <span class="op">/</span><span class="st"> </span><span class="dv">5</span>) <span class="op">+</span><span class="st"> </span><span class="dv">32</span></span>
+<span id="cb167-3"><a href="why-do-we-need-reactive-programming.html#cb167-3"></a>temp_f</span>
+<span id="cb167-4"><a href="why-do-we-need-reactive-programming.html#cb167-4"></a><span class="co">#&gt; [1] 50</span></span>
+<span id="cb167-5"><a href="why-do-we-need-reactive-programming.html#cb167-5"></a></span>
+<span id="cb167-6"><a href="why-do-we-need-reactive-programming.html#cb167-6"></a>temp_c &lt;-<span class="st"> </span><span class="dv">30</span></span>
+<span id="cb167-7"><a href="why-do-we-need-reactive-programming.html#cb167-7"></a></span>
+<span id="cb167-8"><a href="why-do-we-need-reactive-programming.html#cb167-8"></a><span class="co"># temp_f not automatically updated</span></span>
+<span id="cb167-9"><a href="why-do-we-need-reactive-programming.html#cb167-9"></a>temp_f</span>
+<span id="cb167-10"><a href="why-do-we-need-reactive-programming.html#cb167-10"></a><span class="co">#&gt; [1] 50</span></span></code></pre></div>
 </div>
-<div id="why-about-functions" class="section level3">
-<h3><span class="header-section-number">13.2.2</span> Why about functions?</h3>
+<div id="why-about-functions" class="section level3 hasAnchor">
+<h3><span class="header-section-number">13.2.2</span> Why about functions?<a href="why-do-we-need-reactive-programming.html#why-about-functions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>solves automatic updating problem</li>
 <li>doesn’t solve necessary computation problem</li>
 </ul>
-<div class="sourceCode" id="cb156"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb156-1"><a href="why-do-we-need-reactive-programming.html#cb156-1"></a>temp_c &lt;-<span class="st"> </span><span class="dv">10</span></span>
-<span id="cb156-2"><a href="why-do-we-need-reactive-programming.html#cb156-2"></a>temp_f &lt;-<span class="st"> </span><span class="cf">function</span>() {</span>
-<span id="cb156-3"><a href="why-do-we-need-reactive-programming.html#cb156-3"></a>  <span class="kw">message</span>(<span class="st">&quot;Converting&quot;</span>) </span>
-<span id="cb156-4"><a href="why-do-we-need-reactive-programming.html#cb156-4"></a>  (temp_c <span class="op">*</span><span class="st"> </span><span class="dv">9</span> <span class="op">/</span><span class="st"> </span><span class="dv">5</span>) <span class="op">+</span><span class="st"> </span><span class="dv">32</span></span>
-<span id="cb156-5"><a href="why-do-we-need-reactive-programming.html#cb156-5"></a>}</span>
-<span id="cb156-6"><a href="why-do-we-need-reactive-programming.html#cb156-6"></a><span class="kw">temp_f</span>()</span>
-<span id="cb156-7"><a href="why-do-we-need-reactive-programming.html#cb156-7"></a><span class="co">#&gt; Converting</span></span>
-<span id="cb156-8"><a href="why-do-we-need-reactive-programming.html#cb156-8"></a><span class="co">#&gt; [1] 50</span></span>
-<span id="cb156-9"><a href="why-do-we-need-reactive-programming.html#cb156-9"></a></span>
-<span id="cb156-10"><a href="why-do-we-need-reactive-programming.html#cb156-10"></a><span class="co"># temp_f automatically updated</span></span>
-<span id="cb156-11"><a href="why-do-we-need-reactive-programming.html#cb156-11"></a>temp_c &lt;-<span class="st"> </span><span class="dv">-3</span></span>
-<span id="cb156-12"><a href="why-do-we-need-reactive-programming.html#cb156-12"></a><span class="kw">temp_f</span>() </span>
-<span id="cb156-13"><a href="why-do-we-need-reactive-programming.html#cb156-13"></a><span class="co">#&gt; Converting</span></span>
-<span id="cb156-14"><a href="why-do-we-need-reactive-programming.html#cb156-14"></a><span class="co">#&gt; [1] 26.6</span></span>
-<span id="cb156-15"><a href="why-do-we-need-reactive-programming.html#cb156-15"></a></span>
-<span id="cb156-16"><a href="why-do-we-need-reactive-programming.html#cb156-16"></a><span class="co"># but does unnecessary computation (recomputes every time it&#39;s called)</span></span>
-<span id="cb156-17"><a href="why-do-we-need-reactive-programming.html#cb156-17"></a><span class="kw">temp_f</span>() </span>
-<span id="cb156-18"><a href="why-do-we-need-reactive-programming.html#cb156-18"></a><span class="co">#&gt; Converting</span></span>
-<span id="cb156-19"><a href="why-do-we-need-reactive-programming.html#cb156-19"></a><span class="co">#&gt; [1] 26.6</span></span></code></pre></div>
+<div class="sourceCode" id="cb168"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb168-1"><a href="why-do-we-need-reactive-programming.html#cb168-1"></a>temp_c &lt;-<span class="st"> </span><span class="dv">10</span></span>
+<span id="cb168-2"><a href="why-do-we-need-reactive-programming.html#cb168-2"></a>temp_f &lt;-<span class="st"> </span><span class="cf">function</span>() {</span>
+<span id="cb168-3"><a href="why-do-we-need-reactive-programming.html#cb168-3"></a>  <span class="kw">message</span>(<span class="st">&quot;Converting&quot;</span>) </span>
+<span id="cb168-4"><a href="why-do-we-need-reactive-programming.html#cb168-4"></a>  (temp_c <span class="op">*</span><span class="st"> </span><span class="dv">9</span> <span class="op">/</span><span class="st"> </span><span class="dv">5</span>) <span class="op">+</span><span class="st"> </span><span class="dv">32</span></span>
+<span id="cb168-5"><a href="why-do-we-need-reactive-programming.html#cb168-5"></a>}</span>
+<span id="cb168-6"><a href="why-do-we-need-reactive-programming.html#cb168-6"></a><span class="kw">temp_f</span>()</span>
+<span id="cb168-7"><a href="why-do-we-need-reactive-programming.html#cb168-7"></a><span class="co">#&gt; Converting</span></span>
+<span id="cb168-8"><a href="why-do-we-need-reactive-programming.html#cb168-8"></a><span class="co">#&gt; [1] 50</span></span>
+<span id="cb168-9"><a href="why-do-we-need-reactive-programming.html#cb168-9"></a></span>
+<span id="cb168-10"><a href="why-do-we-need-reactive-programming.html#cb168-10"></a><span class="co"># temp_f automatically updated</span></span>
+<span id="cb168-11"><a href="why-do-we-need-reactive-programming.html#cb168-11"></a>temp_c &lt;-<span class="st"> </span><span class="dv">-3</span></span>
+<span id="cb168-12"><a href="why-do-we-need-reactive-programming.html#cb168-12"></a><span class="kw">temp_f</span>() </span>
+<span id="cb168-13"><a href="why-do-we-need-reactive-programming.html#cb168-13"></a><span class="co">#&gt; Converting</span></span>
+<span id="cb168-14"><a href="why-do-we-need-reactive-programming.html#cb168-14"></a><span class="co">#&gt; [1] 26.6</span></span>
+<span id="cb168-15"><a href="why-do-we-need-reactive-programming.html#cb168-15"></a></span>
+<span id="cb168-16"><a href="why-do-we-need-reactive-programming.html#cb168-16"></a><span class="co"># but does unnecessary computation (recomputes every time it&#39;s called)</span></span>
+<span id="cb168-17"><a href="why-do-we-need-reactive-programming.html#cb168-17"></a><span class="kw">temp_f</span>() </span>
+<span id="cb168-18"><a href="why-do-we-need-reactive-programming.html#cb168-18"></a><span class="co">#&gt; Converting</span></span>
+<span id="cb168-19"><a href="why-do-we-need-reactive-programming.html#cb168-19"></a><span class="co">#&gt; [1] 26.6</span></span></code></pre></div>
 </div>
-<div id="event-driven-programming" class="section level3">
-<h3><span class="header-section-number">13.2.3</span> Event-driven programming</h3>
+<div id="event-driven-programming" class="section level3 hasAnchor">
+<h3><span class="header-section-number">13.2.3</span> Event-driven programming<a href="why-do-we-need-reactive-programming.html#event-driven-programming" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>before, Shiny would probably have used event-driven programming
 <ul>
@@ -690,39 +714,39 @@ changes</li>
 </ul></li>
 <li>can implement with R6 classes in R</li>
 </ul>
-<div class="sourceCode" id="cb157"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb157-1"><a href="why-do-we-need-reactive-programming.html#cb157-1"></a>DynamicValue &lt;-<span class="st"> </span>R6<span class="op">::</span><span class="kw">R6Class</span>(<span class="st">&quot;DynamicValue&quot;</span>, <span class="kw">list</span>(</span>
-<span id="cb157-2"><a href="why-do-we-need-reactive-programming.html#cb157-2"></a>  <span class="dt">value =</span> <span class="ot">NULL</span>,</span>
-<span id="cb157-3"><a href="why-do-we-need-reactive-programming.html#cb157-3"></a>  <span class="dt">on_update =</span> <span class="ot">NULL</span>,</span>
-<span id="cb157-4"><a href="why-do-we-need-reactive-programming.html#cb157-4"></a>  </span>
-<span id="cb157-5"><a href="why-do-we-need-reactive-programming.html#cb157-5"></a>  <span class="dt">get =</span> <span class="cf">function</span>() self<span class="op">$</span>value,</span>
-<span id="cb157-6"><a href="why-do-we-need-reactive-programming.html#cb157-6"></a></span>
-<span id="cb157-7"><a href="why-do-we-need-reactive-programming.html#cb157-7"></a>  <span class="dt">set =</span> <span class="cf">function</span>(value) {</span>
-<span id="cb157-8"><a href="why-do-we-need-reactive-programming.html#cb157-8"></a>    self<span class="op">$</span>value &lt;-<span class="st"> </span>value</span>
-<span id="cb157-9"><a href="why-do-we-need-reactive-programming.html#cb157-9"></a>    <span class="cf">if</span> (<span class="op">!</span><span class="kw">is.null</span>(self<span class="op">$</span>on_update)) </span>
-<span id="cb157-10"><a href="why-do-we-need-reactive-programming.html#cb157-10"></a>      self<span class="op">$</span><span class="kw">on_update</span>(value)</span>
-<span id="cb157-11"><a href="why-do-we-need-reactive-programming.html#cb157-11"></a>    <span class="kw">invisible</span>(self)</span>
-<span id="cb157-12"><a href="why-do-we-need-reactive-programming.html#cb157-12"></a>  },</span>
-<span id="cb157-13"><a href="why-do-we-need-reactive-programming.html#cb157-13"></a>  </span>
-<span id="cb157-14"><a href="why-do-we-need-reactive-programming.html#cb157-14"></a>  <span class="dt">onUpdate =</span> <span class="cf">function</span>(on_update) {</span>
-<span id="cb157-15"><a href="why-do-we-need-reactive-programming.html#cb157-15"></a>    self<span class="op">$</span>on_update &lt;-<span class="st"> </span>on_update</span>
-<span id="cb157-16"><a href="why-do-we-need-reactive-programming.html#cb157-16"></a>    <span class="kw">invisible</span>(self)</span>
-<span id="cb157-17"><a href="why-do-we-need-reactive-programming.html#cb157-17"></a>  }</span>
-<span id="cb157-18"><a href="why-do-we-need-reactive-programming.html#cb157-18"></a>))</span></code></pre></div>
-<div class="sourceCode" id="cb158"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb158-1"><a href="why-do-we-need-reactive-programming.html#cb158-1"></a>temp_c &lt;-<span class="st"> </span>DynamicValue<span class="op">$</span><span class="kw">new</span>()</span>
-<span id="cb158-2"><a href="why-do-we-need-reactive-programming.html#cb158-2"></a>temp_c<span class="op">$</span><span class="kw">onUpdate</span>(<span class="cf">function</span>(value) {</span>
-<span id="cb158-3"><a href="why-do-we-need-reactive-programming.html#cb158-3"></a>  <span class="kw">message</span>(<span class="st">&quot;Converting&quot;</span>) </span>
-<span id="cb158-4"><a href="why-do-we-need-reactive-programming.html#cb158-4"></a>  temp_f &lt;&lt;-<span class="st"> </span>(value <span class="op">*</span><span class="st"> </span><span class="dv">9</span> <span class="op">/</span><span class="st"> </span><span class="dv">5</span>) <span class="op">+</span><span class="st"> </span><span class="dv">32</span></span>
-<span id="cb158-5"><a href="why-do-we-need-reactive-programming.html#cb158-5"></a>})</span>
-<span id="cb158-6"><a href="why-do-we-need-reactive-programming.html#cb158-6"></a></span>
-<span id="cb158-7"><a href="why-do-we-need-reactive-programming.html#cb158-7"></a>temp_c<span class="op">$</span><span class="kw">set</span>(<span class="dv">10</span>)</span>
-<span id="cb158-8"><a href="why-do-we-need-reactive-programming.html#cb158-8"></a><span class="co">#&gt; Converting</span></span>
-<span id="cb158-9"><a href="why-do-we-need-reactive-programming.html#cb158-9"></a>temp_f</span>
-<span id="cb158-10"><a href="why-do-we-need-reactive-programming.html#cb158-10"></a><span class="co">#&gt; [1] 50</span></span>
-<span id="cb158-11"><a href="why-do-we-need-reactive-programming.html#cb158-11"></a></span>
-<span id="cb158-12"><a href="why-do-we-need-reactive-programming.html#cb158-12"></a>temp_c<span class="op">$</span><span class="kw">set</span>(<span class="op">-</span><span class="dv">3</span>)</span>
-<span id="cb158-13"><a href="why-do-we-need-reactive-programming.html#cb158-13"></a><span class="co">#&gt; Converting</span></span>
-<span id="cb158-14"><a href="why-do-we-need-reactive-programming.html#cb158-14"></a>temp_f</span>
-<span id="cb158-15"><a href="why-do-we-need-reactive-programming.html#cb158-15"></a><span class="co">#&gt; [1] 26.6</span></span></code></pre></div>
+<div class="sourceCode" id="cb169"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb169-1"><a href="why-do-we-need-reactive-programming.html#cb169-1"></a>DynamicValue &lt;-<span class="st"> </span>R6<span class="op">::</span><span class="kw">R6Class</span>(<span class="st">&quot;DynamicValue&quot;</span>, <span class="kw">list</span>(</span>
+<span id="cb169-2"><a href="why-do-we-need-reactive-programming.html#cb169-2"></a>  <span class="dt">value =</span> <span class="ot">NULL</span>,</span>
+<span id="cb169-3"><a href="why-do-we-need-reactive-programming.html#cb169-3"></a>  <span class="dt">on_update =</span> <span class="ot">NULL</span>,</span>
+<span id="cb169-4"><a href="why-do-we-need-reactive-programming.html#cb169-4"></a>  </span>
+<span id="cb169-5"><a href="why-do-we-need-reactive-programming.html#cb169-5"></a>  <span class="dt">get =</span> <span class="cf">function</span>() self<span class="op">$</span>value,</span>
+<span id="cb169-6"><a href="why-do-we-need-reactive-programming.html#cb169-6"></a></span>
+<span id="cb169-7"><a href="why-do-we-need-reactive-programming.html#cb169-7"></a>  <span class="dt">set =</span> <span class="cf">function</span>(value) {</span>
+<span id="cb169-8"><a href="why-do-we-need-reactive-programming.html#cb169-8"></a>    self<span class="op">$</span>value &lt;-<span class="st"> </span>value</span>
+<span id="cb169-9"><a href="why-do-we-need-reactive-programming.html#cb169-9"></a>    <span class="cf">if</span> (<span class="op">!</span><span class="kw">is.null</span>(self<span class="op">$</span>on_update)) </span>
+<span id="cb169-10"><a href="why-do-we-need-reactive-programming.html#cb169-10"></a>      self<span class="op">$</span><span class="kw">on_update</span>(value)</span>
+<span id="cb169-11"><a href="why-do-we-need-reactive-programming.html#cb169-11"></a>    <span class="kw">invisible</span>(self)</span>
+<span id="cb169-12"><a href="why-do-we-need-reactive-programming.html#cb169-12"></a>  },</span>
+<span id="cb169-13"><a href="why-do-we-need-reactive-programming.html#cb169-13"></a>  </span>
+<span id="cb169-14"><a href="why-do-we-need-reactive-programming.html#cb169-14"></a>  <span class="dt">onUpdate =</span> <span class="cf">function</span>(on_update) {</span>
+<span id="cb169-15"><a href="why-do-we-need-reactive-programming.html#cb169-15"></a>    self<span class="op">$</span>on_update &lt;-<span class="st"> </span>on_update</span>
+<span id="cb169-16"><a href="why-do-we-need-reactive-programming.html#cb169-16"></a>    <span class="kw">invisible</span>(self)</span>
+<span id="cb169-17"><a href="why-do-we-need-reactive-programming.html#cb169-17"></a>  }</span>
+<span id="cb169-18"><a href="why-do-we-need-reactive-programming.html#cb169-18"></a>))</span></code></pre></div>
+<div class="sourceCode" id="cb170"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb170-1"><a href="why-do-we-need-reactive-programming.html#cb170-1"></a>temp_c &lt;-<span class="st"> </span>DynamicValue<span class="op">$</span><span class="kw">new</span>()</span>
+<span id="cb170-2"><a href="why-do-we-need-reactive-programming.html#cb170-2"></a>temp_c<span class="op">$</span><span class="kw">onUpdate</span>(<span class="cf">function</span>(value) {</span>
+<span id="cb170-3"><a href="why-do-we-need-reactive-programming.html#cb170-3"></a>  <span class="kw">message</span>(<span class="st">&quot;Converting&quot;</span>) </span>
+<span id="cb170-4"><a href="why-do-we-need-reactive-programming.html#cb170-4"></a>  temp_f &lt;&lt;-<span class="st"> </span>(value <span class="op">*</span><span class="st"> </span><span class="dv">9</span> <span class="op">/</span><span class="st"> </span><span class="dv">5</span>) <span class="op">+</span><span class="st"> </span><span class="dv">32</span></span>
+<span id="cb170-5"><a href="why-do-we-need-reactive-programming.html#cb170-5"></a>})</span>
+<span id="cb170-6"><a href="why-do-we-need-reactive-programming.html#cb170-6"></a></span>
+<span id="cb170-7"><a href="why-do-we-need-reactive-programming.html#cb170-7"></a>temp_c<span class="op">$</span><span class="kw">set</span>(<span class="dv">10</span>)</span>
+<span id="cb170-8"><a href="why-do-we-need-reactive-programming.html#cb170-8"></a><span class="co">#&gt; Converting</span></span>
+<span id="cb170-9"><a href="why-do-we-need-reactive-programming.html#cb170-9"></a>temp_f</span>
+<span id="cb170-10"><a href="why-do-we-need-reactive-programming.html#cb170-10"></a><span class="co">#&gt; [1] 50</span></span>
+<span id="cb170-11"><a href="why-do-we-need-reactive-programming.html#cb170-11"></a></span>
+<span id="cb170-12"><a href="why-do-we-need-reactive-programming.html#cb170-12"></a>temp_c<span class="op">$</span><span class="kw">set</span>(<span class="op">-</span><span class="dv">3</span>)</span>
+<span id="cb170-13"><a href="why-do-we-need-reactive-programming.html#cb170-13"></a><span class="co">#&gt; Converting</span></span>
+<span id="cb170-14"><a href="why-do-we-need-reactive-programming.html#cb170-14"></a>temp_f</span>
+<span id="cb170-15"><a href="why-do-we-need-reactive-programming.html#cb170-15"></a><span class="co">#&gt; [1] 26.6</span></span></code></pre></div>
 <ul>
 <li>event-driven programming solves problem of unnecessary computation</li>
 <li>but introduces a new problem
