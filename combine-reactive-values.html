@@ -23,7 +23,7 @@
 <meta name="author" content="The R4DS Online Learning Community" />
 
 
-<meta name="date" content="2022-05-12" />
+<meta name="date" content="2022-05-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -675,8 +675,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>To have an idea of what is happening inside the app we can sketch a graph of the connections with one of the {diagrammeR} functions for making flowcharts, such as the <strong>mermaid()</strong> function, so, we visually identify the connections related to the action of the reset button.</p>
 <p>Figure <a href="combine-reactive-values.html#fig:diagram2">16.2</a> Graph of the App</p>
 <div class="figure"><span style="display:block;" id="fig:diagram2"></span>
-<div id="htmlwidget-bde7cefaf178628e4d59" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-bde7cefaf178628e4d59">{"x":{"diagram":"\ngraph LR\n\nA((ui))-.-B\n   B(textInput)-.-C>textOutput]\n   C-. reactive connection .->D\n   D((server))-.-E\nE(reactive)-.-S(output)\n   \nA((ui))-.-F\n   F(name)-.-G(salutation)\n   G-. reactive connection .->    D((server))\n   D((server))-.-H(Hello)\nH-.-T(Your name here)\n   \nI((ui))-.-L(actionButton)\nL-.-M((server))\nM-.-N(observeEvent)\nN-.-O>updateTextInput]\n  O-.-P>no record of the reset in the reactive graph]\n\nI((ui))-.-Q\nQ(clr)-.-M\nM-.-R(Clear)\nR-.-U(name)\nU-.-P\n  style A fill:#f9f\n  style B fill:#bbf\n  style C fill:#f96\n  style D fill:#f9f\n  style I fill:#f9f\n  style L fill:#bbf\n  style M fill:#f9f\n  style O fill:#f96\n  style P fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5\n\n "},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-14251b97caf07c540fcf" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-14251b97caf07c540fcf">{"x":{"diagram":"\ngraph LR\n\nA((ui))-.-B\n   B(textInput)-.-C>textOutput]\n   C-. reactive connection .->D\n   D((server))-.-E\nE(reactive)-.-S(output)\n   \nA((ui))-.-F\n   F(name)-.-G(salutation)\n   G-. reactive connection .->    D((server))\n   D((server))-.-H(Hello)\nH-.-T(Your name here)\n   \nI((ui))-.-L(actionButton)\nL-.-M((server))\nM-.-N(observeEvent)\nN-.-O>updateTextInput]\n  O-.-P>no record of the reset in the reactive graph]\n\nI((ui))-.-Q\nQ(clr)-.-M\nM-.-R(Clear)\nR-.-U(name)\nU-.-P\n  style A fill:#f9f\n  style B fill:#bbf\n  style C fill:#f96\n  style D fill:#f9f\n  style I fill:#f9f\n  style L fill:#bbf\n  style M fill:#f9f\n  style O fill:#f96\n  style P fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5\n\n "},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 16.2: Graph of the steps made by the app
 </p>
