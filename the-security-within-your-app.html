@@ -23,7 +23,7 @@
 <meta name="author" content="The R4DS Online Learning Community" />
 
 
-<meta name="date" content="2022-05-15" />
+<meta name="date" content="2022-05-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -49,7 +49,6 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
@@ -66,18 +65,18 @@
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -97,7 +96,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -147,17 +146,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Mastering Shiny Book Club</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
 <li class="chapter" data-level="" data-path="book-club-meetings.html"><a href="book-club-meetings.html"><i class="fa fa-check"></i>Book club meetings</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a></li>
 <li class="part"><span><b>Getting started</b></span></li>
-<li class="chapter" data-level="1" data-path="your-first-shiny-app.html"><a href="your-first-shiny-app.html"><i class="fa fa-check"></i><b>1</b> Your first Shiny app</a><ul>
-<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1.1</b> Introduction</a><ul>
+<li class="chapter" data-level="1" data-path="your-first-shiny-app.html"><a href="your-first-shiny-app.html"><i class="fa fa-check"></i><b>1</b> Your first Shiny app</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1.1</b> Introduction</a>
+<ul>
 <li class="chapter" data-level="1.1.1" data-path="introduction.html"><a href="introduction.html#if-you-havent-installed-shiny-already"><i class="fa fa-check"></i><b>1.1.1</b> If you haven’t installed Shiny already:</a></li>
 </ul></li>
 <li class="chapter" data-level="1.2" data-path="creating-an-app.html"><a href="creating-an-app.html"><i class="fa fa-check"></i><b>1.2</b> Creating an app</a></li>
-<li class="chapter" data-level="1.3" data-path="running-and-stopping-the-app.html"><a href="running-and-stopping-the-app.html"><i class="fa fa-check"></i><b>1.3</b> Running and stopping the app</a><ul>
+<li class="chapter" data-level="1.3" data-path="running-and-stopping-the-app.html"><a href="running-and-stopping-the-app.html"><i class="fa fa-check"></i><b>1.3</b> Running and stopping the app</a>
+<ul>
 <li class="chapter" data-level="1.3.1" data-path="running-and-stopping-the-app.html"><a href="running-and-stopping-the-app.html#running-the-app"><i class="fa fa-check"></i><b>1.3.1</b> Running the app</a></li>
 <li class="chapter" data-level="1.3.2" data-path="running-and-stopping-the-app.html"><a href="running-and-stopping-the-app.html#stopping-the-app"><i class="fa fa-check"></i><b>1.3.2</b> Stopping the app:</a></li>
 </ul></li>
@@ -165,23 +168,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.5" data-path="adding-behaviour.html"><a href="adding-behaviour.html"><i class="fa fa-check"></i><b>1.5</b> Adding behaviour</a></li>
 <li class="chapter" data-level="1.6" data-path="reactive-expressions.html"><a href="reactive-expressions.html"><i class="fa fa-check"></i><b>1.6</b> Reactive expressions</a></li>
 <li class="chapter" data-level="1.7" data-path="visualising-reactive-expressions.html"><a href="visualising-reactive-expressions.html"><i class="fa fa-check"></i><b>1.7</b> Visualising reactive expressions</a></li>
-<li class="chapter" data-level="1.8" data-path="shiny-resources.html"><a href="shiny-resources.html"><i class="fa fa-check"></i><b>1.8</b> Shiny resources</a><ul>
+<li class="chapter" data-level="1.8" data-path="shiny-resources.html"><a href="shiny-resources.html"><i class="fa fa-check"></i><b>1.8</b> Shiny resources</a>
+<ul>
 <li class="chapter" data-level="1.8.1" data-path="shiny-resources.html"><a href="shiny-resources.html#other-resources"><i class="fa fa-check"></i><b>1.8.1</b> Other resources</a></li>
 </ul></li>
-<li class="chapter" data-level="1.9" data-path="meeting-videos.html"><a href="meeting-videos.html"><i class="fa fa-check"></i><b>1.9</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="1.9" data-path="meeting-videos.html"><a href="meeting-videos.html"><i class="fa fa-check"></i><b>1.9</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="1.9.1" data-path="meeting-videos.html"><a href="meeting-videos.html#cohort-1"><i class="fa fa-check"></i><b>1.9.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="1.9.2" data-path="meeting-videos.html"><a href="meeting-videos.html#cohort-2"><i class="fa fa-check"></i><b>1.9.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="1.9.3" data-path="meeting-videos.html"><a href="meeting-videos.html#cohort-3"><i class="fa fa-check"></i><b>1.9.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="shiny---basic-user-interface.html"><a href="shiny---basic-user-interface.html"><i class="fa fa-check"></i><b>2</b> Shiny - Basic User Interface</a><ul>
+<li class="chapter" data-level="2" data-path="shiny---basic-user-interface.html"><a href="shiny---basic-user-interface.html"><i class="fa fa-check"></i><b>2</b> Shiny - Basic User Interface</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="learning-objectives.html"><a href="learning-objectives.html"><i class="fa fa-check"></i><b>2.1</b> Learning objectives</a></li>
 <li class="chapter" data-level="2.2" data-path="fyi.html"><a href="fyi.html"><i class="fa fa-check"></i><b>2.2</b> FYI</a></li>
 <li class="chapter" data-level="2.3" data-path="the-shiny-basic-user-interfaceui.html"><a href="the-shiny-basic-user-interfaceui.html"><i class="fa fa-check"></i><b>2.3</b> The Shiny Basic User Interface(ui)</a></li>
 <li class="chapter" data-level="2.4" data-path="what-can-one-input.html"><a href="what-can-one-input.html"><i class="fa fa-check"></i><b>2.4</b> What Can One INPUT?</a></li>
 <li class="chapter" data-level="2.5" data-path="input-1---text-numeric.html"><a href="input-1---text-numeric.html"><i class="fa fa-check"></i><b>2.5</b> Input 1 - Text &amp; Numeric</a></li>
 <li class="chapter" data-level="2.6" data-path="inputs-2---dates-limited-choices-file-uploads-action-buttons.html"><a href="inputs-2---dates-limited-choices-file-uploads-action-buttons.html"><i class="fa fa-check"></i><b>2.6</b> Inputs 2 - Dates, Limited choices, File uploads, Action buttons</a></li>
-<li class="chapter" data-level="2.7" data-path="what-can-one-output.html"><a href="what-can-one-output.html"><i class="fa fa-check"></i><b>2.7</b> What can one OUTPUT?</a><ul>
+<li class="chapter" data-level="2.7" data-path="what-can-one-output.html"><a href="what-can-one-output.html"><i class="fa fa-check"></i><b>2.7</b> What can one OUTPUT?</a>
+<ul>
 <li class="chapter" data-level="" data-path="what-can-one-output.html"><a href="what-can-one-output.html#text"><i class="fa fa-check"></i>Text</a></li>
 </ul></li>
 <li class="chapter" data-level="2.8" data-path="outputs-2---tables.html"><a href="outputs-2---tables.html"><i class="fa fa-check"></i><b>2.8</b> Outputs 2 - Tables</a></li>
@@ -190,42 +197,51 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.11" data-path="under-the-hood.html"><a href="under-the-hood.html"><i class="fa fa-check"></i><b>2.11</b> Under the hood</a></li>
 <li class="chapter" data-level="2.12" data-path="other-tools-material.html"><a href="other-tools-material.html"><i class="fa fa-check"></i><b>2.12</b> Other tools &amp; material</a></li>
 <li class="chapter" data-level="2.13" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>2.13</b> Summary</a></li>
-<li class="chapter" data-level="2.14" data-path="meeting-videos-1.html"><a href="meeting-videos-1.html"><i class="fa fa-check"></i><b>2.14</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="2.14" data-path="meeting-videos-1.html"><a href="meeting-videos-1.html"><i class="fa fa-check"></i><b>2.14</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="2.14.1" data-path="meeting-videos-1.html"><a href="meeting-videos-1.html#cohort-1-1"><i class="fa fa-check"></i><b>2.14.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="2.14.2" data-path="meeting-videos-1.html"><a href="meeting-videos-1.html#cohort-2-1"><i class="fa fa-check"></i><b>2.14.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="2.14.3" data-path="meeting-videos-1.html"><a href="meeting-videos-1.html#cohort-3-1"><i class="fa fa-check"></i><b>2.14.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="basic-reactivity.html"><a href="basic-reactivity.html"><i class="fa fa-check"></i><b>3</b> Basic Reactivity</a><ul>
-<li class="chapter" data-level="3.1" data-path="recap.html"><a href="recap.html"><i class="fa fa-check"></i><b>3.1</b> Recap</a><ul>
+<li class="chapter" data-level="3" data-path="basic-reactivity.html"><a href="basic-reactivity.html"><i class="fa fa-check"></i><b>3</b> Basic Reactivity</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="recap.html"><a href="recap.html"><i class="fa fa-check"></i><b>3.1</b> Recap</a>
+<ul>
 <li class="chapter" data-level="3.1.1" data-path="recap.html"><a href="recap.html#important-learnings-so-far-main-app-components"><i class="fa fa-check"></i><b>3.1.1</b> Important Learnings so far, main app components:</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="a-deeper-dive-into-the-server-function.html"><a href="a-deeper-dive-into-the-server-function.html"><i class="fa fa-check"></i><b>3.2</b> A deeper dive into the server function</a></li>
-<li class="chapter" data-level="3.3" data-path="reactive-programming.html"><a href="reactive-programming.html"><i class="fa fa-check"></i><b>3.3</b> Reactive Programming</a><ul>
+<li class="chapter" data-level="3.3" data-path="reactive-programming.html"><a href="reactive-programming.html"><i class="fa fa-check"></i><b>3.3</b> Reactive Programming</a>
+<ul>
 <li class="chapter" data-level="3.3.1" data-path="reactive-programming.html"><a href="reactive-programming.html#imperative-vs-declarative-programming"><i class="fa fa-check"></i><b>3.3.1</b> Imperative vs declarative programming</a></li>
 </ul></li>
-<li class="chapter" data-level="3.4" data-path="laziness.html"><a href="laziness.html"><i class="fa fa-check"></i><b>3.4</b> Laziness</a><ul>
+<li class="chapter" data-level="3.4" data-path="laziness.html"><a href="laziness.html"><i class="fa fa-check"></i><b>3.4</b> Laziness</a>
+<ul>
 <li class="chapter" data-level="3.4.1" data-path="laziness.html"><a href="laziness.html#will-this-app-work"><i class="fa fa-check"></i><b>3.4.1</b> Will this app work?</a></li>
 </ul></li>
 <li class="chapter" data-level="3.5" data-path="the-reactive-graph.html"><a href="the-reactive-graph.html"><i class="fa fa-check"></i><b>3.5</b> The reactive graph</a></li>
 <li class="chapter" data-level="3.6" data-path="reactive-expressions-1.html"><a href="reactive-expressions-1.html"><i class="fa fa-check"></i><b>3.6</b> Reactive expressions</a></li>
 <li class="chapter" data-level="3.7" data-path="new-vocab---producers-and-consumers.html"><a href="new-vocab---producers-and-consumers.html"><i class="fa fa-check"></i><b>3.7</b> New vocab - producers and consumers</a></li>
 <li class="chapter" data-level="3.8" data-path="execution-order.html"><a href="execution-order.html"><i class="fa fa-check"></i><b>3.8</b> Execution order</a></li>
-<li class="chapter" data-level="3.9" data-path="controlling-timing-of-evaluation.html"><a href="controlling-timing-of-evaluation.html"><i class="fa fa-check"></i><b>3.9</b> Controlling timing of evaluation</a><ul>
+<li class="chapter" data-level="3.9" data-path="controlling-timing-of-evaluation.html"><a href="controlling-timing-of-evaluation.html"><i class="fa fa-check"></i><b>3.9</b> Controlling timing of evaluation</a>
+<ul>
 <li class="chapter" data-level="3.9.1" data-path="controlling-timing-of-evaluation.html"><a href="controlling-timing-of-evaluation.html#timed-invalidation"><i class="fa fa-check"></i><b>3.9.1</b> <strong><em>Timed invalidation</em></strong></a></li>
 <li class="chapter" data-level="3.9.2" data-path="controlling-timing-of-evaluation.html"><a href="controlling-timing-of-evaluation.html#on-click"><i class="fa fa-check"></i><b>3.9.2</b> <strong><em>On click</em></strong></a></li>
 </ul></li>
-<li class="chapter" data-level="3.10" data-path="observers.html"><a href="observers.html"><i class="fa fa-check"></i><b>3.10</b> Observers</a><ul>
+<li class="chapter" data-level="3.10" data-path="observers.html"><a href="observers.html"><i class="fa fa-check"></i><b>3.10</b> Observers</a>
+<ul>
 <li class="chapter" data-level="3.10.1" data-path="observers.html"><a href="observers.html#when-might-you-use-an-observer"><i class="fa fa-check"></i><b>3.10.1</b> When might you use an observer?</a></li>
 </ul></li>
 <li class="chapter" data-level="3.11" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i><b>3.11</b> Acknowledgements</a></li>
-<li class="chapter" data-level="3.12" data-path="meeting-videos-2.html"><a href="meeting-videos-2.html"><i class="fa fa-check"></i><b>3.12</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="3.12" data-path="meeting-videos-2.html"><a href="meeting-videos-2.html"><i class="fa fa-check"></i><b>3.12</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="3.12.1" data-path="meeting-videos-2.html"><a href="meeting-videos-2.html#cohort-1-2"><i class="fa fa-check"></i><b>3.12.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="3.12.2" data-path="meeting-videos-2.html"><a href="meeting-videos-2.html#cohort-2-2"><i class="fa fa-check"></i><b>3.12.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="3.12.3" data-path="meeting-videos-2.html"><a href="meeting-videos-2.html#cohort-3-2"><i class="fa fa-check"></i><b>3.12.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="case-study-er-injuries.html"><a href="case-study-er-injuries.html"><i class="fa fa-check"></i><b>4</b> Case study: ER injuries</a><ul>
+<li class="chapter" data-level="4" data-path="case-study-er-injuries.html"><a href="case-study-er-injuries.html"><i class="fa fa-check"></i><b>4</b> Case study: ER injuries</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="introduction-1.html"><a href="introduction-1.html"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
 <li class="chapter" data-level="4.2" data-path="the-data.html"><a href="the-data.html"><i class="fa fa-check"></i><b>4.2</b> The data</a></li>
 <li class="chapter" data-level="4.3" data-path="exploration.html"><a href="exploration.html"><i class="fa fa-check"></i><b>4.3</b> Exploration</a></li>
@@ -233,14 +249,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.5" data-path="polish-tables.html"><a href="polish-tables.html"><i class="fa fa-check"></i><b>4.5</b> Polish tables</a></li>
 <li class="chapter" data-level="4.6" data-path="rate-vs-count.html"><a href="rate-vs-count.html"><i class="fa fa-check"></i><b>4.6</b> Rate vs count</a></li>
 <li class="chapter" data-level="4.7" data-path="narrative.html"><a href="narrative.html"><i class="fa fa-check"></i><b>4.7</b> Narrative</a></li>
-<li class="chapter" data-level="4.8" data-path="meeting-videos-3.html"><a href="meeting-videos-3.html"><i class="fa fa-check"></i><b>4.8</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="4.8" data-path="meeting-videos-3.html"><a href="meeting-videos-3.html"><i class="fa fa-check"></i><b>4.8</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="4.8.1" data-path="meeting-videos-3.html"><a href="meeting-videos-3.html#cohort-1-3"><i class="fa fa-check"></i><b>4.8.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="4.8.2" data-path="meeting-videos-3.html"><a href="meeting-videos-3.html#cohort-2-3"><i class="fa fa-check"></i><b>4.8.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="4.8.3" data-path="meeting-videos-3.html"><a href="meeting-videos-3.html#cohort-3-3"><i class="fa fa-check"></i><b>4.8.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Shiny in action</b></span></li>
-<li class="chapter" data-level="5" data-path="workflow.html"><a href="workflow.html"><i class="fa fa-check"></i><b>5</b> Workflow</a><ul>
+<li class="chapter" data-level="5" data-path="workflow.html"><a href="workflow.html"><i class="fa fa-check"></i><b>5</b> Workflow</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="why-workflow.html"><a href="why-workflow.html"><i class="fa fa-check"></i><b>5.1</b> Why workflow?</a></li>
 <li class="chapter" data-level="5.2" data-path="learning-objectives-1.html"><a href="learning-objectives-1.html"><i class="fa fa-check"></i><b>5.2</b> Learning objectives</a></li>
 <li class="chapter" data-level="5.3" data-path="development-workflow.html"><a href="development-workflow.html"><i class="fa fa-check"></i><b>5.3</b> Development workflow</a></li>
@@ -248,172 +266,210 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.5" data-path="seeing-your-changes-faster.html"><a href="seeing-your-changes-faster.html"><i class="fa fa-check"></i><b>5.5</b> Seeing your changes faster</a></li>
 <li class="chapter" data-level="5.6" data-path="controlling-the-view.html"><a href="controlling-the-view.html"><i class="fa fa-check"></i><b>5.6</b> Controlling the view</a></li>
 <li class="chapter" data-level="5.7" data-path="debugging.html"><a href="debugging.html"><i class="fa fa-check"></i><b>5.7</b> Debugging</a></li>
-<li class="chapter" data-level="5.8" data-path="three-dubugging-challenges.html"><a href="three-dubugging-challenges.html"><i class="fa fa-check"></i><b>5.8</b> Three dubugging Challenges</a><ul>
+<li class="chapter" data-level="5.8" data-path="three-dubugging-challenges.html"><a href="three-dubugging-challenges.html"><i class="fa fa-check"></i><b>5.8</b> Three dubugging Challenges</a>
+<ul>
 <li class="chapter" data-level="5.8.1" data-path="three-dubugging-challenges.html"><a href="three-dubugging-challenges.html#you-get-an-unexpected-error-easiest-case."><i class="fa fa-check"></i><b>5.8.1</b> You get an unexpected error (easiest case).</a></li>
 <li class="chapter" data-level="5.8.2" data-path="three-dubugging-challenges.html"><a href="three-dubugging-challenges.html#you-dont-get-any-errors"><i class="fa fa-check"></i><b>5.8.2</b> You don’t get any errors</a></li>
 <li class="chapter" data-level="5.8.3" data-path="three-dubugging-challenges.html"><a href="three-dubugging-challenges.html#all-the-values-are-correct-but-theyre-not-updated-when-you-expect"><i class="fa fa-check"></i><b>5.8.3</b> All the values are correct, but they’re not updated when you expect</a></li>
 </ul></li>
-<li class="chapter" data-level="5.9" data-path="fixing-errors-tracebacks.html"><a href="fixing-errors-tracebacks.html"><i class="fa fa-check"></i><b>5.9</b> Fixing errors: Tracebacks</a><ul>
+<li class="chapter" data-level="5.9" data-path="fixing-errors-tracebacks.html"><a href="fixing-errors-tracebacks.html"><i class="fa fa-check"></i><b>5.9</b> Fixing errors: Tracebacks</a>
+<ul>
 <li class="chapter" data-level="5.9.1" data-path="fixing-errors-tracebacks.html"><a href="fixing-errors-tracebacks.html#example-of-reading-traceback"><i class="fa fa-check"></i><b>5.9.1</b> Example of reading traceback</a></li>
 </ul></li>
 <li class="chapter" data-level="5.10" data-path="tracebacks-in-shiny.html"><a href="tracebacks-in-shiny.html"><i class="fa fa-check"></i><b>5.10</b> Tracebacks in Shiny</a></li>
 <li class="chapter" data-level="5.11" data-path="three-components-to-a-shiny-error-stack.html"><a href="three-components-to-a-shiny-error-stack.html"><i class="fa fa-check"></i><b>5.11</b> Three components to a Shiny error stack</a></li>
-<li class="chapter" data-level="5.12" data-path="fixing-errors-interactive-debugger.html"><a href="fixing-errors-interactive-debugger.html"><i class="fa fa-check"></i><b>5.12</b> Fixing errors: Interactive debugger</a><ul>
+<li class="chapter" data-level="5.12" data-path="fixing-errors-interactive-debugger.html"><a href="fixing-errors-interactive-debugger.html"><i class="fa fa-check"></i><b>5.12</b> Fixing errors: Interactive debugger</a>
+<ul>
 <li class="chapter" data-level="5.12.1" data-path="fixing-errors-interactive-debugger.html"><a href="fixing-errors-interactive-debugger.html#useful-interactive-debugger-commands"><i class="fa fa-check"></i><b>5.12.1</b> Useful interactive debugger commands</a></li>
 </ul></li>
 <li class="chapter" data-level="5.13" data-path="debugging-reactivity.html"><a href="debugging-reactivity.html"><i class="fa fa-check"></i><b>5.13</b> Debugging reactivity</a></li>
-<li class="chapter" data-level="5.14" data-path="getting-help-using-reprex.html"><a href="getting-help-using-reprex.html"><i class="fa fa-check"></i><b>5.14</b> Getting help (using Reprex)</a><ul>
+<li class="chapter" data-level="5.14" data-path="getting-help-using-reprex.html"><a href="getting-help-using-reprex.html"><i class="fa fa-check"></i><b>5.14</b> Getting help (using Reprex)</a>
+<ul>
 <li class="chapter" data-level="5.14.1" data-path="getting-help-using-reprex.html"><a href="getting-help-using-reprex.html#how-to-make-a-reprex"><i class="fa fa-check"></i><b>5.14.1</b> How to make a reprex</a></li>
 <li class="chapter" data-level="5.14.2" data-path="getting-help-using-reprex.html"><a href="getting-help-using-reprex.html#making-a-minimal-reprex"><i class="fa fa-check"></i><b>5.14.2</b> Making a minimal reprex</a></li>
 </ul></li>
-<li class="chapter" data-level="5.15" data-path="meeting-videos-4.html"><a href="meeting-videos-4.html"><i class="fa fa-check"></i><b>5.15</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="5.15" data-path="meeting-videos-4.html"><a href="meeting-videos-4.html"><i class="fa fa-check"></i><b>5.15</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="5.15.1" data-path="meeting-videos-4.html"><a href="meeting-videos-4.html#cohort-1-4"><i class="fa fa-check"></i><b>5.15.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="5.15.2" data-path="meeting-videos-4.html"><a href="meeting-videos-4.html#cohort-2-4"><i class="fa fa-check"></i><b>5.15.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="5.15.3" data-path="meeting-videos-4.html"><a href="meeting-videos-4.html#cohort-3-4"><i class="fa fa-check"></i><b>5.15.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="layout-themes-html.html"><a href="layout-themes-html.html"><i class="fa fa-check"></i><b>6</b> Layout, themes, HTML</a><ul>
+<li class="chapter" data-level="6" data-path="layout-themes-html.html"><a href="layout-themes-html.html"><i class="fa fa-check"></i><b>6</b> Layout, themes, HTML</a>
+<ul>
 <li class="chapter" data-level="6.1" data-path="disclaimer.html"><a href="disclaimer.html"><i class="fa fa-check"></i><b>6.1</b> Disclaimer</a></li>
 <li class="chapter" data-level="6.2" data-path="learning-objectives-2.html"><a href="learning-objectives-2.html"><i class="fa fa-check"></i><b>6.2</b> Learning objectives</a></li>
-<li class="chapter" data-level="6.3" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>6.3</b> Resources</a><ul>
+<li class="chapter" data-level="6.3" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>6.3</b> Resources</a>
+<ul>
 <li class="chapter" data-level="6.3.1" data-path="resources.html"><a href="resources.html#websites"><i class="fa fa-check"></i><b>6.3.1</b> Websites</a></li>
 <li class="chapter" data-level="6.3.2" data-path="resources.html"><a href="resources.html#books"><i class="fa fa-check"></i><b>6.3.2</b> Books</a></li>
 <li class="chapter" data-level="6.3.3" data-path="resources.html"><a href="resources.html#packages-tools"><i class="fa fa-check"></i><b>6.3.3</b> Packages / Tools</a></li>
 </ul></li>
-<li class="chapter" data-level="6.4" data-path="under-the-hood-1.html"><a href="under-the-hood-1.html"><i class="fa fa-check"></i><b>6.4</b> Under the hood</a><ul>
+<li class="chapter" data-level="6.4" data-path="under-the-hood-1.html"><a href="under-the-hood-1.html"><i class="fa fa-check"></i><b>6.4</b> Under the hood</a>
+<ul>
 <li class="chapter" data-level="6.4.1" data-path="under-the-hood-1.html"><a href="under-the-hood-1.html#html---hypertext-markup-language"><i class="fa fa-check"></i><b>6.4.1</b> HTML - Hypertext markup language</a></li>
 <li class="chapter" data-level="6.4.2" data-path="under-the-hood-1.html"><a href="under-the-hood-1.html#writing-html-with-shiny-htmltools"><i class="fa fa-check"></i><b>6.4.2</b> Writing HTML with <code>shiny</code> / <code>htmltools</code></a></li>
 <li class="chapter" data-level="6.4.3" data-path="under-the-hood-1.html"><a href="under-the-hood-1.html#css---cascading-style-sheets"><i class="fa fa-check"></i><b>6.4.3</b> CSS - Cascading Style Sheets</a></li>
 <li class="chapter" data-level="6.4.4" data-path="under-the-hood-1.html"><a href="under-the-hood-1.html#using-css-to-style-a-shiny-app"><i class="fa fa-check"></i><b>6.4.4</b> Using CSS to style a shiny app</a></li>
 </ul></li>
 <li class="chapter" data-level="6.5" data-path="bootstrap-themes.html"><a href="bootstrap-themes.html"><i class="fa fa-check"></i><b>6.5</b> Bootstrap &amp; Themes</a></li>
-<li class="chapter" data-level="6.6" data-path="layouts-1.html"><a href="layouts-1.html"><i class="fa fa-check"></i><b>6.6</b> Layouts</a><ul>
+<li class="chapter" data-level="6.6" data-path="layouts-1.html"><a href="layouts-1.html"><i class="fa fa-check"></i><b>6.6</b> Layouts</a>
+<ul>
 <li class="chapter" data-level="6.6.1" data-path="layouts-1.html"><a href="layouts-1.html#single-page-layouts"><i class="fa fa-check"></i><b>6.6.1</b> Single-page Layouts</a></li>
 <li class="chapter" data-level="6.6.2" data-path="layouts-1.html"><a href="layouts-1.html#multi-page-layouts"><i class="fa fa-check"></i><b>6.6.2</b> Multi-page Layouts</a></li>
 </ul></li>
-<li class="chapter" data-level="6.7" data-path="case-study.html"><a href="case-study.html"><i class="fa fa-check"></i><b>6.7</b> Case study</a><ul>
+<li class="chapter" data-level="6.7" data-path="case-study.html"><a href="case-study.html"><i class="fa fa-check"></i><b>6.7</b> Case study</a>
+<ul>
 <li class="chapter" data-level="6.7.1" data-path="case-study.html"><a href="case-study.html#the-initial-app-app-01.r"><i class="fa fa-check"></i><b>6.7.1</b> The initial app (app-01.R)</a></li>
 <li class="chapter" data-level="6.7.2" data-path="case-study.html"><a href="case-study.html#the-final-app-app.r"><i class="fa fa-check"></i><b>6.7.2</b> The final app (app.R)</a></li>
 </ul></li>
-<li class="chapter" data-level="6.8" data-path="meeting-videos-5.html"><a href="meeting-videos-5.html"><i class="fa fa-check"></i><b>6.8</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="6.8" data-path="meeting-videos-5.html"><a href="meeting-videos-5.html"><i class="fa fa-check"></i><b>6.8</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="6.8.1" data-path="meeting-videos-5.html"><a href="meeting-videos-5.html#cohort-1-5"><i class="fa fa-check"></i><b>6.8.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="6.8.2" data-path="meeting-videos-5.html"><a href="meeting-videos-5.html#cohort-2-5"><i class="fa fa-check"></i><b>6.8.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="6.8.3" data-path="meeting-videos-5.html"><a href="meeting-videos-5.html#cohort-3-5"><i class="fa fa-check"></i><b>6.8.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="graphics-and-shiny.html"><a href="graphics-and-shiny.html"><i class="fa fa-check"></i><b>7</b> Graphics and Shiny</a><ul>
-<li class="chapter" data-level="7.1" data-path="meeting-videos-6.html"><a href="meeting-videos-6.html"><i class="fa fa-check"></i><b>7.1</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="7" data-path="graphics-and-shiny.html"><a href="graphics-and-shiny.html"><i class="fa fa-check"></i><b>7</b> Graphics and Shiny</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="meeting-videos-6.html"><a href="meeting-videos-6.html"><i class="fa fa-check"></i><b>7.1</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="7.1.1" data-path="meeting-videos-6.html"><a href="meeting-videos-6.html#cohort-1-6"><i class="fa fa-check"></i><b>7.1.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="7.1.2" data-path="meeting-videos-6.html"><a href="meeting-videos-6.html#cohort-2-6"><i class="fa fa-check"></i><b>7.1.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="7.1.3" data-path="meeting-videos-6.html"><a href="meeting-videos-6.html#cohort-3-6"><i class="fa fa-check"></i><b>7.1.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="user-feedback.html"><a href="user-feedback.html"><i class="fa fa-check"></i><b>8</b> User Feedback</a><ul>
-<li class="chapter" data-level="8.1" data-path="validation.html"><a href="validation.html"><i class="fa fa-check"></i><b>8.1</b> Validation</a><ul>
+<li class="chapter" data-level="8" data-path="user-feedback.html"><a href="user-feedback.html"><i class="fa fa-check"></i><b>8</b> User Feedback</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="validation.html"><a href="validation.html"><i class="fa fa-check"></i><b>8.1</b> Validation</a>
+<ul>
 <li class="chapter" data-level="8.1.1" data-path="validation.html"><a href="validation.html#validating-input"><i class="fa fa-check"></i><b>8.1.1</b> Validating input</a></li>
 <li class="chapter" data-level="8.1.2" data-path="validation.html"><a href="validation.html#cancelling-execution-with-req"><i class="fa fa-check"></i><b>8.1.2</b> Cancelling execution with <code>req()</code></a></li>
 <li class="chapter" data-level="8.1.3" data-path="validation.html"><a href="validation.html#req-and-validation"><i class="fa fa-check"></i><b>8.1.3</b> <code>req()</code> and validation</a></li>
 <li class="chapter" data-level="8.1.4" data-path="validation.html"><a href="validation.html#validate-output"><i class="fa fa-check"></i><b>8.1.4</b> Validate output</a></li>
 </ul></li>
-<li class="chapter" data-level="8.2" data-path="notifications.html"><a href="notifications.html"><i class="fa fa-check"></i><b>8.2</b> Notifications</a><ul>
+<li class="chapter" data-level="8.2" data-path="notifications.html"><a href="notifications.html"><i class="fa fa-check"></i><b>8.2</b> Notifications</a>
+<ul>
 <li class="chapter" data-level="8.2.1" data-path="notifications.html"><a href="notifications.html#transient-notifications"><i class="fa fa-check"></i><b>8.2.1</b> Transient notifications</a></li>
 <li class="chapter" data-level="8.2.2" data-path="notifications.html"><a href="notifications.html#removing-on-completion"><i class="fa fa-check"></i><b>8.2.2</b> Removing on completion</a></li>
 <li class="chapter" data-level="8.2.3" data-path="notifications.html"><a href="notifications.html#progressive-updates"><i class="fa fa-check"></i><b>8.2.3</b> Progressive updates</a></li>
 </ul></li>
-<li class="chapter" data-level="8.3" data-path="progress-bars.html"><a href="progress-bars.html"><i class="fa fa-check"></i><b>8.3</b> Progress bars</a><ul>
+<li class="chapter" data-level="8.3" data-path="progress-bars.html"><a href="progress-bars.html"><i class="fa fa-check"></i><b>8.3</b> Progress bars</a>
+<ul>
 <li class="chapter" data-level="8.3.1" data-path="progress-bars.html"><a href="progress-bars.html#shiny"><i class="fa fa-check"></i><b>8.3.1</b> Shiny</a></li>
 <li class="chapter" data-level="8.3.2" data-path="progress-bars.html"><a href="progress-bars.html#waiter"><i class="fa fa-check"></i><b>8.3.2</b> Waiter</a></li>
 <li class="chapter" data-level="8.3.3" data-path="progress-bars.html"><a href="progress-bars.html#spinners"><i class="fa fa-check"></i><b>8.3.3</b> Spinners</a></li>
 </ul></li>
-<li class="chapter" data-level="8.4" data-path="confirming-and-undoing.html"><a href="confirming-and-undoing.html"><i class="fa fa-check"></i><b>8.4</b> Confirming and undoing</a><ul>
+<li class="chapter" data-level="8.4" data-path="confirming-and-undoing.html"><a href="confirming-and-undoing.html"><i class="fa fa-check"></i><b>8.4</b> Confirming and undoing</a>
+<ul>
 <li class="chapter" data-level="8.4.1" data-path="confirming-and-undoing.html"><a href="confirming-and-undoing.html#explicit-confirmation"><i class="fa fa-check"></i><b>8.4.1</b> Explicit confirmation</a></li>
 <li class="chapter" data-level="8.4.2" data-path="confirming-and-undoing.html"><a href="confirming-and-undoing.html#undoing-an-action"><i class="fa fa-check"></i><b>8.4.2</b> Undoing an action</a></li>
 </ul></li>
-<li class="chapter" data-level="8.5" data-path="meeting-videos-7.html"><a href="meeting-videos-7.html"><i class="fa fa-check"></i><b>8.5</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="8.5" data-path="meeting-videos-7.html"><a href="meeting-videos-7.html"><i class="fa fa-check"></i><b>8.5</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="8.5.1" data-path="meeting-videos-7.html"><a href="meeting-videos-7.html#cohort-1-7"><i class="fa fa-check"></i><b>8.5.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="8.5.2" data-path="meeting-videos-7.html"><a href="meeting-videos-7.html#cohort-2-7"><i class="fa fa-check"></i><b>8.5.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="8.5.3" data-path="meeting-videos-7.html"><a href="meeting-videos-7.html#cohort-3-7"><i class="fa fa-check"></i><b>8.5.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="uploads-and-downloads.html"><a href="uploads-and-downloads.html"><i class="fa fa-check"></i><b>9</b> Uploads and Downloads</a><ul>
-<li class="chapter" data-level="9.1" data-path="file-uploads.html"><a href="file-uploads.html"><i class="fa fa-check"></i><b>9.1</b> File uploads</a><ul>
+<li class="chapter" data-level="9" data-path="uploads-and-downloads.html"><a href="uploads-and-downloads.html"><i class="fa fa-check"></i><b>9</b> Uploads and Downloads</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="file-uploads.html"><a href="file-uploads.html"><i class="fa fa-check"></i><b>9.1</b> File uploads</a>
+<ul>
 <li class="chapter" data-level="9.1.1" data-path="file-uploads.html"><a href="file-uploads.html#ui"><i class="fa fa-check"></i><b>9.1.1</b> UI</a></li>
 <li class="chapter" data-level="9.1.2" data-path="file-uploads.html"><a href="file-uploads.html#server"><i class="fa fa-check"></i><b>9.1.2</b> Server</a></li>
 </ul></li>
-<li class="chapter" data-level="9.2" data-path="uploading-data.html"><a href="uploading-data.html"><i class="fa fa-check"></i><b>9.2</b> Uploading data</a><ul>
+<li class="chapter" data-level="9.2" data-path="uploading-data.html"><a href="uploading-data.html"><i class="fa fa-check"></i><b>9.2</b> Uploading data</a>
+<ul>
 <li class="chapter" data-level="9.2.1" data-path="uploading-data.html"><a href="uploading-data.html#observe-this-in-action"><i class="fa fa-check"></i><b>9.2.1</b> Observe this in action</a></li>
 <li class="chapter" data-level="9.2.2" data-path="uploading-data.html"><a href="uploading-data.html#use-a-break-point-to-observe-whats-going-on-here"><i class="fa fa-check"></i><b>9.2.2</b> Use a break-point to observe what’s going on here</a></li>
 </ul></li>
-<li class="chapter" data-level="9.3" data-path="downloads.html"><a href="downloads.html"><i class="fa fa-check"></i><b>9.3</b> Downloads</a><ul>
+<li class="chapter" data-level="9.3" data-path="downloads.html"><a href="downloads.html"><i class="fa fa-check"></i><b>9.3</b> Downloads</a>
+<ul>
 <li class="chapter" data-level="9.3.1" data-path="downloads.html"><a href="downloads.html#ui-1"><i class="fa fa-check"></i><b>9.3.1</b> UI</a></li>
 <li class="chapter" data-level="9.3.2" data-path="downloads.html"><a href="downloads.html#server-1"><i class="fa fa-check"></i><b>9.3.2</b> Server</a></li>
 </ul></li>
-<li class="chapter" data-level="9.4" data-path="downloading-data.html"><a href="downloading-data.html"><i class="fa fa-check"></i><b>9.4</b> Downloading data</a><ul>
+<li class="chapter" data-level="9.4" data-path="downloading-data.html"><a href="downloading-data.html"><i class="fa fa-check"></i><b>9.4</b> Downloading data</a>
+<ul>
 <li class="chapter" data-level="9.4.1" data-path="downloading-data.html"><a href="downloading-data.html#observe-this-in-action-1"><i class="fa fa-check"></i><b>9.4.1</b> Observe this in action</a></li>
 </ul></li>
-<li class="chapter" data-level="9.5" data-path="downloading-reports.html"><a href="downloading-reports.html"><i class="fa fa-check"></i><b>9.5</b> Downloading reports</a><ul>
+<li class="chapter" data-level="9.5" data-path="downloading-reports.html"><a href="downloading-reports.html"><i class="fa fa-check"></i><b>9.5</b> Downloading reports</a>
+<ul>
 <li class="chapter" data-level="9.5.1" data-path="downloading-reports.html"><a href="downloading-reports.html#observe-this-in-action-2"><i class="fa fa-check"></i><b>9.5.1</b> Observe this in action</a></li>
 <li class="chapter" data-level="9.5.2" data-path="downloading-reports.html"><a href="downloading-reports.html#some-tips-tricks-when-including-report-download-functionality"><i class="fa fa-check"></i><b>9.5.2</b> Some tips &amp; tricks when including report download functionality:</a></li>
 </ul></li>
-<li class="chapter" data-level="9.6" data-path="meeting-videos-8.html"><a href="meeting-videos-8.html"><i class="fa fa-check"></i><b>9.6</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="9.6" data-path="meeting-videos-8.html"><a href="meeting-videos-8.html"><i class="fa fa-check"></i><b>9.6</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="9.6.1" data-path="meeting-videos-8.html"><a href="meeting-videos-8.html#cohort-1-8"><i class="fa fa-check"></i><b>9.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="9.6.2" data-path="meeting-videos-8.html"><a href="meeting-videos-8.html#cohort-2-8"><i class="fa fa-check"></i><b>9.6.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="9.6.3" data-path="meeting-videos-8.html"><a href="meeting-videos-8.html#cohort-3-8"><i class="fa fa-check"></i><b>9.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="dynamic-ui.html"><a href="dynamic-ui.html"><i class="fa fa-check"></i><b>10</b> Dynamic UI</a><ul>
+<li class="chapter" data-level="10" data-path="dynamic-ui.html"><a href="dynamic-ui.html"><i class="fa fa-check"></i><b>10</b> Dynamic UI</a>
+<ul>
 <li class="chapter" data-level="10.1" data-path="introduction-2.html"><a href="introduction-2.html"><i class="fa fa-check"></i><b>10.1</b> Introduction</a></li>
-<li class="chapter" data-level="10.2" data-path="updating-inputs.html"><a href="updating-inputs.html"><i class="fa fa-check"></i><b>10.2</b> Updating inputs</a><ul>
+<li class="chapter" data-level="10.2" data-path="updating-inputs.html"><a href="updating-inputs.html"><i class="fa fa-check"></i><b>10.2</b> Updating inputs</a>
+<ul>
 <li class="chapter" data-level="10.2.1" data-path="updating-inputs.html"><a href="updating-inputs.html#update-functions"><i class="fa fa-check"></i><b>10.2.1</b> Update functions</a></li>
 </ul></li>
 <li class="chapter" data-level="10.3" data-path="dynamic-visibility.html"><a href="dynamic-visibility.html"><i class="fa fa-check"></i><b>10.3</b> Dynamic visibility</a></li>
 <li class="chapter" data-level="10.4" data-path="creating-ui-with-code.html"><a href="creating-ui-with-code.html"><i class="fa fa-check"></i><b>10.4</b> Creating UI with code</a></li>
 <li class="chapter" data-level="10.5" data-path="conclusions.html"><a href="conclusions.html"><i class="fa fa-check"></i><b>10.5</b> Conclusions</a></li>
-<li class="chapter" data-level="10.6" data-path="meeting-videos-9.html"><a href="meeting-videos-9.html"><i class="fa fa-check"></i><b>10.6</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="10.6" data-path="meeting-videos-9.html"><a href="meeting-videos-9.html"><i class="fa fa-check"></i><b>10.6</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="10.6.1" data-path="meeting-videos-9.html"><a href="meeting-videos-9.html#cohort-1-9"><i class="fa fa-check"></i><b>10.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="10.6.2" data-path="meeting-videos-9.html"><a href="meeting-videos-9.html#cohort-2-9"><i class="fa fa-check"></i><b>10.6.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="10.6.3" data-path="meeting-videos-9.html"><a href="meeting-videos-9.html#cohort-3-9"><i class="fa fa-check"></i><b>10.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="bookmarking.html"><a href="bookmarking.html"><i class="fa fa-check"></i><b>11</b> Bookmarking</a><ul>
+<li class="chapter" data-level="11" data-path="bookmarking.html"><a href="bookmarking.html"><i class="fa fa-check"></i><b>11</b> Bookmarking</a>
+<ul>
 <li class="chapter" data-level="11.1" data-path="introduction-3.html"><a href="introduction-3.html"><i class="fa fa-check"></i><b>11.1</b> Introduction</a></li>
 <li class="chapter" data-level="11.2" data-path="modifying-app-to-be-bookmarkable.html"><a href="modifying-app-to-be-bookmarkable.html"><i class="fa fa-check"></i><b>11.2</b> Modifying app to be bookmarkable</a></li>
 <li class="chapter" data-level="11.3" data-path="breaking-down-the-url.html"><a href="breaking-down-the-url.html"><i class="fa fa-check"></i><b>11.3</b> Breaking down the URL</a></li>
-<li class="chapter" data-level="11.4" data-path="updating-the-url.html"><a href="updating-the-url.html"><i class="fa fa-check"></i><b>11.4</b> Updating the URL</a><ul>
+<li class="chapter" data-level="11.4" data-path="updating-the-url.html"><a href="updating-the-url.html"><i class="fa fa-check"></i><b>11.4</b> Updating the URL</a>
+<ul>
 <li class="chapter" data-level="11.4.1" data-path="updating-the-url.html"><a href="updating-the-url.html#storing-a-richer-state"><i class="fa fa-check"></i><b>11.4.1</b> Storing a richer state</a></li>
 </ul></li>
 <li class="chapter" data-level="11.5" data-path="bookmarking-challenges.html"><a href="bookmarking-challenges.html"><i class="fa fa-check"></i><b>11.5</b> Bookmarking Challenges</a></li>
-<li class="chapter" data-level="11.6" data-path="meeting-videos-10.html"><a href="meeting-videos-10.html"><i class="fa fa-check"></i><b>11.6</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="11.6" data-path="meeting-videos-10.html"><a href="meeting-videos-10.html"><i class="fa fa-check"></i><b>11.6</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="11.6.1" data-path="meeting-videos-10.html"><a href="meeting-videos-10.html#cohort-1-10"><i class="fa fa-check"></i><b>11.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="11.6.2" data-path="meeting-videos-10.html"><a href="meeting-videos-10.html#cohort-2-10"><i class="fa fa-check"></i><b>11.6.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="11.6.3" data-path="meeting-videos-10.html"><a href="meeting-videos-10.html#cohort-3-10"><i class="fa fa-check"></i><b>11.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path="tidy-evaluation.html"><a href="tidy-evaluation.html"><i class="fa fa-check"></i><b>12</b> Tidy evaluation</a><ul>
+<li class="chapter" data-level="12" data-path="tidy-evaluation.html"><a href="tidy-evaluation.html"><i class="fa fa-check"></i><b>12</b> Tidy evaluation</a>
+<ul>
 <li class="chapter" data-level="12.1" data-path="slide-title.html"><a href="slide-title.html"><i class="fa fa-check"></i><b>12.1</b> Slide Title</a></li>
-<li class="chapter" data-level="12.2" data-path="meeting-videos-11.html"><a href="meeting-videos-11.html"><i class="fa fa-check"></i><b>12.2</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="12.2" data-path="meeting-videos-11.html"><a href="meeting-videos-11.html"><i class="fa fa-check"></i><b>12.2</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="12.2.1" data-path="meeting-videos-11.html"><a href="meeting-videos-11.html#cohort-1-11"><i class="fa fa-check"></i><b>12.2.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="12.2.2" data-path="meeting-videos-11.html"><a href="meeting-videos-11.html#cohort-2-11"><i class="fa fa-check"></i><b>12.2.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="12.2.3" data-path="meeting-videos-11.html"><a href="meeting-videos-11.html#cohort-3-11"><i class="fa fa-check"></i><b>12.2.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Mastering reactivity</b></span></li>
-<li class="chapter" data-level="13" data-path="why-reactivity.html"><a href="why-reactivity.html"><i class="fa fa-check"></i><b>13</b> Why reactivity?</a><ul>
+<li class="chapter" data-level="13" data-path="why-reactivity.html"><a href="why-reactivity.html"><i class="fa fa-check"></i><b>13</b> Why reactivity?</a>
+<ul>
 <li class="chapter" data-level="13.1" data-path="introduction-4.html"><a href="introduction-4.html"><i class="fa fa-check"></i><b>13.1</b> Introduction</a></li>
-<li class="chapter" data-level="13.2" data-path="why-do-we-need-reactive-programming.html"><a href="why-do-we-need-reactive-programming.html"><i class="fa fa-check"></i><b>13.2</b> Why do we need reactive programming?</a><ul>
+<li class="chapter" data-level="13.2" data-path="why-do-we-need-reactive-programming.html"><a href="why-do-we-need-reactive-programming.html"><i class="fa fa-check"></i><b>13.2</b> Why do we need reactive programming?</a>
+<ul>
 <li class="chapter" data-level="13.2.1" data-path="why-do-we-need-reactive-programming.html"><a href="why-do-we-need-reactive-programming.html#why-cant-you-use-variables"><i class="fa fa-check"></i><b>13.2.1</b> Why can’t you use variables?</a></li>
 <li class="chapter" data-level="13.2.2" data-path="why-do-we-need-reactive-programming.html"><a href="why-do-we-need-reactive-programming.html#why-about-functions"><i class="fa fa-check"></i><b>13.2.2</b> Why about functions?</a></li>
 <li class="chapter" data-level="13.2.3" data-path="why-do-we-need-reactive-programming.html"><a href="why-do-we-need-reactive-programming.html#event-driven-programming"><i class="fa fa-check"></i><b>13.2.3</b> Event-driven programming</a></li>
 </ul></li>
 <li class="chapter" data-level="13.3" data-path="reactive-programming-1.html"><a href="reactive-programming-1.html"><i class="fa fa-check"></i><b>13.3</b> Reactive programming</a></li>
 <li class="chapter" data-level="13.4" data-path="a-brief-history-of-reactive-programming.html"><a href="a-brief-history-of-reactive-programming.html"><i class="fa fa-check"></i><b>13.4</b> A brief history of reactive programming</a></li>
-<li class="chapter" data-level="13.5" data-path="meeting-videos-12.html"><a href="meeting-videos-12.html"><i class="fa fa-check"></i><b>13.5</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="13.5" data-path="meeting-videos-12.html"><a href="meeting-videos-12.html"><i class="fa fa-check"></i><b>13.5</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="13.5.1" data-path="meeting-videos-12.html"><a href="meeting-videos-12.html#cohort-1-12"><i class="fa fa-check"></i><b>13.5.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="13.5.2" data-path="meeting-videos-12.html"><a href="meeting-videos-12.html#cohort-2-12"><i class="fa fa-check"></i><b>13.5.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="13.5.3" data-path="meeting-videos-12.html"><a href="meeting-videos-12.html#cohort-3-12"><i class="fa fa-check"></i><b>13.5.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="the-reactive-graph-1.html"><a href="the-reactive-graph-1.html"><i class="fa fa-check"></i><b>14</b> The reactive graph</a><ul>
+<li class="chapter" data-level="14" data-path="the-reactive-graph-1.html"><a href="the-reactive-graph-1.html"><i class="fa fa-check"></i><b>14</b> The reactive graph</a>
+<ul>
 <li class="chapter" data-level="14.1" data-path="quick-review-of-chapter-3-basic-reactivity.html"><a href="quick-review-of-chapter-3-basic-reactivity.html"><i class="fa fa-check"></i><b>14.1</b> Quick review of chapter 3 Basic reactivity</a></li>
 <li class="chapter" data-level="14.2" data-path="introduction-5.html"><a href="introduction-5.html"><i class="fa fa-check"></i><b>14.2</b> Introduction</a></li>
 <li class="chapter" data-level="14.3" data-path="an-example.html"><a href="an-example.html"><i class="fa fa-check"></i><b>14.3</b> An example</a></li>
@@ -421,48 +477,57 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="14.5" data-path="dynamism.html"><a href="dynamism.html"><i class="fa fa-check"></i><b>14.5</b> Dynamism</a></li>
 <li class="chapter" data-level="14.6" data-path="the-reactlog-package.html"><a href="the-reactlog-package.html"><i class="fa fa-check"></i><b>14.6</b> The reactlog package</a></li>
 <li class="chapter" data-level="14.7" data-path="summary-1.html"><a href="summary-1.html"><i class="fa fa-check"></i><b>14.7</b> Summary</a></li>
-<li class="chapter" data-level="14.8" data-path="meeting-videos-13.html"><a href="meeting-videos-13.html"><i class="fa fa-check"></i><b>14.8</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="14.8" data-path="meeting-videos-13.html"><a href="meeting-videos-13.html"><i class="fa fa-check"></i><b>14.8</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="14.8.1" data-path="meeting-videos-13.html"><a href="meeting-videos-13.html#cohort-1-13"><i class="fa fa-check"></i><b>14.8.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="14.8.2" data-path="meeting-videos-13.html"><a href="meeting-videos-13.html#cohort-2-13"><i class="fa fa-check"></i><b>14.8.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="14.8.3" data-path="meeting-videos-13.html"><a href="meeting-videos-13.html#cohort-3-13"><i class="fa fa-check"></i><b>14.8.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="15" data-path="reactive-building-blocks.html"><a href="reactive-building-blocks.html"><i class="fa fa-check"></i><b>15</b> Reactive Building Blocks</a><ul>
+<li class="chapter" data-level="15" data-path="reactive-building-blocks.html"><a href="reactive-building-blocks.html"><i class="fa fa-check"></i><b>15</b> Reactive Building Blocks</a>
+<ul>
 <li class="chapter" data-level="15.1" data-path="learning-objectives-3.html"><a href="learning-objectives-3.html"><i class="fa fa-check"></i><b>15.1</b> Learning Objectives</a></li>
 <li class="chapter" data-level="15.2" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>15.2</b> Tools</a></li>
 <li class="chapter" data-level="15.3" data-path="prerequisite-knowledge.html"><a href="prerequisite-knowledge.html"><i class="fa fa-check"></i><b>15.3</b> Prerequisite Knowledge</a></li>
 <li class="chapter" data-level="15.4" data-path="reactive-values.html"><a href="reactive-values.html"><i class="fa fa-check"></i><b>15.4</b> Reactive Values</a></li>
-<li class="chapter" data-level="15.5" data-path="reactive-expressions-2.html"><a href="reactive-expressions-2.html"><i class="fa fa-check"></i><b>15.5</b> Reactive Expressions</a><ul>
+<li class="chapter" data-level="15.5" data-path="reactive-expressions-2.html"><a href="reactive-expressions-2.html"><i class="fa fa-check"></i><b>15.5</b> Reactive Expressions</a>
+<ul>
 <li class="chapter" data-level="15.5.1" data-path="reactive-expressions-2.html"><a href="reactive-expressions-2.html#errors"><i class="fa fa-check"></i><b>15.5.1</b> Errors</a></li>
 <li class="chapter" data-level="15.5.2" data-path="reactive-expressions-2.html"><a href="reactive-expressions-2.html#on.exit"><i class="fa fa-check"></i><b>15.5.2</b> <code>on.exit()</code></a></li>
 </ul></li>
 <li class="chapter" data-level="15.6" data-path="observers-and-outputs.html"><a href="observers-and-outputs.html"><i class="fa fa-check"></i><b>15.6</b> Observers and Outputs</a></li>
 <li class="chapter" data-level="15.7" data-path="isolating-code.html"><a href="isolating-code.html"><i class="fa fa-check"></i><b>15.7</b> Isolating Code</a></li>
 <li class="chapter" data-level="15.8" data-path="timed-invalidation-1.html"><a href="timed-invalidation-1.html"><i class="fa fa-check"></i><b>15.8</b> Timed Invalidation</a></li>
-<li class="chapter" data-level="15.9" data-path="meeting-videos-14.html"><a href="meeting-videos-14.html"><i class="fa fa-check"></i><b>15.9</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="15.9" data-path="meeting-videos-14.html"><a href="meeting-videos-14.html"><i class="fa fa-check"></i><b>15.9</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="15.9.1" data-path="meeting-videos-14.html"><a href="meeting-videos-14.html#cohort-1-14"><i class="fa fa-check"></i><b>15.9.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="15.9.2" data-path="meeting-videos-14.html"><a href="meeting-videos-14.html#cohort-2-14"><i class="fa fa-check"></i><b>15.9.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="15.9.3" data-path="meeting-videos-14.html"><a href="meeting-videos-14.html#cohort-3-14"><i class="fa fa-check"></i><b>15.9.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="16" data-path="escaping-the-graph.html"><a href="escaping-the-graph.html"><i class="fa fa-check"></i><b>16</b> Escaping the graph</a><ul>
+<li class="chapter" data-level="16" data-path="escaping-the-graph.html"><a href="escaping-the-graph.html"><i class="fa fa-check"></i><b>16</b> Escaping the graph</a>
+<ul>
 <li class="chapter" data-level="16.1" data-path="introduction-6.html"><a href="introduction-6.html"><i class="fa fa-check"></i><b>16.1</b> Introduction</a></li>
 <li class="chapter" data-level="16.2" data-path="combine-reactive-values.html"><a href="combine-reactive-values.html"><i class="fa fa-check"></i><b>16.2</b> Combine reactive values</a></li>
-<li class="chapter" data-level="16.3" data-path="connect-the-right-side-with-the-left-side.html"><a href="connect-the-right-side-with-the-left-side.html"><i class="fa fa-check"></i><b>16.3</b> Connect the right side with the left side</a><ul>
+<li class="chapter" data-level="16.3" data-path="connect-the-right-side-with-the-left-side.html"><a href="connect-the-right-side-with-the-left-side.html"><i class="fa fa-check"></i><b>16.3</b> Connect the right side with the left side</a>
+<ul>
 <li class="chapter" data-level="16.3.1" data-path="connect-the-right-side-with-the-left-side.html"><a href="connect-the-right-side-with-the-left-side.html#case-studies"><i class="fa fa-check"></i><b>16.3.1</b> Case Studies:</a></li>
 </ul></li>
 <li class="chapter" data-level="16.4" data-path="create-infinite-loops.html"><a href="create-infinite-loops.html"><i class="fa fa-check"></i><b>16.4</b> Create infinite loops</a></li>
-<li class="chapter" data-level="16.5" data-path="conclusions-1.html"><a href="conclusions-1.html"><i class="fa fa-check"></i><b>16.5</b> Conclusions</a><ul>
+<li class="chapter" data-level="16.5" data-path="conclusions-1.html"><a href="conclusions-1.html"><i class="fa fa-check"></i><b>16.5</b> Conclusions</a>
+<ul>
 <li class="chapter" data-level="16.5.1" data-path="conclusions-1.html"><a href="conclusions-1.html#resources-1"><i class="fa fa-check"></i><b>16.5.1</b> Resources:</a></li>
 </ul></li>
-<li class="chapter" data-level="16.6" data-path="meeting-videos-15.html"><a href="meeting-videos-15.html"><i class="fa fa-check"></i><b>16.6</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="16.6" data-path="meeting-videos-15.html"><a href="meeting-videos-15.html"><i class="fa fa-check"></i><b>16.6</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="16.6.1" data-path="meeting-videos-15.html"><a href="meeting-videos-15.html#cohort-1-15"><i class="fa fa-check"></i><b>16.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="16.6.2" data-path="meeting-videos-15.html"><a href="meeting-videos-15.html#cohort-2-15"><i class="fa fa-check"></i><b>16.6.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="16.6.3" data-path="meeting-videos-15.html"><a href="meeting-videos-15.html#cohort-3-15"><i class="fa fa-check"></i><b>16.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Best practices</b></span></li>
-<li class="chapter" data-level="17" data-path="general-guidelines.html"><a href="general-guidelines.html"><i class="fa fa-check"></i><b>17</b> General guidelines</a><ul>
+<li class="chapter" data-level="17" data-path="general-guidelines.html"><a href="general-guidelines.html"><i class="fa fa-check"></i><b>17</b> General guidelines</a>
+<ul>
 <li class="chapter" data-level="17.1" data-path="best-practices-section-of-the-book.html"><a href="best-practices-section-of-the-book.html"><i class="fa fa-check"></i><b>17.1</b> “Best practices” section of the book</a></li>
 <li class="chapter" data-level="17.2" data-path="software-engineering.html"><a href="software-engineering.html"><i class="fa fa-check"></i><b>17.2</b> Software engineering</a></li>
 <li class="chapter" data-level="17.3" data-path="code-organization.html"><a href="code-organization.html"><i class="fa fa-check"></i><b>17.3</b> Code organization</a></li>
@@ -471,53 +536,64 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="17.6" data-path="source-code-management.html"><a href="source-code-management.html"><i class="fa fa-check"></i><b>17.6</b> Source code management</a></li>
 <li class="chapter" data-level="17.7" data-path="continuous-integration-continuous-deployment.html"><a href="continuous-integration-continuous-deployment.html"><i class="fa fa-check"></i><b>17.7</b> Continuous integration / Continuous deployment</a></li>
 <li class="chapter" data-level="17.8" data-path="code-reviews.html"><a href="code-reviews.html"><i class="fa fa-check"></i><b>17.8</b> Code reviews</a></li>
-<li class="chapter" data-level="17.9" data-path="meeting-videos-16.html"><a href="meeting-videos-16.html"><i class="fa fa-check"></i><b>17.9</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="17.9" data-path="meeting-videos-16.html"><a href="meeting-videos-16.html"><i class="fa fa-check"></i><b>17.9</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="17.9.1" data-path="meeting-videos-16.html"><a href="meeting-videos-16.html#cohort-1-16"><i class="fa fa-check"></i><b>17.9.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="17.9.2" data-path="meeting-videos-16.html"><a href="meeting-videos-16.html#cohort-2-16"><i class="fa fa-check"></i><b>17.9.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="17.9.3" data-path="meeting-videos-16.html"><a href="meeting-videos-16.html#cohort-3-16"><i class="fa fa-check"></i><b>17.9.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="18" data-path="functions.html"><a href="functions.html"><i class="fa fa-check"></i><b>18</b> Functions</a><ul>
+<li class="chapter" data-level="18" data-path="functions.html"><a href="functions.html"><i class="fa fa-check"></i><b>18</b> Functions</a>
+<ul>
 <li class="chapter" data-level="18.1" data-path="file-organization.html"><a href="file-organization.html"><i class="fa fa-check"></i><b>18.1</b> File Organization</a></li>
-<li class="chapter" data-level="18.2" data-path="ui-functions.html"><a href="ui-functions.html"><i class="fa fa-check"></i><b>18.2</b> UI Functions</a><ul>
+<li class="chapter" data-level="18.2" data-path="ui-functions.html"><a href="ui-functions.html"><i class="fa fa-check"></i><b>18.2</b> UI Functions</a>
+<ul>
 <li class="chapter" data-level="18.2.1" data-path="ui-functions.html"><a href="ui-functions.html#functional-programming"><i class="fa fa-check"></i><b>18.2.1</b> Functional Programming</a></li>
 <li class="chapter" data-level="18.2.2" data-path="ui-functions.html"><a href="ui-functions.html#ui-as-data"><i class="fa fa-check"></i><b>18.2.2</b> UI as data</a></li>
 </ul></li>
-<li class="chapter" data-level="18.3" data-path="server-functions.html"><a href="server-functions.html"><i class="fa fa-check"></i><b>18.3</b> Server Functions</a><ul>
+<li class="chapter" data-level="18.3" data-path="server-functions.html"><a href="server-functions.html"><i class="fa fa-check"></i><b>18.3</b> Server Functions</a>
+<ul>
 <li class="chapter" data-level="18.3.1" data-path="server-functions.html"><a href="server-functions.html#internal-functions"><i class="fa fa-check"></i><b>18.3.1</b> Internal functions</a></li>
 </ul></li>
-<li class="chapter" data-level="18.4" data-path="meeting-videos-17.html"><a href="meeting-videos-17.html"><i class="fa fa-check"></i><b>18.4</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="18.4" data-path="meeting-videos-17.html"><a href="meeting-videos-17.html"><i class="fa fa-check"></i><b>18.4</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="18.4.1" data-path="meeting-videos-17.html"><a href="meeting-videos-17.html#cohort-1-17"><i class="fa fa-check"></i><b>18.4.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="18.4.2" data-path="meeting-videos-17.html"><a href="meeting-videos-17.html#cohort-2-17"><i class="fa fa-check"></i><b>18.4.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="18.4.3" data-path="meeting-videos-17.html"><a href="meeting-videos-17.html#cohort-3-17"><i class="fa fa-check"></i><b>18.4.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="19" data-path="modules.html"><a href="modules.html"><i class="fa fa-check"></i><b>19</b> Modules</a><ul>
+<li class="chapter" data-level="19" data-path="modules.html"><a href="modules.html"><i class="fa fa-check"></i><b>19</b> Modules</a>
+<ul>
 <li class="chapter" data-level="19.0.1" data-path="modules.html"><a href="modules.html#note-about-golem"><i class="fa fa-check"></i><b>19.0.1</b> note about golem</a></li>
 <li class="chapter" data-level="19.1" data-path="case-study-modules-to-make-a-histogram.html"><a href="case-study-modules-to-make-a-histogram.html"><i class="fa fa-check"></i><b>19.1</b> Case study – modules to make a histogram</a></li>
 <li class="chapter" data-level="19.2" data-path="case-study-histogram-with-two-modules.html"><a href="case-study-histogram-with-two-modules.html"><i class="fa fa-check"></i><b>19.2</b> Case study: histogram with two modules</a></li>
 <li class="chapter" data-level="19.3" data-path="links-to-examples.html"><a href="links-to-examples.html"><i class="fa fa-check"></i><b>19.3</b> Links to examples</a></li>
-<li class="chapter" data-level="19.4" data-path="meeting-videos-18.html"><a href="meeting-videos-18.html"><i class="fa fa-check"></i><b>19.4</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="19.4" data-path="meeting-videos-18.html"><a href="meeting-videos-18.html"><i class="fa fa-check"></i><b>19.4</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="19.4.1" data-path="meeting-videos-18.html"><a href="meeting-videos-18.html#cohort-1-18"><i class="fa fa-check"></i><b>19.4.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="19.4.2" data-path="meeting-videos-18.html"><a href="meeting-videos-18.html#cohort-2-18"><i class="fa fa-check"></i><b>19.4.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="19.4.3" data-path="meeting-videos-18.html"><a href="meeting-videos-18.html#cohort-3-18"><i class="fa fa-check"></i><b>19.4.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="20" data-path="packages.html"><a href="packages.html"><i class="fa fa-check"></i><b>20</b> Packages</a><ul>
+<li class="chapter" data-level="20" data-path="packages.html"><a href="packages.html"><i class="fa fa-check"></i><b>20</b> Packages</a>
+<ul>
 <li class="chapter" data-level="20.1" data-path="package-structure.html"><a href="package-structure.html"><i class="fa fa-check"></i><b>20.1</b> Package Structure</a></li>
 <li class="chapter" data-level="20.2" data-path="benefits.html"><a href="benefits.html"><i class="fa fa-check"></i><b>20.2</b> Benefits</a></li>
 <li class="chapter" data-level="20.3" data-path="converting-an-existing-app.html"><a href="converting-an-existing-app.html"><i class="fa fa-check"></i><b>20.3</b> Converting an existing app</a></li>
-<li class="chapter" data-level="20.4" data-path="example-shinysurveys.html"><a href="example-shinysurveys.html"><i class="fa fa-check"></i><b>20.4</b> Example: shinysurveys</a><ul>
+<li class="chapter" data-level="20.4" data-path="example-shinysurveys.html"><a href="example-shinysurveys.html"><i class="fa fa-check"></i><b>20.4</b> Example: shinysurveys</a>
+<ul>
 <li class="chapter" data-level="20.4.1" data-path="example-shinysurveys.html"><a href="example-shinysurveys.html#installation"><i class="fa fa-check"></i><b>20.4.1</b> Installation</a></li>
 <li class="chapter" data-level="20.4.2" data-path="example-shinysurveys.html"><a href="example-shinysurveys.html#demo"><i class="fa fa-check"></i><b>20.4.2</b> Demo</a></li>
 <li class="chapter" data-level="20.4.3" data-path="example-shinysurveys.html"><a href="example-shinysurveys.html#lets-take-a-look"><i class="fa fa-check"></i><b>20.4.3</b> Let’s take a look!</a></li>
 </ul></li>
-<li class="chapter" data-level="20.5" data-path="meeting-videos-19.html"><a href="meeting-videos-19.html"><i class="fa fa-check"></i><b>20.5</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="20.5" data-path="meeting-videos-19.html"><a href="meeting-videos-19.html"><i class="fa fa-check"></i><b>20.5</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="20.5.1" data-path="meeting-videos-19.html"><a href="meeting-videos-19.html#cohort-1-19"><i class="fa fa-check"></i><b>20.5.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="20.5.2" data-path="meeting-videos-19.html"><a href="meeting-videos-19.html#cohort-3-19"><i class="fa fa-check"></i><b>20.5.2</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="21" data-path="testing-1.html"><a href="testing-1.html"><i class="fa fa-check"></i><b>21</b> Testing</a><ul>
+<li class="chapter" data-level="21" data-path="testing-1.html"><a href="testing-1.html"><i class="fa fa-check"></i><b>21</b> Testing</a>
+<ul>
 <li class="chapter" data-level="21.1" data-path="learning-outcomes.html"><a href="learning-outcomes.html"><i class="fa fa-check"></i><b>21.1</b> Learning outcomes</a></li>
 <li class="chapter" data-level="21.2" data-path="purpose-of-testing.html"><a href="purpose-of-testing.html"><i class="fa fa-check"></i><b>21.2</b> Purpose of testing</a></li>
 <li class="chapter" data-level="21.3" data-path="discussions.html"><a href="discussions.html"><i class="fa fa-check"></i><b>21.3</b> Discussions</a></li>
@@ -525,89 +601,109 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="21.5" data-path="example.html"><a href="example.html"><i class="fa fa-check"></i><b>21.5</b> Example</a></li>
 <li class="chapter" data-level="21.6" data-path="using-testthat.html"><a href="using-testthat.html"><i class="fa fa-check"></i><b>21.6</b> Using {testthat}</a></li>
 <li class="chapter" data-level="21.7" data-path="recommended-workflow.html"><a href="recommended-workflow.html"><i class="fa fa-check"></i><b>21.7</b> Recommended workflow</a></li>
-<li class="chapter" data-level="21.8" data-path="testing-non-reactive-functions.html"><a href="testing-non-reactive-functions.html"><i class="fa fa-check"></i><b>21.8</b> Testing non-reactive functions</a><ul>
+<li class="chapter" data-level="21.8" data-path="testing-non-reactive-functions.html"><a href="testing-non-reactive-functions.html"><i class="fa fa-check"></i><b>21.8</b> Testing non-reactive functions</a>
+<ul>
 <li class="chapter" data-level="21.8.1" data-path="testing-non-reactive-functions.html"><a href="testing-non-reactive-functions.html#workflow-1"><i class="fa fa-check"></i><b>21.8.1</b> Workflow</a></li>
 <li class="chapter" data-level="21.8.2" data-path="testing-non-reactive-functions.html"><a href="testing-non-reactive-functions.html#a-typical-test"><i class="fa fa-check"></i><b>21.8.2</b> A typical test</a></li>
 </ul></li>
-<li class="chapter" data-level="21.9" data-path="testing-reactivity.html"><a href="testing-reactivity.html"><i class="fa fa-check"></i><b>21.9</b> Testing Reactivity</a><ul>
+<li class="chapter" data-level="21.9" data-path="testing-reactivity.html"><a href="testing-reactivity.html"><i class="fa fa-check"></i><b>21.9</b> Testing Reactivity</a>
+<ul>
 <li class="chapter" data-level="21.9.1" data-path="testing-reactivity.html"><a href="testing-reactivity.html#restructured-app"><i class="fa fa-check"></i><b>21.9.1</b> Restructured app</a></li>
 <li class="chapter" data-level="21.9.2" data-path="testing-reactivity.html"><a href="testing-reactivity.html#shinytestserver"><i class="fa fa-check"></i><b>21.9.2</b> <code>shiny::testServer</code></a></li>
 <li class="chapter" data-level="21.9.3" data-path="testing-reactivity.html"><a href="testing-reactivity.html#a-typical-reactivity-test"><i class="fa fa-check"></i><b>21.9.3</b> A typical reactivity test</a></li>
 </ul></li>
-<li class="chapter" data-level="21.10" data-path="testing-reactivity-module-version.html"><a href="testing-reactivity-module-version.html"><i class="fa fa-check"></i><b>21.10</b> Testing Reactivity: Module version</a><ul>
+<li class="chapter" data-level="21.10" data-path="testing-reactivity-module-version.html"><a href="testing-reactivity-module-version.html"><i class="fa fa-check"></i><b>21.10</b> Testing Reactivity: Module version</a>
+<ul>
 <li class="chapter" data-level="21.10.1" data-path="testing-reactivity-module-version.html"><a href="testing-reactivity-module-version.html#structural-changes"><i class="fa fa-check"></i><b>21.10.1</b> Structural changes</a></li>
 <li class="chapter" data-level="21.10.2" data-path="testing-reactivity-module-version.html"><a href="testing-reactivity-module-version.html#a-typical-module-reactivity-test"><i class="fa fa-check"></i><b>21.10.2</b> A typical module-reactivity test</a></li>
 </ul></li>
-<li class="chapter" data-level="21.11" data-path="testing-javascript.html"><a href="testing-javascript.html"><i class="fa fa-check"></i><b>21.11</b> Testing JavaScript</a><ul>
+<li class="chapter" data-level="21.11" data-path="testing-javascript.html"><a href="testing-javascript.html"><i class="fa fa-check"></i><b>21.11</b> Testing JavaScript</a>
+<ul>
 <li class="chapter" data-level="21.11.1" data-path="testing-javascript.html"><a href="testing-javascript.html#shinytestshinydriver"><i class="fa fa-check"></i><b>21.11.1</b> <code>shinytest::ShinyDriver</code></a></li>
 <li class="chapter" data-level="21.11.2" data-path="testing-javascript.html"><a href="testing-javascript.html#exercise-for-the-reader"><i class="fa fa-check"></i><b>21.11.2</b> Exercise for the reader</a></li>
 </ul></li>
 <li class="chapter" data-level="21.12" data-path="new-testthat-things-mentioned-in-the-chapter.html"><a href="new-testthat-things-mentioned-in-the-chapter.html"><i class="fa fa-check"></i><b>21.12</b> New testthat things mentioned in the chapter</a></li>
 <li class="chapter" data-level="21.13" data-path="new-rstudio-mentioned-in-the-chapter.html"><a href="new-rstudio-mentioned-in-the-chapter.html"><i class="fa fa-check"></i><b>21.13</b> New RStudio mentioned in the chapter</a></li>
 <li class="chapter" data-level="21.14" data-path="other-interesting-things.html"><a href="other-interesting-things.html"><i class="fa fa-check"></i><b>21.14</b> Other interesting things</a></li>
-<li class="chapter" data-level="21.15" data-path="meeting-videos-20.html"><a href="meeting-videos-20.html"><i class="fa fa-check"></i><b>21.15</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="21.15" data-path="meeting-videos-20.html"><a href="meeting-videos-20.html"><i class="fa fa-check"></i><b>21.15</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="21.15.1" data-path="meeting-videos-20.html"><a href="meeting-videos-20.html#cohort-1-20"><i class="fa fa-check"></i><b>21.15.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="21.15.2" data-path="meeting-videos-20.html"><a href="meeting-videos-20.html#cohort-2-19"><i class="fa fa-check"></i><b>21.15.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="21.15.3" data-path="meeting-videos-20.html"><a href="meeting-videos-20.html#cohort-3-20"><i class="fa fa-check"></i><b>21.15.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="22" data-path="security.html"><a href="security.html"><i class="fa fa-check"></i><b>22</b> Security</a><ul>
+<li class="chapter" data-level="22" data-path="security.html"><a href="security.html"><i class="fa fa-check"></i><b>22</b> Security</a>
+<ul>
 <li class="chapter" data-level="22.1" data-path="introduction-7.html"><a href="introduction-7.html"><i class="fa fa-check"></i><b>22.1</b> Introduction</a></li>
 <li class="chapter" data-level="22.2" data-path="the-security-within-your-app.html"><a href="the-security-within-your-app.html"><i class="fa fa-check"></i><b>22.2</b> The security within your app</a></li>
 <li class="chapter" data-level="22.3" data-path="compute-resources.html"><a href="compute-resources.html"><i class="fa fa-check"></i><b>22.3</b> Compute resources</a></li>
 <li class="chapter" data-level="22.4" data-path="publishing-on-shinyapps.html"><a href="publishing-on-shinyapps.html"><i class="fa fa-check"></i><b>22.4</b> Publishing on shinyapps.io</a></li>
-<li class="chapter" data-level="22.5" data-path="conclusions-2.html"><a href="conclusions-2.html"><i class="fa fa-check"></i><b>22.5</b> Conclusions:</a><ul>
+<li class="chapter" data-level="22.5" data-path="conclusions-2.html"><a href="conclusions-2.html"><i class="fa fa-check"></i><b>22.5</b> Conclusions:</a>
+<ul>
 <li class="chapter" data-level="22.5.1" data-path="conclusions-2.html"><a href="conclusions-2.html#resources-2"><i class="fa fa-check"></i><b>22.5.1</b> Resources:</a></li>
 </ul></li>
-<li class="chapter" data-level="22.6" data-path="meeting-videos-21.html"><a href="meeting-videos-21.html"><i class="fa fa-check"></i><b>22.6</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="22.6" data-path="meeting-videos-21.html"><a href="meeting-videos-21.html"><i class="fa fa-check"></i><b>22.6</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="22.6.1" data-path="meeting-videos-21.html"><a href="meeting-videos-21.html#cohort-1-21"><i class="fa fa-check"></i><b>22.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="22.6.2" data-path="meeting-videos-21.html"><a href="meeting-videos-21.html#cohort-2-20"><i class="fa fa-check"></i><b>22.6.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="22.6.3" data-path="meeting-videos-21.html"><a href="meeting-videos-21.html#cohort-3-21"><i class="fa fa-check"></i><b>22.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="23" data-path="performance.html"><a href="performance.html"><i class="fa fa-check"></i><b>23</b> Performance</a><ul>
+<li class="chapter" data-level="23" data-path="performance.html"><a href="performance.html"><i class="fa fa-check"></i><b>23</b> Performance</a>
+<ul>
 <li class="chapter" data-level="23.1" data-path="restaurant-shiny.html"><a href="restaurant-shiny.html"><i class="fa fa-check"></i><b>23.1</b> Restaurant Shiny</a></li>
-<li class="chapter" data-level="23.2" data-path="benchmarking.html"><a href="benchmarking.html"><i class="fa fa-check"></i><b>23.2</b> Benchmarking</a><ul>
+<li class="chapter" data-level="23.2" data-path="benchmarking.html"><a href="benchmarking.html"><i class="fa fa-check"></i><b>23.2</b> Benchmarking</a>
+<ul>
 <li class="chapter" data-level="23.2.1" data-path="benchmarking.html"><a href="benchmarking.html#tools-1"><i class="fa fa-check"></i><b>23.2.1</b> Tools</a></li>
 </ul></li>
-<li class="chapter" data-level="23.3" data-path="profiling.html"><a href="profiling.html"><i class="fa fa-check"></i><b>23.3</b> Profiling</a><ul>
+<li class="chapter" data-level="23.3" data-path="profiling.html"><a href="profiling.html"><i class="fa fa-check"></i><b>23.3</b> Profiling</a>
+<ul>
 <li class="chapter" data-level="23.3.1" data-path="profiling.html"><a href="profiling.html#tools-2"><i class="fa fa-check"></i><b>23.3.1</b> Tools</a></li>
 </ul></li>
-<li class="chapter" data-level="23.4" data-path="optimisation.html"><a href="optimisation.html"><i class="fa fa-check"></i><b>23.4</b> Optimisation</a><ul>
+<li class="chapter" data-level="23.4" data-path="optimisation.html"><a href="optimisation.html"><i class="fa fa-check"></i><b>23.4</b> Optimisation</a>
+<ul>
 <li class="chapter" data-level="23.4.1" data-path="optimisation.html"><a href="optimisation.html#cacheing"><i class="fa fa-check"></i><b>23.4.1</b> Cacheing</a></li>
 <li class="chapter" data-level="23.4.2" data-path="optimisation.html"><a href="optimisation.html#other-optimisations"><i class="fa fa-check"></i><b>23.4.2</b> Other Optimisations</a></li>
 </ul></li>
 <li class="chapter" data-level="23.5" data-path="resources-3.html"><a href="resources-3.html"><i class="fa fa-check"></i><b>23.5</b> Resources</a></li>
-<li class="chapter" data-level="23.6" data-path="meeting-videos-22.html"><a href="meeting-videos-22.html"><i class="fa fa-check"></i><b>23.6</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="23.6" data-path="meeting-videos-22.html"><a href="meeting-videos-22.html"><i class="fa fa-check"></i><b>23.6</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="23.6.1" data-path="meeting-videos-22.html"><a href="meeting-videos-22.html#cohort-1-22"><i class="fa fa-check"></i><b>23.6.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="23.6.2" data-path="meeting-videos-22.html"><a href="meeting-videos-22.html#cohort-2-21"><i class="fa fa-check"></i><b>23.6.2</b> Cohort 2</a></li>
 <li class="chapter" data-level="23.6.3" data-path="meeting-videos-22.html"><a href="meeting-videos-22.html#cohort-3-22"><i class="fa fa-check"></i><b>23.6.3</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="24" data-path="wrap-up-session.html"><a href="wrap-up-session.html"><i class="fa fa-check"></i><b>24</b> Wrap up session</a><ul>
-<li class="chapter" data-level="24.1" data-path="meeting-videos-23.html"><a href="meeting-videos-23.html"><i class="fa fa-check"></i><b>24.1</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="24" data-path="wrap-up-session.html"><a href="wrap-up-session.html"><i class="fa fa-check"></i><b>24</b> Wrap up session</a>
+<ul>
+<li class="chapter" data-level="24.1" data-path="meeting-videos-23.html"><a href="meeting-videos-23.html"><i class="fa fa-check"></i><b>24.1</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="24.1.1" data-path="meeting-videos-23.html"><a href="meeting-videos-23.html#cohort-1-23"><i class="fa fa-check"></i><b>24.1.1</b> Cohort 1</a></li>
 <li class="chapter" data-level="24.1.2" data-path="meeting-videos-23.html"><a href="meeting-videos-23.html#cohort-3-23"><i class="fa fa-check"></i><b>24.1.2</b> Cohort 3</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Other topics</b></span></li>
-<li class="chapter" data-level="25" data-path="up-and-running-with-git.html"><a href="up-and-running-with-git.html"><i class="fa fa-check"></i><b>25</b> Up and running with <code>git</code></a><ul>
+<li class="chapter" data-level="25" data-path="up-and-running-with-git.html"><a href="up-and-running-with-git.html"><i class="fa fa-check"></i><b>25</b> Up and running with <code>git</code></a>
+<ul>
 <li class="chapter" data-level="25.1" data-path="what-is-git.html"><a href="what-is-git.html"><i class="fa fa-check"></i><b>25.1</b> What is <code>git</code>?</a></li>
 <li class="chapter" data-level="25.2" data-path="accessing-and-using-git.html"><a href="accessing-and-using-git.html"><i class="fa fa-check"></i><b>25.2</b> Accessing and using <code>git</code></a></li>
 <li class="chapter" data-level="25.3" data-path="example-using-the-built-in-rstudio-git-gui..html"><a href="example-using-the-built-in-rstudio-git-gui..html"><i class="fa fa-check"></i><b>25.3</b> Example using the built in RStudio <code>git</code> GUI.</a></li>
-<li class="chapter" data-level="25.4" data-path="example-using-git-in-a-system-terminal.html"><a href="example-using-git-in-a-system-terminal.html"><i class="fa fa-check"></i><b>25.4</b> Example using <code>git</code> in a system terminal</a><ul>
+<li class="chapter" data-level="25.4" data-path="example-using-git-in-a-system-terminal.html"><a href="example-using-git-in-a-system-terminal.html"><i class="fa fa-check"></i><b>25.4</b> Example using <code>git</code> in a system terminal</a>
+<ul>
 <li class="chapter" data-level="25.4.1" data-path="example-using-git-in-a-system-terminal.html"><a href="example-using-git-in-a-system-terminal.html#example-using-git-in-rstudios-terminal"><i class="fa fa-check"></i><b>25.4.1</b> Example using <code>git</code> in RStudio’s terminal</a></li>
 </ul></li>
-<li class="chapter" data-level="25.5" data-path="what-is-github.html"><a href="what-is-github.html"><i class="fa fa-check"></i><b>25.5</b> What is GitHub?</a><ul>
+<li class="chapter" data-level="25.5" data-path="what-is-github.html"><a href="what-is-github.html"><i class="fa fa-check"></i><b>25.5</b> What is GitHub?</a>
+<ul>
 <li class="chapter" data-level="25.5.1" data-path="what-is-github.html"><a href="what-is-github.html#other-services-like-github"><i class="fa fa-check"></i><b>25.5.1</b> Other services like GitHub</a></li>
 </ul></li>
 <li class="chapter" data-level="25.6" data-path="a-basic-workflow---pull-commit-and-push.html"><a href="a-basic-workflow---pull-commit-and-push.html"><i class="fa fa-check"></i><b>25.6</b> A basic workflow - pull, commit, and push</a></li>
 <li class="chapter" data-level="25.7" data-path="personal-repo-workflow-step-by-step.html"><a href="personal-repo-workflow-step-by-step.html"><i class="fa fa-check"></i><b>25.7</b> Personal repo workflow step-by-step</a></li>
 <li class="chapter" data-level="25.8" data-path="personal-repo-workflow-alternative-view.html"><a href="personal-repo-workflow-alternative-view.html"><i class="fa fa-check"></i><b>25.8</b> Personal repo workflow alternative view</a></li>
-<li class="chapter" data-level="25.9" data-path="fork-clone-push-and-pull-workflow-collaboration.html"><a href="fork-clone-push-and-pull-workflow-collaboration.html"><i class="fa fa-check"></i><b>25.9</b> Fork, clone, push, and pull workflow (collaboration)</a><ul>
+<li class="chapter" data-level="25.9" data-path="fork-clone-push-and-pull-workflow-collaboration.html"><a href="fork-clone-push-and-pull-workflow-collaboration.html"><i class="fa fa-check"></i><b>25.9</b> Fork, clone, push, and pull workflow (collaboration)</a>
+<ul>
 <li class="chapter" data-level="25.9.1" data-path="fork-clone-push-and-pull-workflow-collaboration.html"><a href="fork-clone-push-and-pull-workflow-collaboration.html#some-notes-about-these-workflows"><i class="fa fa-check"></i><b>25.9.1</b> Some notes about these workflows</a></li>
 </ul></li>
-<li class="chapter" data-level="25.10" data-path="workflow-commands.html"><a href="workflow-commands.html"><i class="fa fa-check"></i><b>25.10</b> Workflow commands</a><ul>
+<li class="chapter" data-level="25.10" data-path="workflow-commands.html"><a href="workflow-commands.html"><i class="fa fa-check"></i><b>25.10</b> Workflow commands</a>
+<ul>
 <li class="chapter" data-level="25.10.1" data-path="workflow-commands.html"><a href="workflow-commands.html#get-remote-repoupdate-local-repo"><i class="fa fa-check"></i><b>25.10.1</b> Get Remote Repo/Update Local Repo</a></li>
 <li class="chapter" data-level="25.10.2" data-path="workflow-commands.html"><a href="workflow-commands.html#view-info-about-local-files"><i class="fa fa-check"></i><b>25.10.2</b> View info about local files</a></li>
 <li class="chapter" data-level="25.10.3" data-path="workflow-commands.html"><a href="workflow-commands.html#stage-and-document-changes"><i class="fa fa-check"></i><b>25.10.3</b> Stage and document changes</a></li>
@@ -615,7 +711,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="25.11" data-path="demo-of-the-workflow.html"><a href="demo-of-the-workflow.html"><i class="fa fa-check"></i><b>25.11</b> Demo of the workflow</a></li>
 <li class="chapter" data-level="25.12" data-path="other-resources-to-learn-more-about-git.html"><a href="other-resources-to-learn-more-about-git.html"><i class="fa fa-check"></i><b>25.12</b> Other resources to learn more about <code>git</code></a></li>
-<li class="chapter" data-level="25.13" data-path="meeting-videos-24.html"><a href="meeting-videos-24.html"><i class="fa fa-check"></i><b>25.13</b> Meeting Videos</a><ul>
+<li class="chapter" data-level="25.13" data-path="meeting-videos-24.html"><a href="meeting-videos-24.html"><i class="fa fa-check"></i><b>25.13</b> Meeting Videos</a>
+<ul>
 <li class="chapter" data-level="25.13.1" data-path="meeting-videos-24.html"><a href="meeting-videos-24.html#cohort-2-22"><i class="fa fa-check"></i><b>25.13.1</b> Cohort 2</a></li>
 </ul></li>
 </ul></li>
@@ -639,11 +736,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="the-security-within-your-app" class="section level2 hasAnchor">
+<div id="the-security-within-your-app" class="section level2 hasAnchor" number="22.2">
 <h2><span class="header-section-number">22.2</span> The security within your app<a href="the-security-within-your-app.html#the-security-within-your-app" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Two main security actions:</p>
-<div id="htmlwidget-c46d7b95dc93e6f5567a" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c46d7b95dc93e6f5567a">{"x":{"diagram":"\ngraph LR\nA(validation)-.and.-B(isolation)\nstyle A fill:#f9f\nstyle B fill:#f9f"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d8806561f4f613fa41f4" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d8806561f4f613fa41f4">{"x":{"diagram":"\ngraph LR\nA(validation)-.and.-B(isolation)\nstyle A fill:#f9f\nstyle B fill:#f9f"},"evals":[],"jsHooks":[]}</script>
 <ul>
 <li><p>Shiny <code>inputs</code> use client-side <strong>validation</strong> such as data that is user-specific and need the user to authenticate before use</p></li>
 <li><p>Shiny <code>server()</code> code <strong>isolation</strong>; one user cannot see data from another user in a different session, the only exception is if caching is in use, more about this is specified in the last chapter of the book</p></li>
@@ -677,18 +774,19 @@ Figure 22.2: config package
 </p>
 </div>
 <p>How to install <strong>config</strong> and all the other packages (substituting the package’s name where appropriate):</p>
-<p>install.packages(“config”)
-library(config)</p>
+<pre><code>install.packages(&quot;config&quot;)
+library(config)</code></pre>
 <p>How to store the password in a file with <a href="https://db.rstudio.com/best-practices/managing-credentials/">config in practice</a> ?</p>
 <p>The package makes easier to deploy content, and in this context is used to keep the credentials outside of the R script by saving them in the <strong>config.yml</strong> file while keeping it in the current working directory.</p>
 <p><a href="https://yaml.org/about.html">YAML(tm)</a> are type of files made for making easier international collaboration with a language which is both human readable and computationally powerful.</p>
 <p>An example of a .yml file is a <strong>config.yml</strong> file:</p>
-<p>default:
-uid: “my-name”
-pwd: “my-password”</p>
+<pre><code>default:
+uid: &quot;my-name&quot;
+pwd: &quot;my-password&quot;</code></pre>
 <p>And to recall the information back from its directory:</p>
-<p>config &lt;- config::get(file = “conf/config.yml”)
-config<span class="math inline">\(uid  config\)</span>pwd</p>
+<pre><code>config &lt;- config::get(file = &quot;conf/config.yml&quot;)
+config$uid
+config$pwd</code></pre>
 <hr />
 <p>2 - Another interesting package, mentioned in the search-engine of “securing a Shiny app” is <strong><a href="https://curso-r.github.io/auth0/index.html">{auth0}</a></strong> package.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-100"></span>
@@ -699,23 +797,26 @@ Figure 22.3: auth0 package
 </div>
 <p>It is an identity provider, it offers a server where to store shiny apps as well as procedures for setting credentials at access. You need an account where to load your app and set up the credentials.</p>
 <p><code>_auth0.yml</code> files can be created with the command <code>use_auth0()</code> which can be automatically positioned in the app.R directory and it is already filled with basic information:</p>
-<p>auth0::use_auth0()</p>
+<pre><code>  auth0::use_auth0()
+  </code></pre>
 <p>Here is the content of the <code>_auth0.yml</code> file:</p>
-<p>name: myApp
-remote_url: ’’
-auth0_config:
-api_url: !expr paste0(‘<a href="https://" class="uri">https://</a>’, Sys.getenv(‘AUTH0_USER’), ‘.auth0.com’)
-credentials:
-key: !expr Sys.getenv(“AUTH0_KEY”)
-secret: !expr Sys.getenv(“AUTH0_SECRET”)</p>
+<pre><code>  name: myApp
+  remote_url: &#39;&#39;
+  auth0_config:
+  api_url: !expr paste0(&#39;https://&#39;, Sys.getenv(&#39;AUTH0_USER&#39;), &#39;.auth0.com&#39;)
+  credentials:
+  key: !expr Sys.getenv(&quot;AUTH0_KEY&quot;)
+  secret: !expr Sys.getenv(&quot;AUTH0_SECRET&quot;)
+  </code></pre>
 <p>Then set up the keys using</p>
-<p>usethis::edit_r_environ(“project”)</p>
+<pre><code>  usethis::edit_r_environ(&quot;project&quot;)      
+  </code></pre>
 <p>which adds a <code>.Renviron</code> file in your project directory for you to modify the content with</p>
-<p>AUTH0_USER = …
-AUTH0_KEY = …
-AUTH0_SECRET = …</p>
+<pre><code>  AUTH0_USER   = ...
+  AUTH0_KEY    = ...
+  AUTH0_SECRET = ...</code></pre>
 <p>It adds a layer between Shiny and the user. And then you can retrieve the credentials using <code>Sys.getenv()</code></p>
-<p>auth0::Sys.getenv(“AUTH0_USER”)</p>
+<pre><code>  auth0::Sys.getenv(&quot;AUTH0_USER&quot;)      </code></pre>
 <p>This method is not exclusive of <code>auth0</code>package but is a recommended approach to use for storing <strong>Credentials inside Environment Variables</strong> even with other packages.</p>
 <hr />
 <p>3 - A simple and secure authentication mechanism for single ‘Shiny’ applications is through <strong><a href="https://datastorm-open.github.io/shinymanager/">{shinymanager}</a></strong> package.</p>
@@ -731,14 +832,14 @@ Figure 22.4: shinymanager package
 <li><a href="https://dreamrs.shinyapps.io/shinymanager-demo/">shinyapps.io</a></li>
 </ul>
 <p>it follows with these authentication credentials:</p>
-<p>user: shiny / password: shiny
-user: shinymanager / password: shinymanager (Admin)</p>
+<pre><code>user: shiny / password: shiny
+user: shinymanager / password: shinymanager (Admin)</code></pre>
 <p>In particular it provides a function to <code>secure_app()</code> in which to wrap the <code>ui</code>:</p>
-<p>Wrap your UI with secure_app
-ui &lt;- secure_app(ui, choose_language = TRUE)</p>
+<pre><code>Wrap your UI with secure_app
+ui &lt;- secure_app(ui, choose_language = TRUE)</code></pre>
 <p>As well as in the <code>server()</code> with the following commands:</p>
-<p>secure_server()
-check_credentials()</p>
+<pre><code>secure_server()
+check_credentials()</code></pre>
 <hr />
 4 - The <strong><a href="https://paulc91.github.io/shinyauthr/">{shinyauthr}</a></strong> package is very useful for providing key function to use.
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-102"></span>
@@ -748,10 +849,10 @@ Figure 22.5: shinyauthr package
 </p>
 </div>
 <p>These are the main functions which invisibly call JavaScript with the command <code>shinyjs::useShinyjs()</code> internally:</p>
-<p>loginUI()
+<pre><code>loginUI()
 loginServer()
 logoutUI()
-logoutServer()</p>
+logoutServer()</code></pre>
 <p>It also provides a method for <strong>cookie-based automatic login</strong>, which means that the system can store the credentials for some time as established by the creator of the app.</p>
 <hr />
 5 - <strong><a href="https://github.com/jeroen/sodium">{sodium}</a></strong> package is software library for encryption, decryption, signatures, password hashing and more.
@@ -762,14 +863,14 @@ Figure 22.6: sodium package
 </p>
 </div>
 <p>Generally used in this contest to encrypt passwords with simple commands such as:</p>
-<p>user_name = “user_authr_1”,
-password = sodium::password_store(“pass_authr_1”)</p>
+<pre><code>user_name = &quot;user_authr_1&quot;,
+password  = sodium::password_store(&quot;pass_authr_1&quot;)</code></pre>
 <p>which releases the password in this format:</p>
-<div class="sourceCode" id="cb266"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb266-1"><a href="the-security-within-your-app.html#cb266-1"></a>password =<span class="st"> &quot;pass_authr_1&quot;</span></span>
-<span id="cb266-2"><a href="the-security-within-your-app.html#cb266-2"></a>sodium<span class="op">::</span><span class="kw">password_store</span>(password)</span></code></pre></div>
-<pre><code>## [1] &quot;$7$C6..../....R.F7Cd25kbnG51BcMeoxPw9qRDbi8Mgc4lVAwkP7OC5$fX7CUFvJ5UY2P1K1vbjpLOdgNNqkybXgBH3K3eIyW81&quot;</code></pre>
-<div class="sourceCode" id="cb268"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb268-1"><a href="the-security-within-your-app.html#cb268-1"></a>hash &lt;-<span class="st"> </span>sodium<span class="op">::</span><span class="kw">password_store</span>(password)</span>
-<span id="cb268-2"><a href="the-security-within-your-app.html#cb268-2"></a>sodium<span class="op">::</span><span class="kw">password_verify</span>(hash, password)</span></code></pre></div>
+<div class="sourceCode" id="cb279"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb279-1"><a href="the-security-within-your-app.html#cb279-1" aria-hidden="true" tabindex="-1"></a>password <span class="ot">=</span> <span class="st">&quot;pass_authr_1&quot;</span></span>
+<span id="cb279-2"><a href="the-security-within-your-app.html#cb279-2" aria-hidden="true" tabindex="-1"></a>sodium<span class="sc">::</span><span class="fu">password_store</span>(password)</span></code></pre></div>
+<pre><code>## [1] &quot;$7$C6..../....msx4Ph4n/DiIbWE6ZPt66p08RZ2Etnf3565CkSnSoE3$ioX9rjo6RdKKUdxF5HyoFRib/WV8ki04GtgIBgtMgR.&quot;</code></pre>
+<div class="sourceCode" id="cb281"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb281-1"><a href="the-security-within-your-app.html#cb281-1" aria-hidden="true" tabindex="-1"></a>hash <span class="ot">&lt;-</span> sodium<span class="sc">::</span><span class="fu">password_store</span>(password)</span>
+<span id="cb281-2"><a href="the-security-within-your-app.html#cb281-2" aria-hidden="true" tabindex="-1"></a>sodium<span class="sc">::</span><span class="fu">password_verify</span>(hash, password)</span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
 <hr />
 <p>Another suggestion by the <a href="https://mastering-shiny.org/scaling-security.html">book</a> is to use:</p>
@@ -786,9 +887,11 @@ Kerberos is available with RStudio Pro Products.</p>
 <p>In general what happens in an app when setting up login credentials is described below.</p>
 <p>In the <code>ui</code> you can use these commands for wrapping your code and build a module, while in the <code>server()</code> you should mind not to storage any form of credentials, but as said, storage them in a separate file (.xlm , .yml , .rds, .Renviron, …).</p>
 <p>The <code>server()</code> should include the <code>eventReactive()</code> function to check whether the user’s login and password are valid credentials, raising a silent validation error.</p>
-<p>server&lt;- function(input,output,session){</p>
-<p>eventReactive()</p>
-<p>}</p>
+<pre><code>server&lt;- function(input,output,session){
+
+eventReactive() 
+
+}</code></pre>
 <hr />
 <p><strong>Examples:</strong></p>
 <p>1 - In this example is shown for simplicity an application of the <strong>{shinyauthr}</strong>: the credentials are located inside the <code>server()</code>, they should be in a <code>config.yml</code> file and then retrieved for use.</p>
@@ -799,79 +902,79 @@ Kerberos is available with RStudio Pro Products.</p>
 Figure 22.8: Credentials
 </p>
 </div>
-<div class="sourceCode" id="cb270"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb270-1"><a href="the-security-within-your-app.html#cb270-1"></a><span class="kw">library</span>(shiny)</span>
-<span id="cb270-2"><a href="the-security-within-your-app.html#cb270-2"></a></span>
-<span id="cb270-3"><a href="the-security-within-your-app.html#cb270-3"></a><span class="co"># dataframe that holds usernames, passwords and other user data</span></span>
-<span id="cb270-4"><a href="the-security-within-your-app.html#cb270-4"></a>user_base &lt;-<span class="st"> </span>dplyr<span class="op">::</span><span class="kw">tibble</span>(</span>
-<span id="cb270-5"><a href="the-security-within-your-app.html#cb270-5"></a>  <span class="dt">user =</span> <span class="kw">c</span>(<span class="st">&quot;user1&quot;</span>, <span class="st">&quot;user2&quot;</span>),</span>
-<span id="cb270-6"><a href="the-security-within-your-app.html#cb270-6"></a>  <span class="dt">password =</span> <span class="kw">c</span>(<span class="st">&quot;pass1&quot;</span>, <span class="st">&quot;pass2&quot;</span>),</span>
-<span id="cb270-7"><a href="the-security-within-your-app.html#cb270-7"></a>  <span class="dt">permissions =</span> <span class="kw">c</span>(<span class="st">&quot;admin&quot;</span>, <span class="st">&quot;standard&quot;</span>),</span>
-<span id="cb270-8"><a href="the-security-within-your-app.html#cb270-8"></a>  <span class="dt">name =</span> <span class="kw">c</span>(<span class="st">&quot;User One&quot;</span>, <span class="st">&quot;User Two&quot;</span>)</span>
-<span id="cb270-9"><a href="the-security-within-your-app.html#cb270-9"></a>)</span>
-<span id="cb270-10"><a href="the-security-within-your-app.html#cb270-10"></a></span>
-<span id="cb270-11"><a href="the-security-within-your-app.html#cb270-11"></a></span>
-<span id="cb270-12"><a href="the-security-within-your-app.html#cb270-12"></a>ui &lt;-<span class="st"> </span><span class="kw">fluidPage</span>(</span>
-<span id="cb270-13"><a href="the-security-within-your-app.html#cb270-13"></a>  <span class="co"># add logout button UI</span></span>
-<span id="cb270-14"><a href="the-security-within-your-app.html#cb270-14"></a>  <span class="kw">div</span>(<span class="dt">class =</span>  <span class="st">&quot;pull-right&quot;</span>, <span class="co"># The HTML tag functions in Shiny, like div() and p() return objects that can be rendered as HTML</span></span>
-<span id="cb270-15"><a href="the-security-within-your-app.html#cb270-15"></a>      shinyauthr<span class="op">::</span><span class="kw">logoutUI</span>(</span>
-<span id="cb270-16"><a href="the-security-within-your-app.html#cb270-16"></a>        <span class="dt">id =</span> <span class="st">&quot;logout&quot;</span>)),</span>
-<span id="cb270-17"><a href="the-security-within-your-app.html#cb270-17"></a>  <span class="co"># add login panel UI function</span></span>
-<span id="cb270-18"><a href="the-security-within-your-app.html#cb270-18"></a>      shinyauthr<span class="op">::</span><span class="kw">loginUI</span>(</span>
-<span id="cb270-19"><a href="the-security-within-your-app.html#cb270-19"></a>        <span class="dt">id =</span> <span class="st">&quot;login&quot;</span>),</span>
-<span id="cb270-20"><a href="the-security-within-your-app.html#cb270-20"></a>  <span class="co"># setup table output to show user info after login</span></span>
-<span id="cb270-21"><a href="the-security-within-your-app.html#cb270-21"></a>  <span class="kw">tableOutput</span>(<span class="st">&quot;user_table&quot;</span>)</span>
-<span id="cb270-22"><a href="the-security-within-your-app.html#cb270-22"></a>)</span>
-<span id="cb270-23"><a href="the-security-within-your-app.html#cb270-23"></a></span>
-<span id="cb270-24"><a href="the-security-within-your-app.html#cb270-24"></a>server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output, session) {</span>
-<span id="cb270-25"><a href="the-security-within-your-app.html#cb270-25"></a>  <span class="co"># call login module supplying data frame, </span></span>
-<span id="cb270-26"><a href="the-security-within-your-app.html#cb270-26"></a>  <span class="co"># user and password cols and reactive trigger</span></span>
-<span id="cb270-27"><a href="the-security-within-your-app.html#cb270-27"></a>  credentials &lt;-<span class="st"> </span>shinyauthr<span class="op">::</span><span class="kw">loginServer</span>(</span>
-<span id="cb270-28"><a href="the-security-within-your-app.html#cb270-28"></a>    <span class="dt">id =</span> <span class="st">&quot;login&quot;</span>,</span>
-<span id="cb270-29"><a href="the-security-within-your-app.html#cb270-29"></a>    <span class="dt">data =</span> user_base,</span>
-<span id="cb270-30"><a href="the-security-within-your-app.html#cb270-30"></a>    <span class="dt">user_col =</span> user,</span>
-<span id="cb270-31"><a href="the-security-within-your-app.html#cb270-31"></a>    <span class="dt">pwd_col =</span> password,</span>
-<span id="cb270-32"><a href="the-security-within-your-app.html#cb270-32"></a>    <span class="dt">log_out =</span> <span class="kw">reactive</span>(<span class="kw">logout_init</span>())</span>
-<span id="cb270-33"><a href="the-security-within-your-app.html#cb270-33"></a>  )</span>
-<span id="cb270-34"><a href="the-security-within-your-app.html#cb270-34"></a>  </span>
-<span id="cb270-35"><a href="the-security-within-your-app.html#cb270-35"></a>  <span class="co"># call the logout module with reactive trigger to hide/show</span></span>
-<span id="cb270-36"><a href="the-security-within-your-app.html#cb270-36"></a>  logout_init &lt;-<span class="st"> </span>shinyauthr<span class="op">::</span><span class="kw">logoutServer</span>(</span>
-<span id="cb270-37"><a href="the-security-within-your-app.html#cb270-37"></a>    <span class="dt">id =</span> <span class="st">&quot;logout&quot;</span>,</span>
-<span id="cb270-38"><a href="the-security-within-your-app.html#cb270-38"></a>    <span class="dt">active =</span> <span class="kw">reactive</span>(<span class="kw">credentials</span>()<span class="op">$</span>user_auth)</span>
-<span id="cb270-39"><a href="the-security-within-your-app.html#cb270-39"></a>  )</span>
-<span id="cb270-40"><a href="the-security-within-your-app.html#cb270-40"></a>  </span>
-<span id="cb270-41"><a href="the-security-within-your-app.html#cb270-41"></a>  output<span class="op">$</span>user_table &lt;-<span class="st"> </span><span class="kw">renderTable</span>({</span>
-<span id="cb270-42"><a href="the-security-within-your-app.html#cb270-42"></a>    <span class="co"># use req to only render results when credentials()$user_auth is TRUE</span></span>
-<span id="cb270-43"><a href="the-security-within-your-app.html#cb270-43"></a>    <span class="kw">req</span>(<span class="kw">credentials</span>()<span class="op">$</span>user_auth) <span class="co"># only run after a successful login</span></span>
-<span id="cb270-44"><a href="the-security-within-your-app.html#cb270-44"></a>    <span class="kw">credentials</span>()<span class="op">$</span>info</span>
-<span id="cb270-45"><a href="the-security-within-your-app.html#cb270-45"></a>  })</span>
-<span id="cb270-46"><a href="the-security-within-your-app.html#cb270-46"></a>}</span>
-<span id="cb270-47"><a href="the-security-within-your-app.html#cb270-47"></a></span>
-<span id="cb270-48"><a href="the-security-within-your-app.html#cb270-48"></a><span class="co">#shinyApp(ui = ui, server = server)</span></span></code></pre></div>
+<div class="sourceCode" id="cb284"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb284-1"><a href="the-security-within-your-app.html#cb284-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(shiny)</span>
+<span id="cb284-2"><a href="the-security-within-your-app.html#cb284-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb284-3"><a href="the-security-within-your-app.html#cb284-3" aria-hidden="true" tabindex="-1"></a><span class="co"># dataframe that holds usernames, passwords and other user data</span></span>
+<span id="cb284-4"><a href="the-security-within-your-app.html#cb284-4" aria-hidden="true" tabindex="-1"></a>user_base <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">tibble</span>(</span>
+<span id="cb284-5"><a href="the-security-within-your-app.html#cb284-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">user =</span> <span class="fu">c</span>(<span class="st">&quot;user1&quot;</span>, <span class="st">&quot;user2&quot;</span>),</span>
+<span id="cb284-6"><a href="the-security-within-your-app.html#cb284-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">password =</span> <span class="fu">c</span>(<span class="st">&quot;pass1&quot;</span>, <span class="st">&quot;pass2&quot;</span>),</span>
+<span id="cb284-7"><a href="the-security-within-your-app.html#cb284-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">permissions =</span> <span class="fu">c</span>(<span class="st">&quot;admin&quot;</span>, <span class="st">&quot;standard&quot;</span>),</span>
+<span id="cb284-8"><a href="the-security-within-your-app.html#cb284-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">&quot;User One&quot;</span>, <span class="st">&quot;User Two&quot;</span>)</span>
+<span id="cb284-9"><a href="the-security-within-your-app.html#cb284-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb284-10"><a href="the-security-within-your-app.html#cb284-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb284-11"><a href="the-security-within-your-app.html#cb284-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb284-12"><a href="the-security-within-your-app.html#cb284-12" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb284-13"><a href="the-security-within-your-app.html#cb284-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># add logout button UI</span></span>
+<span id="cb284-14"><a href="the-security-within-your-app.html#cb284-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">div</span>(<span class="at">class =</span>  <span class="st">&quot;pull-right&quot;</span>, <span class="co"># The HTML tag functions in Shiny, like div() and p() return objects that can be rendered as HTML</span></span>
+<span id="cb284-15"><a href="the-security-within-your-app.html#cb284-15" aria-hidden="true" tabindex="-1"></a>      shinyauthr<span class="sc">::</span><span class="fu">logoutUI</span>(</span>
+<span id="cb284-16"><a href="the-security-within-your-app.html#cb284-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">id =</span> <span class="st">&quot;logout&quot;</span>)),</span>
+<span id="cb284-17"><a href="the-security-within-your-app.html#cb284-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># add login panel UI function</span></span>
+<span id="cb284-18"><a href="the-security-within-your-app.html#cb284-18" aria-hidden="true" tabindex="-1"></a>      shinyauthr<span class="sc">::</span><span class="fu">loginUI</span>(</span>
+<span id="cb284-19"><a href="the-security-within-your-app.html#cb284-19" aria-hidden="true" tabindex="-1"></a>        <span class="at">id =</span> <span class="st">&quot;login&quot;</span>),</span>
+<span id="cb284-20"><a href="the-security-within-your-app.html#cb284-20" aria-hidden="true" tabindex="-1"></a>  <span class="co"># setup table output to show user info after login</span></span>
+<span id="cb284-21"><a href="the-security-within-your-app.html#cb284-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tableOutput</span>(<span class="st">&quot;user_table&quot;</span>)</span>
+<span id="cb284-22"><a href="the-security-within-your-app.html#cb284-22" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb284-23"><a href="the-security-within-your-app.html#cb284-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb284-24"><a href="the-security-within-your-app.html#cb284-24" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output, session) {</span>
+<span id="cb284-25"><a href="the-security-within-your-app.html#cb284-25" aria-hidden="true" tabindex="-1"></a>  <span class="co"># call login module supplying data frame, </span></span>
+<span id="cb284-26"><a href="the-security-within-your-app.html#cb284-26" aria-hidden="true" tabindex="-1"></a>  <span class="co"># user and password cols and reactive trigger</span></span>
+<span id="cb284-27"><a href="the-security-within-your-app.html#cb284-27" aria-hidden="true" tabindex="-1"></a>  credentials <span class="ot">&lt;-</span> shinyauthr<span class="sc">::</span><span class="fu">loginServer</span>(</span>
+<span id="cb284-28"><a href="the-security-within-your-app.html#cb284-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">id =</span> <span class="st">&quot;login&quot;</span>,</span>
+<span id="cb284-29"><a href="the-security-within-your-app.html#cb284-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> user_base,</span>
+<span id="cb284-30"><a href="the-security-within-your-app.html#cb284-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">user_col =</span> user,</span>
+<span id="cb284-31"><a href="the-security-within-your-app.html#cb284-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">pwd_col =</span> password,</span>
+<span id="cb284-32"><a href="the-security-within-your-app.html#cb284-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">log_out =</span> <span class="fu">reactive</span>(<span class="fu">logout_init</span>())</span>
+<span id="cb284-33"><a href="the-security-within-your-app.html#cb284-33" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb284-34"><a href="the-security-within-your-app.html#cb284-34" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb284-35"><a href="the-security-within-your-app.html#cb284-35" aria-hidden="true" tabindex="-1"></a>  <span class="co"># call the logout module with reactive trigger to hide/show</span></span>
+<span id="cb284-36"><a href="the-security-within-your-app.html#cb284-36" aria-hidden="true" tabindex="-1"></a>  logout_init <span class="ot">&lt;-</span> shinyauthr<span class="sc">::</span><span class="fu">logoutServer</span>(</span>
+<span id="cb284-37"><a href="the-security-within-your-app.html#cb284-37" aria-hidden="true" tabindex="-1"></a>    <span class="at">id =</span> <span class="st">&quot;logout&quot;</span>,</span>
+<span id="cb284-38"><a href="the-security-within-your-app.html#cb284-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">active =</span> <span class="fu">reactive</span>(<span class="fu">credentials</span>()<span class="sc">$</span>user_auth)</span>
+<span id="cb284-39"><a href="the-security-within-your-app.html#cb284-39" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb284-40"><a href="the-security-within-your-app.html#cb284-40" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb284-41"><a href="the-security-within-your-app.html#cb284-41" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>user_table <span class="ot">&lt;-</span> <span class="fu">renderTable</span>({</span>
+<span id="cb284-42"><a href="the-security-within-your-app.html#cb284-42" aria-hidden="true" tabindex="-1"></a>    <span class="co"># use req to only render results when credentials()$user_auth is TRUE</span></span>
+<span id="cb284-43"><a href="the-security-within-your-app.html#cb284-43" aria-hidden="true" tabindex="-1"></a>    <span class="fu">req</span>(<span class="fu">credentials</span>()<span class="sc">$</span>user_auth) <span class="co"># only run after a successful login</span></span>
+<span id="cb284-44"><a href="the-security-within-your-app.html#cb284-44" aria-hidden="true" tabindex="-1"></a>    <span class="fu">credentials</span>()<span class="sc">$</span>info</span>
+<span id="cb284-45"><a href="the-security-within-your-app.html#cb284-45" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb284-46"><a href="the-security-within-your-app.html#cb284-46" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb284-47"><a href="the-security-within-your-app.html#cb284-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb284-48"><a href="the-security-within-your-app.html#cb284-48" aria-hidden="true" tabindex="-1"></a><span class="co">#shinyApp(ui = ui, server = server)</span></span></code></pre></div>
 <p>When accessing an API or database in R, Shiny inputs use <strong>client-side validation</strong> and often requires to <a href="https://www.r-bloggers.com/2019/03/how-to-avoid-publishing-credentials-in-your-code/">provide credentials</a> such as a login name and password.</p>
 <p>2 - Another example of Shiny inputs using <strong>client-side validation</strong> (input performed by JavaScript in the browser) where is possible for an attacker to send unexpected values is:</p>
-<div class="sourceCode" id="cb271"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb271-1"><a href="the-security-within-your-app.html#cb271-1"></a>secrets &lt;-<span class="st"> </span><span class="kw">list</span>(</span>
-<span id="cb271-2"><a href="the-security-within-your-app.html#cb271-2"></a>  <span class="dt">a =</span> <span class="st">&quot;my name&quot;</span>,</span>
-<span id="cb271-3"><a href="the-security-within-your-app.html#cb271-3"></a>  <span class="dt">b =</span> <span class="st">&quot;my birthday&quot;</span>,</span>
-<span id="cb271-4"><a href="the-security-within-your-app.html#cb271-4"></a>  <span class="dt">c =</span> <span class="st">&quot;my social security number&quot;</span>, </span>
-<span id="cb271-5"><a href="the-security-within-your-app.html#cb271-5"></a>  <span class="dt">d =</span> <span class="st">&quot;my credit card&quot;</span></span>
-<span id="cb271-6"><a href="the-security-within-your-app.html#cb271-6"></a>)</span>
-<span id="cb271-7"><a href="the-security-within-your-app.html#cb271-7"></a></span>
-<span id="cb271-8"><a href="the-security-within-your-app.html#cb271-8"></a>allowed &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;a&quot;</span>, <span class="st">&quot;b&quot;</span>)</span>
-<span id="cb271-9"><a href="the-security-within-your-app.html#cb271-9"></a>ui &lt;-<span class="st"> </span><span class="kw">fluidPage</span>(</span>
-<span id="cb271-10"><a href="the-security-within-your-app.html#cb271-10"></a>  <span class="kw">selectInput</span>(<span class="st">&quot;x&quot;</span>, <span class="st">&quot;x&quot;</span>, <span class="dt">choices =</span> allowed),</span>
-<span id="cb271-11"><a href="the-security-within-your-app.html#cb271-11"></a>  <span class="kw">textOutput</span>(<span class="st">&quot;secret&quot;</span>)</span>
-<span id="cb271-12"><a href="the-security-within-your-app.html#cb271-12"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb285"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb285-1"><a href="the-security-within-your-app.html#cb285-1" aria-hidden="true" tabindex="-1"></a>secrets <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb285-2"><a href="the-security-within-your-app.html#cb285-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">a =</span> <span class="st">&quot;my name&quot;</span>,</span>
+<span id="cb285-3"><a href="the-security-within-your-app.html#cb285-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">b =</span> <span class="st">&quot;my birthday&quot;</span>,</span>
+<span id="cb285-4"><a href="the-security-within-your-app.html#cb285-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">c =</span> <span class="st">&quot;my social security number&quot;</span>, </span>
+<span id="cb285-5"><a href="the-security-within-your-app.html#cb285-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">d =</span> <span class="st">&quot;my credit card&quot;</span></span>
+<span id="cb285-6"><a href="the-security-within-your-app.html#cb285-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb285-7"><a href="the-security-within-your-app.html#cb285-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb285-8"><a href="the-security-within-your-app.html#cb285-8" aria-hidden="true" tabindex="-1"></a>allowed <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;a&quot;</span>, <span class="st">&quot;b&quot;</span>)</span>
+<span id="cb285-9"><a href="the-security-within-your-app.html#cb285-9" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb285-10"><a href="the-security-within-your-app.html#cb285-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">selectInput</span>(<span class="st">&quot;x&quot;</span>, <span class="st">&quot;x&quot;</span>, <span class="at">choices =</span> allowed),</span>
+<span id="cb285-11"><a href="the-security-within-your-app.html#cb285-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">textOutput</span>(<span class="st">&quot;secret&quot;</span>)</span>
+<span id="cb285-12"><a href="the-security-within-your-app.html#cb285-12" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
 <p>An attacker can open up a JavaScript console in their browser and run <code>Shiny.setInputValue("x", "c")</code> to see client data that are not allowed to see.</p>
 <p>To add a layer of security, in the <code>server()</code> is added the <code>req()</code> function, which ensure that values are available, and if any of the given values is not truthy, the operation is stopped by raising a “silent” exception.</p>
-<p>?req()</p>
-<div class="sourceCode" id="cb272"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb272-1"><a href="the-security-within-your-app.html#cb272-1"></a>server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output, session) {</span>
-<span id="cb272-2"><a href="the-security-within-your-app.html#cb272-2"></a>  output<span class="op">$</span>secret &lt;-<span class="st"> </span><span class="kw">renderText</span>({</span>
-<span id="cb272-3"><a href="the-security-within-your-app.html#cb272-3"></a>    <span class="kw">req</span>(input<span class="op">$</span>x <span class="op">%in%</span><span class="st"> </span>allowed) <span class="co"># this function </span></span>
-<span id="cb272-4"><a href="the-security-within-your-app.html#cb272-4"></a>    secrets[[input<span class="op">$</span>x]]</span>
-<span id="cb272-5"><a href="the-security-within-your-app.html#cb272-5"></a>  })</span>
-<span id="cb272-6"><a href="the-security-within-your-app.html#cb272-6"></a>}</span>
-<span id="cb272-7"><a href="the-security-within-your-app.html#cb272-7"></a></span>
-<span id="cb272-8"><a href="the-security-within-your-app.html#cb272-8"></a><span class="co"># shinyApp(ui = ui, server = server)</span></span></code></pre></div>
+<pre><code>?req()</code></pre>
+<div class="sourceCode" id="cb287"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb287-1"><a href="the-security-within-your-app.html#cb287-1" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output, session) {</span>
+<span id="cb287-2"><a href="the-security-within-your-app.html#cb287-2" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>secret <span class="ot">&lt;-</span> <span class="fu">renderText</span>({</span>
+<span id="cb287-3"><a href="the-security-within-your-app.html#cb287-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">req</span>(input<span class="sc">$</span>x <span class="sc">%in%</span> allowed) <span class="co"># this function </span></span>
+<span id="cb287-4"><a href="the-security-within-your-app.html#cb287-4" aria-hidden="true" tabindex="-1"></a>    secrets[[input<span class="sc">$</span>x]]</span>
+<span id="cb287-5"><a href="the-security-within-your-app.html#cb287-5" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb287-6"><a href="the-security-within-your-app.html#cb287-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb287-7"><a href="the-security-within-your-app.html#cb287-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb287-8"><a href="the-security-within-your-app.html#cb287-8" aria-hidden="true" tabindex="-1"></a><span class="co"># shinyApp(ui = ui, server = server)</span></span></code></pre></div>
 <hr />
 <p>Finally, in case you want to skip the authentication step when testing the app:</p>
 <ul>
@@ -939,20 +1042,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>
